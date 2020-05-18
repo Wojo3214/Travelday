@@ -98,8 +98,37 @@ body{
         .c-content__upcoming-trips{
             width: 35%;
             margin-left: 10px;
-            height: 200px;
-            background-color: rgb(103, 184, 83);
+            padding: 20px;
+            background-color: #EEEEEE;
+
+            .c-content__upcoming-trips__heading{
+                margin-left: 20px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            &__places{
+                display: flex;
+                align-items: center;
+                margin: 10px 15px;
+
+                .c-content__upcoming-trips__img{
+                    width: 75px;
+                    height: auto;
+                } 
+                
+                .c-content__upcoming-trips__info{
+                    margin-left: 20px;
+
+                    .c-content__upcoming-trips__place{
+                        font-size: 20px;
+                    }
+    
+                    .c-content__upcoming-trips__date{
+                        font-size: 17px;
+                    }
+                }
+            }
         }
 
         .c-content__destination{
