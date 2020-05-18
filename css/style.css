@@ -30,6 +30,10 @@ body {
   list-style-type: none;
 }
 
+.nav__list--bottom {
+  margin-top: 80px;
+}
+
 .nav__list .nav__item {
   padding: 15px 10px;
 }
@@ -37,6 +41,11 @@ body {
 .nav__list .nav__item .nav__link {
   text-decoration: none;
   color: #fff;
+}
+
+.nav__list .nav__item .nav__link--active {
+  color: #03a9f4;
+  background-color: #fff;
 }
 
 .nav__list .nav__item .nav__link .nav__img {
@@ -47,5 +56,9 @@ body {
 
 .nav__list .nav__item .nav__link .nav__logo {
   width: 40px;
+}
+
+.nav .nav__rights {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

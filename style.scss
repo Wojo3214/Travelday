@@ -25,27 +25,46 @@ body{
     &__list {
         list-style-type: none;
 
-        
+        &--bottom {
+            margin-top: 80px;
+        }
+
         .nav__item {
             padding: 15px 10px;
+            
 
             .nav__link {
                 text-decoration: none;
                 color: #fff;
 
-                    .nav__img {
-                        width: 80px;
-                        margin: 0 auto;
-                        display: block;
-                    }
-
-                    .nav__logo {
-                        width: 40px;
-                    }
+                &--active {
+                    color: rgb(3,169,244);
+                    background-color: #fff;
                 }
+
+                .nav__img {
+                    width: 80px;
+                    margin: 0 auto;
+                    display: block;
+                }
+
+                .nav__logo {
+                    width: 40px;
+
+                }
+            }
         }
+
+
     }
 
+    .nav__rights {
+        margin-top: 40px;
+    }
+
+    .back__website {
+        
+    }
     
 
     
