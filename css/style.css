@@ -35,7 +35,7 @@ body {
 }
 
 .nav__list .nav__item {
-  padding: 15px 10px;
+  padding: 15px 6px;
 }
 
 .nav__list .nav__item .nav__link {
@@ -60,6 +60,7 @@ body {
 
 .nav__list .nav__item .nav__link .nav__icon {
   width: 25px;
+  margin-right: 10px;
 }
 
 .nav .nav__rights {
