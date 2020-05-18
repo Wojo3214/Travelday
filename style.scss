@@ -5,6 +5,8 @@
 
 body{
     background-color: #fff;
+    font-family: 'Open sans';
+    font-size: 15px;
 }
 
 .l-grid{
@@ -13,8 +15,27 @@ body{
     width: 100%;
 }
 
+/***NAVIGATION***/
 .nav{
-    max-width: 250px;
+    max-width: 200px;
     padding: 25px;
-    background-color: rgb(35, 111, 173);
+    background: rgb(3,169,244);
+    background: linear-gradient(0deg, rgba(3,169,244,1) 0%, rgba(3,155,229,1) 100%);
+    
+    &__list {
+        list-style-type: none;
+
+        
+        .nav__item {
+            padding: 15px 10px;
+            .nav__link {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    
+
+    
 }

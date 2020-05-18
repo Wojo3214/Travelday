@@ -5,6 +5,8 @@
 
 body {
   background-color: #fff;
+  font-family: 'Open sans';
+  font-size: 15px;
 }
 
 .l-grid {
@@ -15,9 +17,25 @@ body {
   width: 100%;
 }
 
+/***NAVIGATION***/
 .nav {
-  max-width: 250px;
+  max-width: 200px;
   padding: 25px;
-  background-color: #236fad;
+  background: #03a9f4;
+  background: -webkit-gradient(linear, left bottom, left top, from(#03a9f4), to(#039be5));
+  background: linear-gradient(0deg, #03a9f4 0%, #039be5 100%);
+}
+
+.nav__list {
+  list-style-type: none;
+}
+
+.nav__list .nav__item {
+  padding: 15px 10px;
+}
+
+.nav__list .nav__item .nav__link {
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
