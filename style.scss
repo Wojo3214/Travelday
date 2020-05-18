@@ -76,7 +76,6 @@ body{
 
     &__item{
         display: flex;
-        background-color: rgb(109, 48, 48);
 
         .c-content__map{
             width: 65%;
@@ -90,6 +89,30 @@ body{
             height: 200px;
             background-color: rgb(103, 184, 83);
         }
+
+        .c-content__destination{
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            .c-content__img{
+                display: block;
+                width: 80px;
+                height: auto;
+                float: left;
+            }
+
+            &__info{
+                margin-left: 10px;
+
+                .c-content__destination-country{
+                    font-size: 15px;
+                }
+
+                .c-content__destination-city{
+                    font-size: 18px;
+                }
+            }
+        }
     }
 
     &__item--vertical{
@@ -97,7 +120,7 @@ body{
         
         .c-content__score{
             font-size: 16px;
-            margin: 10px 0;
+            margin: 10px 0 0 0;
             color: #A8A8A8;
         }
 

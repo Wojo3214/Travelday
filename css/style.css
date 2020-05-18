@@ -80,7 +80,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #6d3030;
 }
 
 .c-content__item .c-content__map {
@@ -96,6 +95,35 @@ body {
   background-color: #67b853;
 }
 
+.c-content__item .c-content__destination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.c-content__item .c-content__destination .c-content__img {
+  display: block;
+  width: 80px;
+  height: auto;
+  float: left;
+}
+
+.c-content__item .c-content__destination__info {
+  margin-left: 10px;
+}
+
+.c-content__item .c-content__destination__info .c-content__destination-country {
+  font-size: 15px;
+}
+
+.c-content__item .c-content__destination__info .c-content__destination-city {
+  font-size: 18px;
+}
+
 .c-content__item--vertical {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -105,7 +133,7 @@ body {
 
 .c-content__item--vertical .c-content__score {
   font-size: 16px;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   color: #A8A8A8;
 }
 
