@@ -61,4 +61,100 @@ body {
 .nav .nav__rights {
   margin-top: 40px;
 }
+
+/***DASHBOARD***/
+.c-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.c-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #6d3030;
+}
+
+.c-content__item .c-content__map {
+  width: 65%;
+  height: 200px;
+  background-color: #5453b8;
+}
+
+.c-content__item .c-content__upcoming-trips {
+  width: 35%;
+  margin-left: 10px;
+  height: 200px;
+  background-color: #67b853;
+}
+
+.c-content__item--vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-content__item--vertical .c-content__score {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #A8A8A8;
+}
+
+.c-content__item--vertical .c-content__bar {
+  width: 100%;
+  height: 15px;
+  background-color: lightgray;
+  border-radius: 20px;
+  overflow: hidden;
+  clear: both;
+}
+
+.c-content__item--vertical .c-content__bar .c-content__progress {
+  width: 0%;
+  height: 15px;
+  border-radius: 20px;
+  float: left;
+  background-color: #0998E6;
+  -webkit-animation: progress 2s;
+          animation: progress 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #333;
+}
+
+.heading--main {
+  font-size: 24px;
+}
+
+.heading--sub {
+  font-size: 15px;
+}
 /*# sourceMappingURL=style.css.map */

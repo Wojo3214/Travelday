@@ -69,3 +69,83 @@ body{
 
     
 }
+
+/***DASHBOARD***/
+.c-content {
+    flex: 1;
+    padding: 25px;
+
+    &__item{
+        display: flex;
+        background-color: rgb(109, 48, 48);
+
+        .c-content__map{
+            width: 65%;
+            height: 200px;
+            background-color: rgb(84, 83, 184);
+        }
+
+        .c-content__upcoming-trips{
+            width: 35%;
+            margin-left: 10px;
+            height: 200px;
+            background-color: rgb(103, 184, 83);
+        }
+    }
+
+    &__item--vertical{
+        flex-direction: column;
+        
+        .c-content__score{
+            font-size: 16px;
+            margin: 10px 0;
+            color: #A8A8A8;
+        }
+
+        .c-content__bar{
+            width: 100%;
+            height: 15px;
+            background-color: rgb(211, 211, 211);
+            border-radius: 20px;
+            overflow: hidden;
+            clear: both;
+
+            .c-content__progress{
+                width: 0%;
+                height: 15px;
+                border-radius: 20px;
+                float: left;
+                background-color: #0998E6;
+                animation: progress 2s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes progress{
+                from{
+                    width: 0%;
+                }
+
+                to{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.heading{
+    font-family: 'Roboto';
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #333;
+
+    &--main{
+        font-size: 24px;
+    }
+
+    &--sub{
+        font-size: 15px;
+    }
+}
+
