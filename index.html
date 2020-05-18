@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Travelday - My dashboard</title>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
 </head>
 <body>
     <div class="l-grid">
@@ -50,7 +53,7 @@
                 <h1 class="heading__text">Dashboard</h1>
             </header>
             <div class="c-content__item">
-                <div class="c-content__map"></div>
+                <div id="map" class="c-content__map"></div>
                 <div class="c-content__upcoming-trips">
                     <h4 class="c-content__upcoming-trips__heading">My upcoming trips</h4>
                     <div class="c-content__upcoming-trips__places">
@@ -61,17 +64,17 @@
                         </div>
                     </div>
                     <div class="c-content__upcoming-trips__places">
-                        <img src="img/upcoming1.png" alt="Nessebar-img" class="c-content__upcoming-trips__img">
+                        <img src="img/upcoming2.png" alt="Nessebar-img" class="c-content__upcoming-trips__img">
                         <div class="c-content__upcoming-trips__info">
-                            <h5 class="c-content__upcoming-trips__place">Nessebar</h5>
-                            <p class="c-content__upcoming-trips__date">02/06 - 10/06</hp>
+                            <h5 class="c-content__upcoming-trips__place">Oslo</h5>
+                            <p class="c-content__upcoming-trips__date">07/08 - 14/07</hp>
                         </div>
                     </div>
                     <div class="c-content__upcoming-trips__places">
-                        <img src="img/upcoming1.png" alt="Nessebar-img" class="c-content__upcoming-trips__img">
+                        <img src="img/upcoming3.png" alt="Nessebar-img" class="c-content__upcoming-trips__img">
                         <div class="c-content__upcoming-trips__info">
-                            <h5 class="c-content__upcoming-trips__place">Nessebar</h5>
-                            <p class="c-content__upcoming-trips__date">02/06 - 10/06</hp>
+                            <h5 class="c-content__upcoming-trips__place">Malaga</h5>
+                            <p class="c-content__upcoming-trips__date">10/12 - 20/12</hp>
                         </div>
                     </div>
 
@@ -117,5 +120,24 @@
             </div>
         </main>
     </div>
+    <script>
+        /********* MAPBOX**********/
+
+        src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"
+
+		mapboxgl.accessToken = 'pk.eyJ1IjoiYWxla3NhbmRyYWJhYWEiLCJhIjoiY2s3ZDE3NHJuMDR3NDNobndpbHA2eGRveiJ9.Y1ppSD3433ywhRd2eW88ew';
+
+        var monument = [27.725, 42.653];
+        let mon2 = [10.150,56.117];
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/aleksandrabaaa/ckacgu39426bk1iprixnbphsq',
+            center: monument,
+            zoom: 2
+        });
+
+        
+    </script>
 </body>
 </html>

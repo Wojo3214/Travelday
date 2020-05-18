@@ -27,6 +27,15 @@ body{
 
         &--bottom {
             margin-top: 60px;
+
+            .nav__item:hover{
+                background-color: rgb(255, 255, 255);
+    
+                .nav__link{
+                    color:rgb(3,169,244);
+                }
+    
+            }
         }
 
         .nav__item {
@@ -62,20 +71,11 @@ body{
             }
             
         }
-
-        .nav__item:hover{
-            background-color: rgb(255, 255, 255);
-
-            .nav__link{
-                color:rgb(3,169,244);
-            }
-
-        }
-
     }
 
     .nav__rights {
         margin-top: 15px;
+        padding-left: 25px;
         font-size: 10px;
     }
     

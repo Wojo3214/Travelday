@@ -34,6 +34,14 @@ body {
   margin-top: 60px;
 }
 
+.nav__list--bottom .nav__item:hover {
+  background-color: white;
+}
+
+.nav__list--bottom .nav__item:hover .nav__link {
+  color: #03a9f4;
+}
+
 .nav__list .nav__item {
   padding: 15px 25px;
 }
@@ -67,16 +75,9 @@ body {
   color: #03a9f4;
 }
 
-.nav__list .nav__item:hover {
-  background-color: white;
-}
-
-.nav__list .nav__item:hover .nav__link {
-  color: #03a9f4;
-}
-
 .nav .nav__rights {
   margin-top: 15px;
+  padding-left: 25px;
   font-size: 10px;
 }
 
