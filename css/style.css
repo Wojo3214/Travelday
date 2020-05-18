@@ -19,8 +19,8 @@ body {
 
 /***NAVIGATION***/
 .nav {
-  max-width: 180px;
-  padding: 25px;
+  max-width: 230px;
+  padding: 25px 0;
   background: #03a9f4;
   background: -webkit-gradient(linear, left bottom, left top, from(#03a9f4), to(#039be5));
   background: linear-gradient(0deg, #03a9f4 0%, #039be5 100%);
@@ -35,17 +35,12 @@ body {
 }
 
 .nav__list .nav__item {
-  padding: 15px 6px;
+  padding: 15px 25px;
 }
 
 .nav__list .nav__item .nav__link {
   text-decoration: none;
   color: #fff;
-}
-
-.nav__list .nav__item .nav__link--active {
-  color: #03a9f4;
-  background-color: #fff;
 }
 
 .nav__list .nav__item .nav__link .nav__img {
@@ -61,6 +56,23 @@ body {
 .nav__list .nav__item .nav__link .nav__icon {
   width: 25px;
   margin-right: 10px;
+}
+
+.nav__list .nav__item--active {
+  background-color: #fff;
+}
+
+.nav__list .nav__item--active .nav__link {
+  text-decoration: none;
+  color: #03a9f4;
+}
+
+.nav__list .nav__item:hover {
+  background-color: white;
+}
+
+.nav__list .nav__item:hover .nav__link {
+  color: #03a9f4;
 }
 
 .nav .nav__rights {

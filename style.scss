@@ -17,8 +17,8 @@ body{
 
 /***NAVIGATION***/
 .nav{
-    max-width: 180px;
-    padding: 25px;
+    max-width: 230px;
+    padding: 25px 0;
     background: rgb(3,169,244);
     background: linear-gradient(0deg, rgba(3,169,244,1) 0%, rgba(3,155,229,1) 100%);
     
@@ -30,17 +30,11 @@ body{
         }
 
         .nav__item {
-            padding: 15px 6px;
+            padding: 15px 25px;
             
-
             .nav__link {
                 text-decoration: none;
                 color: #fff;
-
-                &--active {
-                    color: rgb(3,169,244);
-                    background-color: #fff;
-                }
 
                 .nav__img {
                     width: 80px;
@@ -59,6 +53,24 @@ body{
             }
         }
 
+        .nav__item--active {
+            background-color: #fff;
+
+            .nav__link {
+                text-decoration: none;
+                color: rgb(3,169,244);
+            }
+            
+        }
+
+        .nav__item:hover{
+            background-color: rgb(255, 255, 255);
+
+            .nav__link{
+                color:rgb(3,169,244);
+            }
+
+        }
 
     }
 
