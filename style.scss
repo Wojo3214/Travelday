@@ -58,7 +58,7 @@ body{
                 }
 
                 .nav__icon {
-                    width: 25px;
+                    font-size: 20px;
                     margin-right: 10px;
                 }
             }
@@ -75,7 +75,7 @@ body{
     }
 
     .nav__rights {
-        margin-top: 15px;
+        margin-top: 25px;
         padding-left: 25px;
         font-size: 10px;
         color: #fff;
@@ -90,12 +90,14 @@ body{
 
     &__item{
         display: flex;
+        
 
         //MAP
         .c-content__map{
             width: 65%;
-            height: 200px;
+            height: 350px;
             background-color: rgb(84, 83, 184);
+            border-radius: 20px;
         }
 
         //UPCOMING TRIPS
@@ -236,6 +238,14 @@ body{
 
     &--sub{
         font-size: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        .fa-info-circle{
+            margin-left: 10px;
+            color: gray;
+        }
     }
 }
 
