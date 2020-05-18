@@ -89,17 +89,20 @@ body{
     &__item{
         display: flex;
 
+        //MAP
         .c-content__map{
             width: 65%;
             height: 200px;
             background-color: rgb(84, 83, 184);
         }
 
+        //UPCOMING TRIPS
         .c-content__upcoming-trips{
             width: 35%;
             margin-left: 10px;
             padding: 20px;
             background-color: #EEEEEE;
+            border-radius: 20px;
 
             .c-content__upcoming-trips__heading{
                 margin-left: 20px;
@@ -131,9 +134,11 @@ body{
             }
         }
 
+        //TOP DESTINATIONS
         .c-content__destination{
             display: flex;
             align-items: center;
+            flex-grow: 1;
             margin-right: 30px;
             .c-content__img{
                 display: block;
@@ -152,6 +157,26 @@ body{
                 .c-content__destination-city{
                     font-size: 18px;
                 }
+            }
+        }
+
+        .c-content__days-left{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+
+            .c-content__days-left__num{
+                font-size: 42px;
+                font-weight: 800;
+                padding: 10px 20px;
+                border: 5px solid #333;
+                border-radius: 10px;
+            }
+
+            .c-content__days-left__info{
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-left: 10px;
             }
         }
     }
@@ -212,3 +237,9 @@ body{
     }
 }
 
+
+@media (max-width: 800px){
+    .c-content__item{
+        flex-direction: column;
+    }
+}

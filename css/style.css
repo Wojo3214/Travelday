@@ -106,6 +106,7 @@ body {
   margin-left: 10px;
   padding: 20px;
   background-color: #EEEEEE;
+  border-radius: 20px;
 }
 
 .c-content__item .c-content__upcoming-trips .c-content__upcoming-trips__heading {
@@ -148,6 +149,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-right: 30px;
 }
 
@@ -168,6 +172,32 @@ body {
 
 .c-content__item .c-content__destination__info .c-content__destination-city {
   font-size: 18px;
+}
+
+.c-content__item .c-content__days-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.c-content__item .c-content__days-left .c-content__days-left__num {
+  font-size: 42px;
+  font-weight: 800;
+  padding: 10px 20px;
+  border: 5px solid #333;
+  border-radius: 10px;
+}
+
+.c-content__item .c-content__days-left .c-content__days-left__info {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-left: 10px;
 }
 
 .c-content__item--vertical {
@@ -236,5 +266,14 @@ body {
 
 .heading--sub {
   font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .c-content__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
