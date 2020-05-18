@@ -19,7 +19,7 @@ body {
 
 /***NAVIGATION***/
 .nav {
-  max-width: 200px;
+  max-width: 180px;
   padding: 25px;
   background: #03a9f4;
   background: -webkit-gradient(linear, left bottom, left top, from(#03a9f4), to(#039be5));
@@ -37,5 +37,15 @@ body {
 .nav__list .nav__item .nav__link {
   text-decoration: none;
   color: #fff;
+}
+
+.nav__list .nav__item .nav__link .nav__img {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+.nav__list .nav__item .nav__link .nav__logo {
+  width: 40px;
 }
 /*# sourceMappingURL=style.css.map */

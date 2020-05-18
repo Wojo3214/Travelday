@@ -17,7 +17,7 @@ body{
 
 /***NAVIGATION***/
 .nav{
-    max-width: 200px;
+    max-width: 180px;
     padding: 25px;
     background: rgb(3,169,244);
     background: linear-gradient(0deg, rgba(3,169,244,1) 0%, rgba(3,155,229,1) 100%);
@@ -28,10 +28,21 @@ body{
         
         .nav__item {
             padding: 15px 10px;
+
             .nav__link {
                 text-decoration: none;
                 color: #fff;
-            }
+
+                    .nav__img {
+                        width: 80px;
+                        margin: 0 auto;
+                        display: block;
+                    }
+
+                    .nav__logo {
+                        width: 40px;
+                    }
+                }
         }
     }
 
