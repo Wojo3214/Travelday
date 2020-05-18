@@ -58,8 +58,13 @@ body {
   width: 40px;
 }
 
+.nav__list .nav__item .nav__link .nav__icon {
+  width: 25px;
+}
+
 .nav .nav__rights {
-  margin-top: 40px;
+  margin-top: 15px;
+  font-size: 10px;
 }
 
 /***DASHBOARD***/

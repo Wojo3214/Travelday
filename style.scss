@@ -50,7 +50,10 @@ body{
 
                 .nav__logo {
                     width: 40px;
+                }
 
+                .nav__icon {
+                    width: 25px;
                 }
             }
         }
@@ -59,14 +62,9 @@ body{
     }
 
     .nav__rights {
-        margin-top: 40px;
+        margin-top: 15px;
+        font-size: 10px;
     }
-
-    .back__website {
-        
-    }
-    
-
     
 }
 
