@@ -34,16 +34,17 @@ body{
                 .nav__link{
                     color:rgb(3,169,244);
                 }
-    
             }
         }
-
+       
         .nav__item {
             padding: 15px 25px;
             
             .nav__link {
                 text-decoration: none;
                 color: #fff;
+                display: flex;
+                align-items: center;
 
                 .nav__img {
                     width: 80px;
@@ -53,6 +54,7 @@ body{
 
                 .nav__logo {
                     width: 40px;
+                    margin-right: 7px;
                 }
 
                 .nav__icon {
@@ -69,7 +71,6 @@ body{
                 text-decoration: none;
                 color: rgb(3,169,244);
             }
-            
         }
     }
 
@@ -80,7 +81,6 @@ body{
         color: #fff;
         font-family: "Roboto";
     }
-    
 }
 
 /***DASHBOARD***/
