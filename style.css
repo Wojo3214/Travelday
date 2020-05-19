@@ -330,6 +330,12 @@ body {
   padding: 20px;
 }
 
+.f-content__item .f-content__posts .f-content__post__journal {
+  width: 100px;
+  margin-left: auto;
+  padding: 20px;
+}
+
 .f-content__item .f-content__posts .f-content__post__user {
   font-size: 15px;
   color: #707070;
@@ -346,13 +352,13 @@ body {
 
 .f-content__item .f-content__also-like {
   width: 12%;
-  margin-left: 10px;
+  margin-left: 25px;
   padding: 0 20 0 20px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .f-content__item .f-content__also-like .f-content__also-like__heading {
-  margin-left: 20px;
   font-size: 15px;
   font-weight: 700;
 }
@@ -378,8 +384,7 @@ body {
 }
 
 .f-content__item .f-content__also-like__users .f-content__also-like__info .f-content__also-like__name {
-  font-size: 10px;
-  width: 70px;
+  font-size: 13px;
 }
 
 .f-content__item .f-content__also-like__users .f-content__also-like__info .f-content__also-like__follow {
@@ -388,6 +393,136 @@ body {
   color: white;
   padding: 3px;
   margin-top: 5px;
+  width: 60px;
+  margin: 5px auto;
+}
+
+/***MY BOOKING***/
+.g-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.g-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.g-content__item .g-content__map {
+  width: 100%;
+  height: 350px;
+  background-color: #5453b8;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.g-content__item .g-content__posts {
+  width: 85%;
+}
+
+.g-content__item .g-content__posts .g-content__post {
+  width: 100%;
+  height: 120px;
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.g-content__item .g-content__posts .g-content__post__img {
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+}
+
+.g-content__item .g-content__posts .g-content__post__journal {
+  width: 100px;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.g-content__item .g-content__posts .g-content__post__user {
+  font-size: 15px;
+  color: #707070;
+  padding-bottom: 5px;
+}
+
+.g-content__item .g-content__posts .g-content__post__title {
+  font-size: 15px;
+}
+
+.g-content__item .g-content__posts .g-content__post__link {
+  font-size: 10px;
+}
+
+/***CONTACT and SUPPORT***/
+.s-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.s-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.s-content__item .s-subheading_text_container {
+  margin-top: 10%;
+}
+
+.s-content__item .s_subheading_text {
+  font-size: 20px;
+  color: #333;
+  font-family: Roboto;
+}
+
+.s-content__item .s-content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 46%;
+  height: 60px;
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.s-content__item .s-content__box__question {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.s-content__item .s-content__box__arrow {
+  border: none;
+  color: #0998E6;
+}
+
+.s-content__item .s-content__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.s-content__item .arrow {
+  margin-left: 30%;
 }
 
 .heading {
@@ -425,21 +560,5 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-/***CONTACT and SUPPORT***/
-.s-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 25px;
-}
-
-.s-content__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 300px;
-  border: 2px black;
 }
 /*# sourceMappingURL=style.css.map */

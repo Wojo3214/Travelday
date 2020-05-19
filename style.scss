@@ -411,11 +411,51 @@ body{
 }
 
 /***CONTACT and SUPPORT***/
-.s-content__box{
-    height: 300px;
-    width: 500px;
-    background-color: blue;
-}
+.s-content{
+    flex: 1;
+    padding: 25px;
+
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+        
+        .s-subheading_text_container{
+           margin-top: 10%;
+        }
+            .s_subheading_text{
+                font-size: 20px;
+                color: #333;
+                font-family: Roboto;
+            }
+        
+    
+        .s-content__box{
+            display: flex;
+            width: 46%;
+            height: 60px;
+            background-color: #EEEEEE;
+            border-radius: 20px;
+            margin-top: 20px;
+            color: #333;
+            
+            &__question{
+                margin-left: 30px;
+                margin-top: 15px;
+            }
+                &__arrow{
+                    border: none;
+                    color: #0998E6;
+                }
+        }
+        .s-content__container{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .arrow{
+            margin-left: 30%;
+        }
+    }
+} 
 
 .heading{
     font-family: 'Roboto';
