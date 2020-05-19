@@ -372,3 +372,14 @@ body{
         flex-direction: column;
     }
 }
+
+/***CONTACT and SUPPORT***/
+.s-content{
+    flex: 1;
+    padding: 25px;
+}
+.s-content__box{
+    display: flex;
+    width: 300px;
+    border: 2px black;
+}
