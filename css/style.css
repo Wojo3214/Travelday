@@ -330,6 +330,12 @@ body {
   padding: 20px;
 }
 
+.f-content__item .f-content__posts .f-content__post__journal {
+  width: 100px;
+  margin-left: auto;
+  padding: 20px;
+}
+
 .f-content__item .f-content__posts .f-content__post__user {
   font-size: 15px;
   color: #707070;
@@ -346,13 +352,13 @@ body {
 
 .f-content__item .f-content__also-like {
   width: 12%;
-  margin-left: 10px;
+  margin-left: 25px;
   padding: 0 20 0 20px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .f-content__item .f-content__also-like .f-content__also-like__heading {
-  margin-left: 20px;
   font-size: 15px;
   font-weight: 700;
 }
@@ -378,8 +384,7 @@ body {
 }
 
 .f-content__item .f-content__also-like__users .f-content__also-like__info .f-content__also-like__name {
-  font-size: 10px;
-  width: 70px;
+  font-size: 13px;
 }
 
 .f-content__item .f-content__also-like__users .f-content__also-like__info .f-content__also-like__follow {
@@ -388,6 +393,24 @@ body {
   color: white;
   padding: 3px;
   margin-top: 5px;
+  width: 60px;
+  margin: 5px auto;
+}
+
+/***CONTACT and SUPPORT***/
+.s-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.s-content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  border: 2px black;
 }
 
 .heading {

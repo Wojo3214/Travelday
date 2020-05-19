@@ -261,7 +261,7 @@ body{
         //POSTS
         .f-content__posts {
             width: 85%;
-    
+
             .f-content__post{
                 width: 100%;
                 height: 120px;
@@ -277,7 +277,11 @@ body{
                     padding: 20px;
                 }
 
-            
+                &__journal {
+                    width: 100px;
+                    margin-left: auto;
+                    padding: 20px;
+                }
 
                 &__user {
                     font-size: 15px;
@@ -292,19 +296,19 @@ body{
                 &__link {
                     font-size: 10px;
                 }
-                
             }
+            
         }
 
         //ACCOUNTS YOU MAY LIKE
         .f-content__also-like{
             width: 12%;
-            margin-left: 10px;
+            margin-left: 25px;
             padding: 0 20 0 20px;
             border-radius: 20px;
+            text-align: center;
             
             .f-content__also-like__heading{
-                margin-left: 20px;
                 font-size: 15px;
                 font-weight: 700;
             }
@@ -324,8 +328,7 @@ body{
                 .f-content__also-like__info{
 
                     .f-content__also-like__name{
-                        font-size: 10px;
-                        width: 70px;
+                        font-size: 13px
                     }
     
                     .f-content__also-like__follow{
@@ -334,12 +337,24 @@ body{
                         color: white;
                         padding: 3px;
                         margin-top: 5px;
-
+                        width: 60px;
+                        margin: 5px auto;
                     }
                 }
             }
         }
     }
+}
+
+/***CONTACT and SUPPORT***/
+.s-content{
+    flex: 1;
+    padding: 25px;
+}
+.s-content__box{
+    display: flex;
+    width: 300px;
+    border: 2px black;
 }
 
 .heading{
@@ -373,13 +388,3 @@ body{
     }
 }
 
-/***CONTACT and SUPPORT***/
-.s-content{
-    flex: 1;
-    padding: 25px;
-}
-.s-content__box{
-    display: flex;
-    width: 300px;
-    border: 2px black;
-}
