@@ -346,6 +346,70 @@ body{
     }
 }
 
+
+
+/***MY BOOKING***/
+.g-content {
+    flex: 1;
+    padding: 25px;
+
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+       
+
+        .g-content__map{
+            width: 100%;
+            height: 350px;
+            background-color: rgb(84, 83, 184);
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        //TICKETS
+        .g-content__posts {
+            width: 85%;
+
+            .g-content__post{
+                width: 100%;
+                height: 120px;
+                background-color: #F7F7F7;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+
+                &__img {
+                    width: 80px;
+                    height: 80px;
+                    padding: 20px;
+                }
+
+                &__journal {
+                    width: 100px;
+                    margin-left: auto;
+                    padding: 20px;
+                }
+
+                &__user {
+                    font-size: 15px;
+                    color: #707070;
+                    padding-bottom: 5px;
+                }
+
+                &__title {
+                    font-size: 15px;
+                }
+
+                &__link {
+                    font-size: 10px;
+                }
+            }
+            
+        }
+    }
+}
+
 /***CONTACT and SUPPORT***/
 .s-content{
     flex: 1;
