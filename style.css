@@ -592,6 +592,56 @@ body {
   color: gray;
 }
 
+/***SETTINGS***/
+.a-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.a-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.a-content__item .a-content__settings {
+  width: 85%;
+}
+
+.a-content__item .a-content__settings .a-content__setting {
+  width: 100%;
+  height: 120px;
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.a-content__item .a-content__settings .a-content__setting__journal {
+  width: 100px;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.a-content__item .a-content__settings .a-content__setting__container {
+  font-size: 50px;
+  color: #707070;
+  padding-bottom: 5px;
+}
+
+.a-content__item .a-content__settings .a-content__setting__title {
+  font-size: 15px;
+}
+
 @media (max-width: 800px) {
   .c-content__item {
     -webkit-box-orient: vertical;
