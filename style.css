@@ -521,10 +521,6 @@ body {
       flex-wrap: nowrap;
 }
 
-.s-content__item .arrow {
-  margin-left: 30%;
-}
-
 .heading {
   font-family: 'Roboto';
   font-weight: 600;
