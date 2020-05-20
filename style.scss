@@ -21,6 +21,7 @@ body{
     padding: 25px 0;
     background: rgb(3,169,244);
     background: linear-gradient(0deg, rgba(3,169,244,1) 0%, rgba(3,155,229,1) 100%);
+    position: relative;
     
     &__list {
         list-style-type: none;
