@@ -659,10 +659,9 @@ body {
 
 .a-content__item .a-content__settings .a-content__setting {
   width: 20%;
-  height: 120px;
+  height: 90px;
   background-color: #F7F7F7;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,9 +671,50 @@ body {
 }
 
 .a-content__item .a-content__settings .a-content__setting__container {
-  font-size: 30px;
+  font-size: 20px;
   color: #707070;
   padding: 10px;
+}
+
+.a-content .a-content__upcoming-trips {
+  width: 35%;
+  margin-left: 10px;
+  padding: 20px;
+  background-color: #EEEEEE;
+}
+
+.a-content .a-content__upcoming-trips .c-content__upcoming-trips__heading {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.a-content .a-content__upcoming-trips__places {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 15px;
+}
+
+.a-content .a-content__upcoming-trips__places .c-content__upcoming-trips__img {
+  width: 75px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.a-content .a-content__upcoming-trips__places .c-content__upcoming-trips__info {
+  margin-left: 20px;
+}
+
+.a-content .a-content__upcoming-trips__places .c-content__upcoming-trips__info .c-content__upcoming-trips__place {
+  font-size: 20px;
+}
+
+.a-content .a-content__upcoming-trips__places .c-content__upcoming-trips__info .c-content__upcoming-trips__date {
+  font-size: 17px;
 }
 
 @media (max-width: 800px) {
