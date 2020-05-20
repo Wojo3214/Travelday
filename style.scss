@@ -262,7 +262,7 @@ body{
         //POSTS
         .f-content__posts {
             width: 85%;
-    
+
             .f-content__post{
                 width: 100%;
                 height: 120px;
@@ -278,7 +278,11 @@ body{
                     padding: 20px;
                 }
 
-            
+                &__journal {
+                    width: 100px;
+                    margin-left: auto;
+                    padding: 20px;
+                }
 
                 &__user {
                     font-size: 15px;
@@ -293,19 +297,19 @@ body{
                 &__link {
                     font-size: 10px;
                 }
-                
             }
+            
         }
 
         //ACCOUNTS YOU MAY LIKE
         .f-content__also-like{
             width: 12%;
-            margin-left: 10px;
+            margin-left: 25px;
             padding: 0 20 0 20px;
             border-radius: 20px;
+            text-align: center;
             
             .f-content__also-like__heading{
-                margin-left: 20px;
                 font-size: 15px;
                 font-weight: 700;
             }
@@ -325,8 +329,7 @@ body{
                 .f-content__also-like__info{
 
                     .f-content__also-like__name{
-                        font-size: 10px;
-                        width: 70px;
+                        font-size: 13px
                     }
     
                     .f-content__also-like__follow{
@@ -335,7 +338,8 @@ body{
                         color: white;
                         padding: 3px;
                         margin-top: 5px;
-
+                        width: 60px;
+                        margin: 5px auto;
                     }
                 }
             }
@@ -343,6 +347,277 @@ body{
     }
 }
 
+
+
+/***MY BOOKING***/
+.g-content {
+    flex: 1;
+    padding: 25px;
+
+    &__statistics {
+        width: 20%;
+        padding: 20px;
+        margin: auto;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+
+        &__flights {
+            background-image: url(../img/stat1.png);
+            background-color: #cccccc;
+            background-position: center; /* Center the image */
+            background-size: cover;
+        }
+
+        &__kilometers {
+            background-image: url(../img/stat2.png);
+            background-color: #cccccc;
+            background-position: center; /* Center the image */
+            background-size: cover;
+        }
+
+        &__countries {
+            background-image: url(../img/stat3.png);
+            background-color: #cccccc;
+            background-position: center; /* Center the image */
+            background-size: cover;
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+
+        .g-content__map{
+            width: 100%;
+            height: 350px;
+            background-color: rgb(84, 83, 184);
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        //TICKETS
+        .g-content__tickets {
+            width: 85%;
+            margin: auto;
+
+            .g-content__ticket{
+                width: 100%;
+                height: 100%;
+                background-image: url(../img/ticket.png);
+                background-position: center; /* Center the image */
+                background-size: cover;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 2px;
+
+                &__icon {
+                    font-size: 30px;
+                    color: #0998E6;
+                    margin-left: 50px;
+                    padding: 30px;
+                }
+
+                &__btn {
+                    width: 100px;
+                    margin-left: auto;
+                    padding: 20px;
+                }
+
+                &__places {
+                    display: flex;
+
+                    .g-content__ticket__from {
+                        font-size: 15px;
+                        color: #707070;
+                        padding-bottom: 5px;
+                    }
+
+                    .g-content__ticket__to {
+                        font-size: 15px;
+                    }
+                }
+
+                &__link {
+                    font-size: 10px;
+                }
+            }
+            
+        }
+    }
+}
+
+/***CONTACT and SUPPORT***/
+.s-content{
+    flex: 1;
+    padding: 25px;
+
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+            .s_subheading_text{
+                font-size: 20px;
+                color: #333;
+                font-family: Roboto;
+            }
+        
+    
+        .s-content__box{
+            display: flex;
+            width: 480px;
+            height: 80px;
+            background-color: #EEEEEE;
+            border-radius: 20px;
+            margin-top: 20px;
+            color: #333;
+            margin: 10px;
+            margin-left: 0;
+            
+            &__question{
+                margin-left: 30px;
+                margin-top: 25px;
+            }
+                &__btn{
+                    border: none;
+                    color: #0998E6;
+                    font-size: 20px;
+                    margin-top: 14%;
+                }
+                
+        }
+        .s-content__container{
+            display: flex;
+        }
+    }
+    
+} 
+.dropup {
+    display: flex;
+    flex-direction: column;
+
+     &__btn0{
+         margin-left: 170px;
+     }
+     &__btn1{
+        margin-left: 190px;
+     }
+     &__btn2{
+        margin-left: 145px;
+     }
+     &__btn3{
+        margin-left: 232px;
+     }
+     &__btn4{
+        margin-left: 216px;
+     }
+     &__btn5{
+        margin-left: 145px;
+     }
+     &__btn6{
+        margin-left: 166px;
+     }
+     &__btn7{
+        margin-left: 209px;
+     }
+  }
+.dropup__btn__content {
+display: none;
+width: 480px;
+bottom: 50px;
+z-index: 1;
+margin-left: -248px;
+margin-top: -10px;
+    &__answer1{
+        margin-left: -224px;
+    }
+    &__answer2{
+        margin-left: -273px;
+    }
+    &__answer3{
+        margin-left: -180.5px;
+    }
+    &__answer4{
+        margin-left: -201px;
+    }
+    &__answer5{
+        margin-left: -268px;
+    }
+    &__answer6{
+        margin-left: -250px;
+    }
+    &__answer7{
+        margin-left: -203.5px;
+    }
+    &__paragraph{
+        font-size: 13px;
+        display: block;
+        width: 430px;
+        margin-top: 20px;
+        background-color: #EEEEEE;
+        height: 50px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 25px;
+    }
+  }
+.dropup:hover .dropup__btn__content {
+display: block;
+width: 30px;
+}
+
+.dropup:hover .dropup__btn {
+    color: #333;
+}
+.s-contact{
+    display: flex;
+    margin-top: 2%;
+    padding: 25px;
+    flex-wrap: nowrap;
+    color: #333;
+    font-family: Roboto;
+
+    &__e-mail{
+        margin-left:14px;
+       
+        &__text{
+            font-family: Roboto;
+            font-size: 18px;
+            color: #333;
+        }
+        &__icon{
+            list-style-type: none;
+            
+        }
+        &__us{
+            font-size: 16px;
+            font-family: Roboto;
+            padding-left: 10px;
+            margin-top: 3em;
+        }
+    }
+.fas{
+    color: #0998E6;
+    font-size: 40px;
+}
+.fab{
+    color: #0998E6;
+    font-size: 40px;
+}
+.s-contact__social-media__icon{
+ margin-top: 23px;
+ margin-left: 600px;
+}
+.s-contact__social-media__icons{
+    display: inline-flex;
+    padding-left: 15px;
+}
+
+}
+.s-subheading_text_container{
+    margin-top: 50px;
+ }
 .heading{
     font-family: 'Roboto';
     font-weight: 600;
@@ -367,9 +642,91 @@ body{
     }
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+/***SETTINGS***/
+.a-content {
+    flex: 1;
+    padding: 25px;
+    
 
+    &__item{
+        display: flex;
+        flex-direction: row;
+        
+
+        .a-content__settings {
+            width: 20%;
+            
+                .a-content__setting {
+                    width: 100%;
+                    height: 90px;
+                    background-color: #F7F7F7;
+                    margin-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+
+                    &__container {
+                        font-size: 20px;
+                        color: #707070;
+                        padding: 10px;
+                    }
+    
+                }
+                
+            }
+     
+    }
+    .a-content__settings-main{
+        width: 65%;
+        height: 600px;
+        margin-left: 20px;
+        padding: 20px;
+        background-color: #F7F7F7;
+        
+        &__img{
+            width: 75px;
+            height: auto;
+            border-radius: 50%;
+            margin-left: 50px;
+        } 
+
+        &__heading{
+            margin-left: 20px;
+            font-size: 24px;
+        }
+
+        &__date{
+            font-size:13px;
+            margin-left: 20px;
+        }
+
+        &__information{
+            font-size: 12px;
+        }
+
+        &__places{
+            display: flex;
+            align-items: center;
+            margin: 20px 15px 10px 50px;
+            color: #333;
+
+            .a-content__settings-main__info{
+                margin-left: 20px;
+
+                .a-content__settings-main__place{
+                    font-size: 12px;
+                    color:  #F7F7F7;
+                }
+>>>>>>> master
+
+                
+            }
+        }
+    }
+}
 @media (max-width: 800px){
     .c-content__item{
         flex-direction: column;
@@ -377,6 +734,7 @@ body{
 }
 <<<<<<< Updated upstream
 
+<<<<<<< HEAD
 /***CONTACT and SUPPORT***/
 .s-content{
     flex: 1;
@@ -389,3 +747,5 @@ body{
 }
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master

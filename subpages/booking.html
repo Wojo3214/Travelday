@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Travelday - My Booking</title>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+    <script src="https://kit.fontawesome.com/82ee0524bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="l-grid">
+        <nav class="nav">
+            <ul class="nav__list nav__list--top">
+                <li class="nav__item">
+                    <a href="#" class="nav__link"><img src="../img/alan.png" class="nav__img" alt="user-img"></a>
+                </li>
+                <li class="nav__item nav__www">
+                    <a href="https://travelday.dk/" class="nav__link back__website"><img src="../img/logo.png" alt="logo" class="nav__logo"><span class="go-www">Back to website</span></a>
+                </li>
+            </ul>
+            <ul class="nav__list nav__list--bottom">
+                <li class="nav__item ">
+                    <a href="../index.html" class="nav__link"><i class="fas fa-home nav__icon"></i>Dashboard</a>
+                </li>
+                <li class="nav__item ">
+                    <a href="feed.html" class="nav__link"><i class="fas fa-newspaper nav__icon"></i>Feed</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link"><i class="fas fa-book nav__icon"></i>My Journal</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a href="booking.html" class="nav__link"><i class="fas fa-plane nav__icon"></i>My Booking</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../subpages/contact_support.html" class="nav__link"><i class="fas fa-question-circle nav__icon"></i>Contact & Support</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../subpages/settings.html" class="nav__link"><i class="fas fa-cog nav__icon"></i>Settings</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link"><i class="fas fa-sign-out-alt nav__icon"></i>Log out</a>
+                </li>
+            </ul>
+            <p class="nav__rights">All rights reserved 2020</p>
+        </nav>
+        <main class="g-content">
+            <header class="heading heading--main">
+                <h1 class="heading__text">My Booking</h1>
+            </header>
+            <div class="g-content__item">
+                <div id="map" class="g-content__map"></div>
+                <div class="g-content__statistics g-content__statistics__flights">
+                    <div class="g-content__statistics__info">
+                        <h4 class="g-content__statistics-name">Total flights</h4>
+                        <p class="g-content__statistics-numbers">50</p>
+                    </div>
+                </div>
+                <div class="g-content__statistics g-content__statistics__kilometers">
+                    <div class="g-content__statistics__info">
+                        <h4 class="g-content__statistics-name">Kilometers</h4>
+                        <p class="g-content__statistics-numbers">10000</p>
+                    </div>
+                </div>
+                <div class="g-content__statistics g-content__statistics__countries">
+                    <div class="g-content__statistics__info">
+                        <h4 class="g-content__statistics-name">Visited Countries</h4>
+                        <p class="g-content__statistics-numbers">20</p>
+                    </div>
+                </div>
+                <div class="g-content__tickets g-content__tickets--upper">
+                    <header class=" heading heading--sub">
+                        <h2 class="heading__text">Upcoming</h2>
+                    </header>
+                    <div class="g-content__ticket">
+                        <a href="#" alt="Ticket-icon" class="g-content__ticket__icon"><i class="fas fa-calendar-alt"></i></a>
+                        <h5 class="g-content__ticket__data">12/08/2020</h5>
+                        <div class="g-content__ticket__places">
+                            <p class="g-content__ticket__from"><a href="#" alt="Ticket-icon"><i class="fas fa-map-marker-alt"></i></a>Billund</hp><br>
+                            <p class="g-content__ticket__to"><a href="#" alt="Ticket-icon"><i class="fas fa-map-marker-alt"></i></a>Nessebar</hp><br>
+                            <a href="#" class="g-content__ticket__link"></a>
+                        </div>
+                        <img src="../img/post1.png" alt="Ticket-btn" class="g-content__ticket__btn">    
+                    </div>
+                    <div class="g-content__ticket">
+                        <a href="#" alt="Ticket-icon"><i class="fas fa-calendar-alt g-content__ticket__icon"></i></a>
+                        <h5 class="g-content__ticket__data">12/08/2020</h5>
+                        <div class="g-content__ticket__places">
+                            <p class="g-content__ticket__from">Billund</hp><br>
+                            <p class="g-content__ticket__to">The kingdom of graffiti art - LISBON</hp><br>
+                            <a href="#" class="g-content__ticket__link"></a>      
+                        </div>
+                        <img src="../img/post2.png" alt="Ticket-btn" class="g-content__ticket__btn">
+                    </div>
+                </div>
+                <div class="g-content__tickets g-content__tickets--lower">
+                    <header class=" heading heading--sub">
+                        <h2 class="heading__text">Places I have been to</h2>
+                    </header>
+                    <div class="g-content__ticket g-content__ticket">
+                        <a href="#" alt="Ticket-icon" class="g-content__ticket__icon"><i class="fas fa-calendar-alt"></i></a>
+                        <h5 class="g-content__ticket__data">12/08/2020</h5>
+                        <div class="g-content__ticket__places">
+                            <p class="g-content__ticket__from">The kingdom of graffiti art - LISBON</hp><br>
+                            <p class="g-content__ticket__to">The kingdom of graffiti art - LISBON</hp><br>
+                            <a href="#" class="g-content__ticket__link"></a>
+                        </div>
+                        <img src="../img/post1.png" alt="Ticket-btn" class="g-content__ticket__btn">    
+                    </div>
+                    <div class="g-content__ticket g-content__ticket">
+                        <a href="#" alt="Ticket-icon"><i class="fas fa-calendar-alt g-content__ticket__icon"></i></a>
+                        <h5 class="g-content__ticket__data">12/08/2020</h5>
+                        <div class="g-content__ticket__places">
+                            <p class="g-content__ticket__from">The kingdom of graffiti art - LISBON</hp><br>
+                            <p class="g-content__ticket__to">The kingdom of graffiti art - LISBON</hp><br>
+                            <a href="#" class="g-content__ticket__link"></a>      
+                        </div>
+                        <img src="../img/post2.png" alt="Ticket-btn" class="g-content__ticket__btn">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+         /********* MAPBOX**********/
+
+         mapboxgl.accessToken = 'pk.eyJ1IjoibWFkZWVsZSIsImEiOiJjazdkMWF3NjIwNTBiM2lud2k3cjY0Njl5In0.d6TBUltXIwgnMsKbwESW7g';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/madeele/ckadq6xy403s61ioohg7xtk4e',
+        center: [20.532, 48.929],
+        zoom: 1
+        });
+        
+        // Aarhus
+        var origin = [10.231, 56.150];
+        
+        // Nessebar
+        var destination = [27.736, 42.658];
+        
+        // A simple line from origin to destination.
+        var route = {
+            'type': 'FeatureCollection',
+            'features': [
+            {
+            'type': 'Feature',
+            'geometry': {
+            'type': 'LineString',
+            'coordinates': [origin, destination]
+                     }
+        }
+        ]
+        };
+        
+        // A single point that animates along the route.
+        // Coordinates are initially set to origin.
+        var point = {
+        'type': 'FeatureCollection',
+        'features': [
+        {
+        'type': 'Feature',
+        'properties': {},
+        'geometry': {
+        'type': 'Point',
+        'coordinates': origin
+        }
+        }
+        ]
+        };
+        
+        // Calculate the distance in kilometers between route start/end point.
+        var lineDistance = turf.lineDistance(route.features[0], 'kilometers');
+        
+        var arc = [];
+        
+        // Number of steps to use in the arc and animation, more steps means
+        // a smoother arc and animation, but too many steps will result in a
+        // low frame rate
+        var steps = 500;
+        
+        // Draw an arc between the `origin` & `destination` of the two points
+        for (var i = 0; i < lineDistance; i += lineDistance / steps) {
+        var segment = turf.along(route.features[0], i, 'kilometers');
+        arc.push(segment.geometry.coordinates);
+        }
+        
+        // Update the route with calculated arc coordinates
+        route.features[0].geometry.coordinates = arc;
+        
+        // Used to increment the value of the point measurement against the route.
+        var counter = 0;
+        
+        map.on('load', function() {
+        // Add a source and layer displaying a point which will be animated in a circle.
+        map.addSource('route', {
+        'type': 'geojson',
+        'data': route
+        });
+        
+        map.addSource('point', {
+        'type': 'geojson',
+        'data': point
+        });
+        
+        map.addLayer({
+        'id': 'route',
+        'source': 'route',
+        'type': 'line',
+        'paint': {
+        'line-width': 4,
+        'line-color': '#007cbf'
+        }
+        });
+        
+        map.addLayer({
+        'id': 'point',
+        'source': 'point',
+        'type': 'symbol',
+        'layout': {
+        'icon-image': 'airport-15',
+        'icon-rotate': ['get', 'bearing'],
+        'icon-rotation-alignment': 'map',
+        'icon-allow-overlap': true,
+        'icon-ignore-placement': true
+        }
+        });
+    })          
+    // Update point geometry to a new position based on counter denoting
+// the index to access the arc.
+point.features[0].geometry.coordinates =
+route.features[0].geometry.coordinates[counter];
+ 
+// Calculate the bearing to ensure the icon is rotated to match the route arc
+// The bearing is calculate between the current point and the next point, except
+// at the end of the arc use the previous point and the current point
+point.features[0].properties.bearing = turf.bearing(
+turf.point(
+route.features[0].geometry.coordinates[
+counter >= steps ? counter - 1 : counter
+]
+),
+turf.point(
+route.features[0].geometry.coordinates[
+counter >= steps ? counter : counter + 1
+]
+)
+);
+    </script>
+</body>
+</html>
