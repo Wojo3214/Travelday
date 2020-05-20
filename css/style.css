@@ -462,7 +462,7 @@ body {
 
 .g-content__item .g-content__tickets .g-content__ticket {
   width: 100%;
-  height: 120px;
+  height: 100%;
   background-image: url(../img/ticket.png);
   background-position: center;
   /* Center the image */
@@ -474,37 +474,35 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2px;
 }
 
-.g-content__item .g-content__tickets .g-content__ticket--first {
-  position: relative;
-  z-index: 2;
+.g-content__item .g-content__tickets .g-content__ticket__icon {
+  font-size: 30px;
+  color: #0998E6;
+  margin-left: 50px;
+  padding: 30px;
 }
 
-.g-content__item .g-content__tickets .g-content__ticket--second {
-  position: absolute;
-  z-index: 1;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__img {
-  width: 80px;
-  height: 80px;
-  padding: 20px;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__journal {
+.g-content__item .g-content__tickets .g-content__ticket__btn {
   width: 100px;
   margin-left: auto;
   padding: 20px;
 }
 
-.g-content__item .g-content__tickets .g-content__ticket__user {
+.g-content__item .g-content__tickets .g-content__ticket__places {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__from {
   font-size: 15px;
   color: #707070;
   padding-bottom: 5px;
 }
 
-.g-content__item .g-content__tickets .g-content__ticket__title {
+.g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__to {
   font-size: 15px;
 }
 
@@ -673,20 +671,10 @@ body {
           align-items: center;
 }
 
-.a-content__item .a-content__settings .a-content__setting__journal {
-  width: 100px;
-  margin-left: auto;
-  padding: 20px;
-}
-
 .a-content__item .a-content__settings .a-content__setting__container {
   font-size: 15px;
   color: #707070;
-  padding-bottom: 5px;
-}
-
-.a-content__item .a-content__settings .a-content__setting__title {
-  font-size: 15px;
+  padding: 10px;
 }
 
 @media (max-width: 800px) {
