@@ -600,16 +600,18 @@ color: #333;
 .a-content {
     flex: 1;
     padding: 25px;
+    
 
     &__item{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+        
 
         .a-content__settings {
-            width: 85%;
+            width: 20%;
             
                 .a-content__setting {
-                    width: 20%;
+                    width: 100%;
                     height: 90px;
                     background-color: #F7F7F7;
                     margin-bottom: 15px;
@@ -628,10 +630,11 @@ color: #333;
      
     }
     .a-content__upcoming-trips{
-        width: 35%;
-        margin-left: 10px;
+        width: 65%;
+        margin-left: 20px;
         padding: 20px;
         background-color: #EEEEEE;
+        
 
         .c-content__upcoming-trips__heading{
             margin-left: 20px;
