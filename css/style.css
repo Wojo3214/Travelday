@@ -737,20 +737,19 @@ body {
   padding: 10px;
 }
 
-.a-content .a-content__upcoming-trips {
+.a-content .a-content__settings-main {
   width: 65%;
   margin-left: 20px;
   padding: 20px;
   background-color: #EEEEEE;
 }
 
-.a-content .a-content__upcoming-trips .c-content__upcoming-trips__heading {
-  margin-left: 20px;
-  font-size: 20px;
-  font-weight: 700;
+.a-content .a-content__settings-main .a-content__settings-main__heading {
+  margin-left: 200px;
+  font-size: 28px;
 }
 
-.a-content .a-content__upcoming-trips__places {
+.a-content .a-content__settings-main__places {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -760,22 +759,23 @@ body {
   margin: 10px 15px;
 }
 
-.a-content .a-content__upcoming-trips__places .c-content__upcoming-trips__img {
+.a-content .a-content__settings-main__places .a-content__settings-main__img {
   width: 75px;
   height: auto;
   border-radius: 50%;
 }
 
-.a-content .a-content__upcoming-trips__places .c-content__upcoming-trips__info {
+.a-content .a-content__settings-main__places .a-content__settings-main__info {
   margin-left: 20px;
 }
 
-.a-content .a-content__upcoming-trips__places .c-content__upcoming-trips__info .c-content__upcoming-trips__place {
-  font-size: 20px;
+.a-content .a-content__settings-main__places .a-content__settings-main__info .a-content__settings-main__place {
+  font-size: 12px;
+  color: #707070;
 }
 
-.a-content .a-content__upcoming-trips__places .c-content__upcoming-trips__info .c-content__upcoming-trips__date {
-  font-size: 17px;
+.a-content .a-content__settings-main__places .a-content__settings-main__info .a-content__settings-main__date {
+  font-size: 8px;
 }
 
 @media (max-width: 800px) {
