@@ -923,6 +923,85 @@ body {
   margin-right: 20px;
 }
 
+/***MY JOURNAL***/
+.z-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.z-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -20px;
+}
+
+.z-content__item .z-content__posts {
+  width: 85%;
+}
+
+.z-content__item .z-content__posts .z-content__post {
+  width: 100%;
+  height: 120px;
+  border-radius: 20px;
+  margin-bottom: 35px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.z-content__item .z-content__posts .z-content__post__img {
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+}
+
+.z-content__item .z-content__posts .z-content__post__journal {
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+}
+
+.z-content__item .z-content__posts .z-content__post__title {
+  font-size: 15px;
+}
+
+.z-content__item .z-content__posts .z-content__post__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.z-content__item .z-content__posts .z-content__post__info__eye {
+  margin-top: 25px;
+  bottom: 0;
+  font-size: 18px;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__user {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  margin-top: -30px;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__link {
+  font-size: 10px;
+  color: #707070;
+}
+
 @media (max-width: 800px) {
   .c-content__item {
     -webkit-box-orient: vertical;
