@@ -635,10 +635,19 @@ color: #333;
         padding: 20px;
         background-color: #EEEEEE;
         
+        &__img{
+            width: 75px;
+            height: auto;
+            border-radius: 50%;
+        } 
 
-        .a-content__settings-main__heading{
+        &__heading{
             margin-left: 200px;
             font-size: 28px;
+        }
+
+        &__date{
+            font-size:13px;
         }
 
         &__places{
@@ -646,11 +655,9 @@ color: #333;
             align-items: center;
             margin: 10px 15px;
 
-            .a-content__settings-main__img{
-                width: 75px;
-                height: auto;
-                border-radius: 50%;
-            } 
+            
+
+            
             
             .a-content__settings-main__info{
                 margin-left: 20px;
@@ -660,9 +667,7 @@ color: #333;
                     color: #707070;
                 }
 
-                .a-content__settings-main__date{
-                    font-size: 8px;
-                }
+                
             }
         }
     }
