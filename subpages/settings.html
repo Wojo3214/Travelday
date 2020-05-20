@@ -12,6 +12,7 @@
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
     <script src="https://kit.fontawesome.com/82ee0524bd.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="l-grid">
@@ -57,7 +58,7 @@
                 <div class="a-content__settings">
                     <div class="a-content__setting">
                         <div class="a-content__setting__info">
-                            <h5 class="a-content__setting__container">Edit profile</h5>
+                            <h5 class="a-content__setting__container" id="show">Edit profile</h5>
                         </div>                     
                     </div>
                     <div class="a-content__setting">                    
@@ -87,46 +88,61 @@
                     <h4 class="a-content__settings-main__heading">Alan Smith</h4>
                     <p class="a-content__settings-main__date">Change profile picture</hp>
                     <div class="a-content__settings-main__places">
-                        <div class="a-content__settings-main__info">
-                            <h5 class="a-content__settings-main__place">User name</h5>
-                        </div>
+                        <form action="#">
+                            <label class="a-content__settings-main__place">User name</label>
+                            <input type="text" id="text" name="User name">
+                        </form>
                     </div>
                     <div class="a-content__settings-main__places">
-                        <div class="a-content__settings-main__info">
-                            <h5 class="a-content__settings-main__place">Website</h5>
-                        </div>
+                        <form action="#">
+                            <label class="a-content__settings-main__place">Website</label>
+                            <input type="text" id="text" name="Website">
+                        </form>
                     </div>
                     <div class="a-content__settings-main__places">
-                        <div class="a-content__settings-main__info">
-                            <h5 class="a-content__settings-main__place">Bio</h5>
-                        </div>
+                    <form action="#">
+                        <label class="a-content__settings-main__place">Bio</label>
+                        <input type="text" id="text" name="Bio">
+                    </form>
                     </div>
                     <div class="a-content__settings-main__places">
-                        <div class="a-content__settings-main__info">
-                            <h5 class="a-content__settings-main__place">E-mail</h5>
-                        </div>
+                        <h5 class="a-content__settings-main__information">Personal information</h5>
+                        <p class="a-content__settings-main__information">This information is private and will not be shared with other users</p>
                     </div>
+
                     <div class="a-content__settings-main__places">
-                        <div class="a-content__settings-main__info">
-                            <h5 class="a-content__settings-main__place">Phone</h5>
-                        </div>
-                    </div>
-                    <div class="a-content__settings-main__places">
-                        <div class="a-content__settings-main__info">
-                            <h5 class="a-content__settings-main__place">Gender</h5>
-                        </div>
-                    </div>
-                    <div class="a-content__settings-main__places">
-                        <div class="a-content__settings-main__info">
-                            <h5 class="a-content__settings-main__place">Date of birth</h5>
-                        </div>
-                    </div>
+                    <form action="#">
+                        <label class="a-content__settings-main__place">E-mail</label>
+                        <input type="text" id="text" name="Email">
+                    </form>
+                </div>
+                <div class="a-content__settings-main__places">
+                    <form action="#">
+                        <label class="a-content__settings-main__place">Phone</label>
+                        <input type="text" id="text" name="Phone">
+                    </form>
+                </div>
+                <div class="a-content__settings-main__places">
+                    <form action="#">
+                        <label class="a-content__settings-main__place">Gender</label>
+                        <input type="text" id="text" name="Gender">
+                    </form>
+                </div>
+                <div class="a-content__settings-main__places">
+                    <form action="#">
+                        <label class="a-content__settings-main__place">Date of birth</label>
+                        <input type="text" id="text" name="Date of birth">
+                    </form>
                 </div>
             </div>
-            <div class="a-content__item">
-            
-        </div>
         </main>
     </div>
+    <!-- <script>
+        $(document).ready(function(){
+  $("#show").click(function(){
+    $(".a-content__settings-main").hide();
+  });
+        });
+        </script> -->
     </body>
     </html>
