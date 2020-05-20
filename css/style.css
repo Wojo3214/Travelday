@@ -405,6 +405,40 @@ body {
   padding: 25px;
 }
 
+.g-content__statistics {
+  width: 20%;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.g-content__statistics__flights {
+  background-image: url(../img/stat1.png);
+  background-color: #cccccc;
+  background-position: center;
+  /* Center the image */
+  background-size: cover;
+}
+
+.g-content__statistics__kilometers {
+  background-image: url(../img/stat2.png);
+  background-color: #cccccc;
+  background-position: center;
+  /* Center the image */
+  background-size: cover;
+}
+
+.g-content__statistics__countries {
+  background-image: url(../img/stat3.png);
+  background-color: #cccccc;
+  background-position: center;
+  /* Center the image */
+  background-size: cover;
+}
+
 .g-content__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,16 +455,19 @@ body {
   margin-bottom: 20px;
 }
 
-.g-content__item .g-content__posts {
+.g-content__item .g-content__tickets {
   width: 85%;
+  margin: auto;
 }
 
-.g-content__item .g-content__posts .g-content__post {
+.g-content__item .g-content__tickets .g-content__ticket {
   width: 100%;
   height: 120px;
-  background-color: #F7F7F7;
+  background-image: url(../img/ticket.png);
+  background-position: center;
+  /* Center the image */
+  background-size: cover;
   border-radius: 20px;
-  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,37 +476,139 @@ body {
           align-items: center;
 }
 
-.g-content__item .g-content__posts .g-content__post__img {
+.g-content__item .g-content__tickets .g-content__ticket--first {
+  position: relative;
+  z-index: 2;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket--second {
+  position: absolute;
+  z-index: 1;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket__img {
   width: 80px;
   height: 80px;
   padding: 20px;
 }
 
-.g-content__item .g-content__posts .g-content__post__journal {
+.g-content__item .g-content__tickets .g-content__ticket__journal {
   width: 100px;
   margin-left: auto;
   padding: 20px;
 }
 
-.g-content__item .g-content__posts .g-content__post__user {
+.g-content__item .g-content__tickets .g-content__ticket__user {
   font-size: 15px;
   color: #707070;
   padding-bottom: 5px;
 }
 
-.g-content__item .g-content__posts .g-content__post__title {
+.g-content__item .g-content__tickets .g-content__ticket__title {
   font-size: 15px;
 }
 
-.g-content__item .g-content__posts .g-content__post__link {
+.g-content__item .g-content__tickets .g-content__ticket__link {
   font-size: 10px;
 }
 
 /***CONTACT and SUPPORT***/
-.s-content__box {
-  height: 300px;
-  width: 500px;
-  background-color: blue;
+.s-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.s-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.s-content__item .s_subheading_text {
+  font-size: 20px;
+  color: #333;
+  font-family: Roboto;
+}
+
+.s-content__item .s-content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 480px;
+  height: 60px;
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.s-content__item .s-content__box__question {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.s-content__item .s-content__box__btn {
+  border: none;
+  color: #0998E6;
+  margin-left: 170px;
+  font-size: 20px;
+  margin-top: 9%;
+}
+
+.s-content__item .s-content__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dropup__btn__content {
+  display: none;
+  width: 480px;
+  bottom: 50px;
+  z-index: 1;
+  margin-left: -248px;
+  margin-top: -20px;
+}
+
+.dropup__btn__content__paragraph {
+  display: block;
+  width: 430px;
+  margin-top: 20px;
+  background-color: #EEEEEE;
+  height: 80px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 25px;
+}
+
+.dropup:hover .dropup__btn__content {
+  display: block;
+  width: 30px;
+}
+
+.dropup:hover .dropup__btn {
+  color: #333;
+}
+
+.s-subheading_text_container {
+  margin-top: 50px;
 }
 
 .heading {
@@ -498,6 +637,56 @@ body {
 .heading--sub .fa-info-circle {
   margin-left: 10px;
   color: gray;
+}
+
+/***SETTINGS***/
+.a-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.a-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.a-content__item .a-content__settings {
+  width: 85%;
+}
+
+.a-content__item .a-content__settings .a-content__setting {
+  width: 20%;
+  height: 120px;
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.a-content__item .a-content__settings .a-content__setting__journal {
+  width: 100px;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.a-content__item .a-content__settings .a-content__setting__container {
+  font-size: 15px;
+  color: #707070;
+  padding-bottom: 5px;
+}
+
+.a-content__item .a-content__settings .a-content__setting__title {
+  font-size: 15px;
 }
 
 @media (max-width: 800px) {
