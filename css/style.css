@@ -524,9 +524,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .s-content__item .s_subheading_text {
@@ -540,24 +537,25 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 480px;
-  height: 60px;
+  height: 80px;
   background-color: #EEEEEE;
   border-radius: 20px;
   margin-top: 20px;
   color: #333;
+  margin: 10px;
+  margin-left: 0;
 }
 
 .s-content__item .s-content__box__question {
   margin-left: 30px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .s-content__item .s-content__box__btn {
   border: none;
   color: #0998E6;
-  margin-left: 170px;
   font-size: 20px;
-  margin-top: 9%;
+  margin-top: 14%;
 }
 
 .s-content__item .s-content__container {
@@ -576,21 +574,82 @@ body {
           flex-direction: column;
 }
 
+.dropup__btn0 {
+  margin-left: 170px;
+}
+
+.dropup__btn1 {
+  margin-left: 190px;
+}
+
+.dropup__btn2 {
+  margin-left: 145px;
+}
+
+.dropup__btn3 {
+  margin-left: 232px;
+}
+
+.dropup__btn4 {
+  margin-left: 216px;
+}
+
+.dropup__btn5 {
+  margin-left: 145px;
+}
+
+.dropup__btn6 {
+  margin-left: 166px;
+}
+
+.dropup__btn7 {
+  margin-left: 209px;
+}
+
 .dropup__btn__content {
   display: none;
   width: 480px;
   bottom: 50px;
   z-index: 1;
   margin-left: -248px;
-  margin-top: -20px;
+  margin-top: -10px;
+}
+
+.dropup__btn__content__answer1 {
+  margin-left: -224px;
+}
+
+.dropup__btn__content__answer2 {
+  margin-left: -273px;
+}
+
+.dropup__btn__content__answer3 {
+  margin-left: -180.5px;
+}
+
+.dropup__btn__content__answer4 {
+  margin-left: -201px;
+}
+
+.dropup__btn__content__answer5 {
+  margin-left: -268px;
+}
+
+.dropup__btn__content__answer6 {
+  margin-left: -250px;
+}
+
+.dropup__btn__content__answer7 {
+  margin-left: -203.5px;
 }
 
 .dropup__btn__content__paragraph {
+  font-size: 13px;
   display: block;
   width: 430px;
   margin-top: 20px;
   background-color: #EEEEEE;
-  height: 80px;
+  height: 50px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 25px;
