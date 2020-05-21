@@ -10,8 +10,35 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Travelday - My dashboard</title>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
     <script src="https://kit.fontawesome.com/82ee0524bd.js" crossorigin="anonymous"></script>
+    
+
+    <script>
+        $(document).ready(function(){
+            $(".c-content__button-nav").click(function(){
+                console.log('we have a click now.');
+                let distance = $(".nav").css("left");
+                if(distance === "-1000px"){
+                    $(".nav").animate({left: "0px"}, 200);
+                } else {
+                    $(".nav").animate({left: "-1000px"}, 200);
+                };
+            });
+
+            var today = new Date();
+            var upcomingTrip = new Date(today.getFullYear(),05,02);
+
+            if(today.getMonth()==05 && today.getDate()>02){
+                upcomingTrip.setFullYear(upcomingTrip.getFullYear()+1);
+            }
+            var oneDay = 1000*60*60*24;
+            var score = Math.ceil((upcomingTrip.getTime()-today.getTime())/(oneDay));
+
+            $(".c-content__days-left__num").text(score);
+        });
+    </script>
 </head>
 <body>
     <div class="l-grid">
@@ -47,7 +74,7 @@
                     <a href="#" class="nav__link"><i class="fas fa-sign-out-alt nav__icon"></i>Log out</a>
                 </li>
             </ul>
-            <p class="nav__rights">All rights reserved 2020</p>
+            <p class="nav__rights">All rights reserved <span class="nav__rights__date"></span></p>
         </nav>
         <main class="c-content">
             <header class="heading heading--main">
@@ -61,24 +88,23 @@
                         <img src="img/upcoming1.png" alt="Nessebar-img" class="c-content__upcoming-trips__img">
                         <div class="c-content__upcoming-trips__info">
                             <h5 class="c-content__upcoming-trips__place">Nessebar</h5>
-                            <p class="c-content__upcoming-trips__date">02/06 - 10/06</hp>
+                            <p class="c-content__upcoming-trips__date">02/06 - 10/06</p>
                         </div>
                     </div>
                     <div class="c-content__upcoming-trips__places">
                         <img src="img/upcoming2.png" alt="Nessebar-img" class="c-content__upcoming-trips__img">
                         <div class="c-content__upcoming-trips__info">
                             <h5 class="c-content__upcoming-trips__place">Oslo</h5>
-                            <p class="c-content__upcoming-trips__date">07/08 - 14/07</hp>
+                            <p class="c-content__upcoming-trips__date">07/08 - 14/07</p>
                         </div>
                     </div>
                     <div class="c-content__upcoming-trips__places">
                         <img src="img/upcoming3.png" alt="Nessebar-img" class="c-content__upcoming-trips__img">
                         <div class="c-content__upcoming-trips__info">
                             <h5 class="c-content__upcoming-trips__place">Malaga</h5>
-                            <p class="c-content__upcoming-trips__date">10/12 - 20/12</hp>
+                            <p class="c-content__upcoming-trips__date">10/12 - 20/12</p>
                         </div>
                     </div>
-
                 </div>
             </div>
             <header class=" heading heading--sub">
@@ -123,6 +149,7 @@
                 <p class="c-content__score">100pkt/200pkt</p>
                 <span class="c-content__bar"><span class="c-content__progress"></span></span>
             </div>
+            <div class="c-content__button-nav"><i class="fas fa-bars"></i></div>
         </main>
     </div>
     <script
@@ -131,6 +158,10 @@
     ></script>
  
     <script>
+        var date = new Date();
+        var currentYear = date.getFullYear();
+        $(".nav__rights__date").append(currentYear);
+
         /********* MAPBOX**********/
 
         mapboxgl.accessToken = 'pk.eyJ1IjoibWFkZWVsZSIsImEiOiJjazdkMWF3NjIwNTBiM2lud2k3cjY0Njl5In0.d6TBUltXIwgnMsKbwESW7g';
