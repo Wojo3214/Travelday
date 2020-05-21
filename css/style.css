@@ -456,15 +456,12 @@ body {
 }
 
 .g-content__item .g-content__tickets {
-  width: 80%;
+  width: 90%;
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket {
-  width: 85%;
+  width: 80%;
   height: 100%;
   background-image: url(../img/ticket.png);
   background-position: center;
@@ -483,7 +480,7 @@ body {
 .g-content__item .g-content__tickets .g-content__ticket__pen {
   color: grey;
   margin: auto;
-  ont-size: 20px;
+  font-size: 20px;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__info {
@@ -854,7 +851,7 @@ body {
 
 .a-content__item .a-content__settings .a-content__setting {
   width: 100%;
-  height: 90px;
+  height: 70px;
   background-color: #F7F7F7;
   margin-bottom: 15px;
   display: -webkit-box;
@@ -873,7 +870,7 @@ body {
 
 .a-content .a-content__settings-main {
   width: 65%;
-  height: 600px;
+  height: 80%;
   margin-left: 20px;
   padding: 20px;
   background-color: #F7F7F7;
@@ -908,7 +905,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   color: #333;
 }
 

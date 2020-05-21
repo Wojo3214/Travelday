@@ -398,12 +398,11 @@ body{
 
         //TICKETS
         .g-content__tickets {
-            width: 80%;
+            width: 90%;
             margin: auto;
-            align-items: center;
-
+    
             .g-content__ticket{
-                width: 85%;
+                width: 80%;
                 height: 100%;
                 background-image: url(../img/ticket.png);
                 background-position: center; /* Center the image */
@@ -416,7 +415,7 @@ body{
                 &__pen {
                     color: grey;
                     margin: auto;
-                    ont-size: 20px;
+                    font-size: 20px;
                 }
 
                 &__info {
@@ -732,7 +731,7 @@ body{
             
             .a-content__setting {
                 width: 100%;
-                height: 90px;
+                height: 70px;
                 background-color: #F7F7F7;
                 margin-bottom: 15px;
                 display: flex;
@@ -743,16 +742,13 @@ body{
                     color: #707070;
                     padding: 10px;
                 }
-
-            }
-                
+            }     
         }
-     
     }
 
     .a-content__settings-main{
         width: 65%;
-        height: 600px;
+        height: 80%;
         margin-left: 20px;
         padding: 20px;
         background-color: #F7F7F7;
@@ -781,7 +777,7 @@ body{
         &__places{
             display: flex;
             flex-direction: column;
-            padding: 15px;
+            padding: 10px;
             color: #333;
 
             #text {
