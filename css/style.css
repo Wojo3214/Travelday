@@ -106,7 +106,6 @@ body {
       -ms-flex: 1;
           flex: 1;
   padding: 25px;
-  padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,6 +115,8 @@ body {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 90%;
+  margin: auto;
 }
 
 .u-content__personal {
@@ -215,14 +216,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 4%;
+  padding: 10px;
+  text-align: center;
 }
 
-.u-content__journals__miniatures__photos {
+.u-content__journals__miniatures__content {
+  padding: 5px;
+}
+
+.u-content__journals__miniatures__content .u-content__journals__miniatures__photos {
   max-width: 70%;
 }
 
-.u-content__journals__miniatures__photos__title {
+.u-content__journals__miniatures__content .u-content__journals__miniatures__photos__title {
   font-size: 14px;
   color: #707070;
 }
@@ -239,8 +245,9 @@ body {
   padding: 25px;
   font-family: Roboto;
   color: #333;
-  width: 78%;
-  margin-left: 8%;
+  width: 75%;
+  margin: auto;
+  text-align: center;
 }
 
 .u-content__bottom__text {
@@ -253,7 +260,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+  padding: 10px;
 }
 
 .u-content__bottom__saved__journals {
@@ -265,6 +272,7 @@ body {
 
 .u-content__bottom__saved__journals__miniature {
   max-width: 65%;
+  padding: 5px;
 }
 
 .u-content__bottom__border {
@@ -651,12 +659,9 @@ body {
 
 .g-content__item .g-content__tickets .g-content__ticket {
   width: 80%;
+  position: relative;
   height: 100%;
-  background-image: url(../img/ticket.png);
-  background-position: center;
-  /* Center the image */
-  background-size: cover;
-  border-radius: 20px;
+  background-color: lightgray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,6 +669,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2px;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket:before {
+  content: '';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  top: -13px;
+  left: -15px;
+  -webkit-box-shadow: 0px 47px 0 0 white, 0px 92px 0 0 white, 905px 0px 0 0 white, 905px 47px 0 0 white, 905px 92px 0 0 white;
+          box-shadow: 0px 47px 0 0 white, 0px 92px 0 0 white, 905px 0px 0 0 white, 905px 47px 0 0 white, 905px 92px 0 0 white;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__pen {
@@ -718,7 +738,7 @@ body {
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__from {
-  font-size: 15px;
+  font-size: 13px;
   padding-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -732,7 +752,7 @@ body {
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__to {
-  font-size: 15px;
+  font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,20 +1132,14 @@ body {
   margin-right: 20px;
 }
 
-<<<<<<< HEAD
 /***MY JOURNAL***/
 .z-content {
-=======
-/***CONTACT and SUPPORT***/
-.s-content {
->>>>>>> master
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 25px;
 }
 
-<<<<<<< HEAD
 .z-content__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1197,8 +1211,14 @@ body {
   color: #707070;
 }
 
-@media (max-width: 800px) {
-=======
+/***CONTACT and SUPPORT***/
+.s-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
 .s-content__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1215,7 +1235,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
->>>>>>> master
   .c-content__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

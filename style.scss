@@ -95,10 +95,11 @@ body{
 .u-content{
     flex: 1;
     padding: 25px;
-    padding-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 90%;
+    margin: auto;
 
     &__personal{
         font-family: Roboto;
@@ -125,6 +126,7 @@ body{
             justify-content:space-between;
             margin-top: 20px;
         }
+        
         &__info{
             display: flex;
             flex-direction: column;
@@ -141,6 +143,7 @@ body{
             }
         }
     }
+
     &__right{
         display: flex;
         margin-left: -80px;
@@ -156,46 +159,57 @@ body{
         &__alan{
             font-size: 40px;
         }
+
         &__myjournals{
             font-size: 30px;
             margin-top: 30px;
         }
+
         &__miniatures{
             display: flex;
             justify-content: space-between;
-            margin-top: 4%;
+            padding: 10px;
+            text-align: center;
 
-            &__photos{
-                max-width: 70%;
-                
-                &__title{
-                    font-size: 14px;
-                    color: #707070;
+            &__content {
+                padding: 5px;
+            
+                .u-content__journals__miniatures__photos{
+                    max-width: 70%;
+                    
+                    &__title{
+                        font-size: 14px;
+                        color: #707070;
+                    }
                 }
             }
         }
     }
+
     &__bar{
         width: 480px;
         margin-left: 80px;
     }
 }
+
 .u-content__bottom{
     flex: 1;
     padding: 25px;
     font-family: Roboto;
     color: #333;
-    width: 78%;
-    margin-left: 8%;
+    width: 75%;
+    margin: auto;
+    text-align: center;
 
     &__text{
         margin-bottom: 10px;
         font-size: 30px;
         margin-left: 20px;
     }
+
     &__saved{
         display: flex;
-        margin-top: 20px;
+        padding: 10px;
 
         &__journals{
             margin-left: 25px;
@@ -203,9 +217,11 @@ body{
 
             &__miniature{
                 max-width: 65%;
+                padding: 5px;
             }
         }
     }
+
     &__border{
         border: 3px solid #EEEEEE;
         padding: 8px;
@@ -533,6 +549,14 @@ body{
             margin-bottom: 20px;
         }
 
+        @mixin pseudo-ready($position: absolute){
+            position: relative;
+            &::before, &::after{
+              content: '';
+              position: $position;
+            }
+        }
+
         //TICKETS
         .g-content__tickets {
             width: 90%;
@@ -540,14 +564,29 @@ body{
     
             .g-content__ticket{
                 width: 80%;
+                position: relative;
                 height: 100%;
-                background-image: url(../img/ticket.png);
-                background-position: center; /* Center the image */
-                background-size: cover;
-                border-radius: 20px;
+                background-color: rgb(211, 211, 211);
                 display: flex;
                 align-items: center;
                 margin-bottom: 2px;
+
+                &:before{
+                    content: '';
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background: white;
+                    border-radius: 50%;
+                    top: -13px;
+                    left: -15px;
+                    box-shadow: 0px 47px 0 0 white,
+                  0px 92px 0 0 white,
+                  905px 0px 0 0 white,
+                  905px 47px 0 0 white,
+                  905px 92px 0 0 white
+                }
 
                 &__pen {
                     color: grey;
@@ -598,7 +637,7 @@ body{
                    text-align: center;
 
                     .g-content__ticket__from {
-                        font-size: 15px;
+                        font-size: 13px;
                         padding-bottom: 5px;
                         display: flex;
                         flex-direction: column;
@@ -607,7 +646,7 @@ body{
                     }
 
                     .g-content__ticket__to {
-                        font-size: 15px;
+                        font-size: 13px;
                         display: flex;
                         flex-direction: column;
                         padding: 10px;
@@ -937,7 +976,6 @@ body{
     }
 }
 
-<<<<<<< HEAD
 /***MY JOURNAL***/
 .z-content {
     flex: 1;
@@ -1004,7 +1042,6 @@ body{
         }
     }
 }
-=======
 /***CONTACT and SUPPORT***/
 .s-content{
     flex: 1;
@@ -1028,7 +1065,6 @@ body{
             .c-content__map{
                 width: 100%;
             }
->>>>>>> master
 
             .c-content__upcoming-trips{
                 width: 100%;
