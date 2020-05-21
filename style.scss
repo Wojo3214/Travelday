@@ -805,6 +805,16 @@ body{
     flex: 1;
     padding: 25px;
 
+    &__icon{
+        font-size: 22px;
+        color:grey;
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+        align-items: center;
+        flex-direction: row;
+    }
+
     &__item{
         display: flex;
         flex-wrap: wrap;
@@ -861,8 +871,7 @@ body{
                     color: #707070;
                 }
             }
-            }
-            
+            }           
         }
     }
 }
