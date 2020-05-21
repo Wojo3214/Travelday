@@ -105,7 +105,7 @@ body{
         color: #333;
 
         &__border{
-            border: 2px solid #cccccc;
+            border: 3px solid #EEEEEE;
             padding: 20px;
             border-radius: 20px;
         }
@@ -168,6 +168,38 @@ body{
                 }
             }
         }
+    }
+}
+.u-content__bottom{
+    flex: 1;
+    padding: 25px;
+    font-family: Roboto;
+    color: #333;
+    width: 82%;
+    margin-left: 6%;
+
+    &__text{
+        margin-bottom: 10px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    &__saved{
+        display: flex;
+        margin-top: 20px;
+
+        &__journals{
+            margin-left: 25px;
+            align-items: center;
+
+            &__miniature{
+                max-width: 65%;
+            }
+        }
+    }
+    &__border{
+        border: 3px solid #EEEEEE;
+        padding: 8px;
+        border-radius: 20px;
     }
 }
 /***DASHBOARD***/

@@ -129,7 +129,7 @@ body {
 }
 
 .u-content__personal__border {
-  border: 2px solid #cccccc;
+  border: 3px solid #EEEEEE;
   padding: 20px;
   border-radius: 20px;
 }
@@ -219,6 +219,47 @@ body {
 .u-content__journals__miniatures__photos__title {
   font-size: 14px;
   color: #707070;
+}
+
+.u-content__bottom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+  font-family: Roboto;
+  color: #333;
+  width: 82%;
+  margin-left: 6%;
+}
+
+.u-content__bottom__text {
+  margin-bottom: 10px;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.u-content__bottom__saved {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.u-content__bottom__saved__journals {
+  margin-left: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.u-content__bottom__saved__journals__miniature {
+  max-width: 65%;
+}
+
+.u-content__bottom__border {
+  border: 3px solid #EEEEEE;
+  padding: 8px;
+  border-radius: 20px;
 }
 
 /***DASHBOARD***/
