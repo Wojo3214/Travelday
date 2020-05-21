@@ -139,6 +139,8 @@ body{
     }
     &__right{
         display: flex;
+        margin-left: -80px;
+
     }
     &__journals{
         display: flex;
@@ -169,14 +171,18 @@ body{
             }
         }
     }
+    &__bar{
+        width: 480px;
+        margin-left: 80px;
+    }
 }
 .u-content__bottom{
     flex: 1;
     padding: 25px;
     font-family: Roboto;
     color: #333;
-    width: 82%;
-    margin-left: 6%;
+    width: 78%;
+    margin-left: 8%;
 
     &__text{
         margin-bottom: 10px;

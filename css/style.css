@@ -178,6 +178,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -80px;
 }
 
 .u-content__journals {
@@ -221,6 +222,11 @@ body {
   color: #707070;
 }
 
+.u-content__bar {
+  width: 480px;
+  margin-left: 80px;
+}
+
 .u-content__bottom {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -228,8 +234,8 @@ body {
   padding: 25px;
   font-family: Roboto;
   color: #333;
-  width: 82%;
-  margin-left: 6%;
+  width: 78%;
+  margin-left: 8%;
 }
 
 .u-content__bottom__text {
