@@ -456,12 +456,15 @@ body {
 }
 
 .g-content__item .g-content__tickets {
-  width: 85%;
+  width: 80%;
   margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket {
-  width: 100%;
+  width: 85%;
   height: 100%;
   background-image: url(../img/ticket.png);
   background-position: center;
@@ -477,11 +480,42 @@ body {
   margin-bottom: 2px;
 }
 
+.g-content__item .g-content__tickets .g-content__ticket__pen {
+  color: grey;
+  margin: auto;
+  ont-size: 20px;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket__info {
+  color: #0998E6;
+  margin: auto;
+  font-size: 20px;
+}
+
 .g-content__item .g-content__tickets .g-content__ticket__icon {
   font-size: 30px;
   color: #0998E6;
   margin-left: 50px;
   padding: 30px;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket__icon--grey {
+  font-size: 30px;
+  color: grey;
+  margin-left: 50px;
+  padding: 30px;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket__location {
+  font-size: 25px;
+  color: grey;
+  padding: 10px;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket__location--grey {
+  font-size: 30px;
+  color: grey;
+  padding: 10px;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__btn {
@@ -494,16 +528,61 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__from {
   font-size: 15px;
-  color: #707070;
   padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  margin: 0 80px 0 80px;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__to {
   font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  margin: 0 0 0 150px;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__to--grey {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  margin: 0 0 0 200px;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__from--grey {
+  font-size: 15px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  margin: 0 80px 0 80px;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__link {
@@ -770,7 +849,7 @@ body {
 }
 
 .a-content__item .a-content__settings {
-  width: 20%;
+  width: 15%;
 }
 
 .a-content__item .a-content__settings .a-content__setting {
@@ -787,7 +866,7 @@ body {
 }
 
 .a-content__item .a-content__settings .a-content__setting__container {
-  font-size: 20px;
+  font-size: 15px;
   color: #707070;
   padding: 10px;
 }
@@ -808,13 +887,13 @@ body {
 }
 
 .a-content .a-content__settings-main__heading {
-  margin-left: 20px;
+  margin-left: 15px;
   font-size: 24px;
 }
 
 .a-content .a-content__settings-main__date {
   font-size: 13px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .a-content .a-content__settings-main__information {
@@ -825,20 +904,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 20px 15px 10px 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
   color: #333;
 }
 
-.a-content .a-content__settings-main__places .a-content__settings-main__info {
-  margin-left: 20px;
+.a-content .a-content__settings-main__places #text {
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+  height: 30px;
+  margin-right: 40%;
+  float: right;
 }
 
-.a-content .a-content__settings-main__places .a-content__settings-main__info .a-content__settings-main__place {
-  font-size: 12px;
-  color: #F7F7F7;
+.a-content .a-content__settings-main__places .a-content__settings-main__place {
+  font-size: 15px;
+  margin-right: 20px;
 }
 
 @media (max-width: 800px) {
