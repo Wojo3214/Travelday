@@ -81,8 +81,95 @@ body{
         font-family: "Roboto";
         text-align: center;
     }
+    &__img--active{
+        border: white 2px solid;
+        border-radius: 100%;
+    }
 }
+/***USER PROFILE***/
 
+.u-content{
+    flex: 1;
+    padding: 25px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__personal{
+        font-family: Roboto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 280px;
+        color: #333;
+
+        &__border{
+            border: 2px solid #cccccc;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        
+        &__photo__alan{
+            margin-left: 24%;
+        }
+            
+        
+        &__followers{
+            color: #0998E6;
+            display: inline-flex;
+            justify-content:space-between;
+            margin-top: 20px;
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            &__text{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                
+                &__member{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    &__right{
+        display: flex;
+    }
+    &__journals{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        font-family: Roboto;
+        color: #333;
+
+        &__alan{
+            font-size: 40px;
+        }
+        &__myjournals{
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        &__miniatures{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4%;
+
+            &__photos{
+                max-width: 70%;
+                
+                &__title{
+                    font-size: 14px;
+                    color: #707070;
+                }
+            }
+        }
+    }
+}
 /***DASHBOARD***/
 .c-content {
     flex: 1;

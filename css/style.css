@@ -90,6 +90,137 @@ body {
   text-align: center;
 }
 
+.nav__img--active {
+  border: white 2px solid;
+  border-radius: 100%;
+}
+
+/***USER PROFILE***/
+.u-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.u-content__personal {
+  font-family: Roboto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 280px;
+  color: #333;
+}
+
+.u-content__personal__border {
+  border: 2px solid #cccccc;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.u-content__personal__photo__alan {
+  margin-left: 24%;
+}
+
+.u-content__personal__followers {
+  color: #0998E6;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.u-content__personal__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.u-content__personal__info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.u-content__personal__info__text__member {
+  margin-top: 30px;
+}
+
+.u-content__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.u-content__journals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  font-family: Roboto;
+  color: #333;
+}
+
+.u-content__journals__alan {
+  font-size: 40px;
+}
+
+.u-content__journals__myjournals {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.u-content__journals__miniatures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4%;
+}
+
+.u-content__journals__miniatures__photos {
+  max-width: 70%;
+}
+
+.u-content__journals__miniatures__photos__title {
+  font-size: 14px;
+  color: #707070;
+}
+
 /***DASHBOARD***/
 .c-content {
   -webkit-box-flex: 1;
