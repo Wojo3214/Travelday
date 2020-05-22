@@ -2428,6 +2428,7 @@ body {
   padding: 25px;
 }
 
+<<<<<<< Updated upstream
 .z-content .heading_journal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2468,6 +2469,8 @@ body {
           flex-direction: row;
 }
 
+=======
+>>>>>>> Stashed changes
 .z-content__item {
   display: -webkit-box;
   display: -ms-flexbox;
