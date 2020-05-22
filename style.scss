@@ -21,6 +21,7 @@ body{
     padding: 25px 0;
     background: rgb(3,169,244);
     background: linear-gradient(0deg, rgba(3,169,244,1) 0%, rgba(3,155,229,1) 100%);
+    position: relative;
     
     &__list {
         list-style-type: none;
@@ -75,18 +76,164 @@ body{
     }
 
     .nav__rights {
-        margin-top: 25px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 10px;
         color: #fff;
         font-family: "Roboto";
         text-align: center;
     }
+    &__img--active{
+        border: white 2px solid;
+        border-radius: 100%;
+    }
+}
+/***USER PROFILE***/
+
+.u-content{
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+
+    &__personal{
+        font-family: Roboto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 280px;
+        color: #333;
+
+        &__border{
+            border: 3px solid #EEEEEE;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        
+        &__photo__alan{
+            margin-left: 24%;
+        }
+            
+        
+        &__followers{
+            color: #0998E6;
+            display: inline-flex;
+            justify-content:space-between;
+            margin-top: 20px;
+        }
+        
+        &__info{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            &__text{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                
+                &__member{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    &__right{
+        display: flex;
+        margin-left: -80px;
+
+    }
+    &__journals{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        font-family: Roboto;
+        color: #333;
+
+        &__alan{
+            font-size: 40px;
+        }
+
+        &__myjournals{
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        &__miniatures{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            text-align: center;
+
+            &__content {
+                padding: 5px;
+            
+                .u-content__journals__miniatures__photos{
+                    max-width: 70%;
+                    
+                    &__title{
+                        font-size: 14px;
+                        color: #707070;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bar{
+        width: 480px;
+        margin-left: 80px;
+    }
 }
 
+.u-content__bottom{
+    flex: 1;
+    padding: 25px;
+    font-family: Roboto;
+    color: #333;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+
+    &__text{
+        margin-bottom: 10px;
+        font-size: 30px;
+        margin-left: -76%;
+    }
+
+    &__saved{
+        display: flex;
+        padding: 10px;
+
+        &__journals{
+            margin-left: 25px;
+            align-items: center;
+
+            &__miniature{
+                max-width: 65%;
+                padding: 5px;
+            }
+        }
+    }
+
+    &__border{
+        border: 3px solid #EEEEEE;
+        padding: 8px;
+        border-radius: 20px;
+    }
+}
 /***DASHBOARD***/
 .c-content {
     flex: 1;
     padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
 
     &__item{
         display: flex;
@@ -172,7 +319,7 @@ body{
             .c-content__days-left__num{
                 font-size: 42px;
                 font-weight: 800;
-                padding: 10px 20px;
+                padding: 10px 15px;
                 border: 5px solid #333;
                 border-radius: 10px;
             }
@@ -221,6 +368,12 @@ body{
                     width: 50%;
                 }
             }
+        }
+    }
+
+    .c-content__button-nav{
+        i{
+            color: #fff;
         }
     }
 }
@@ -396,6 +549,14 @@ body{
             margin-bottom: 20px;
         }
 
+        @mixin pseudo-ready($position: absolute){
+            position: relative;
+            &::before, &::after{
+              content: '';
+              position: $position;
+            }
+        }
+
         //TICKETS
         .g-content__tickets {
             width: 90%;
@@ -403,14 +564,29 @@ body{
     
             .g-content__ticket{
                 width: 80%;
+                position: relative;
                 height: 100%;
-                background-image: url(../img/ticket.png);
-                background-position: center; /* Center the image */
-                background-size: cover;
-                border-radius: 20px;
+                background-color: rgb(211, 211, 211);
                 display: flex;
                 align-items: center;
                 margin-bottom: 2px;
+
+                &:before{
+                    content: '';
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background: white;
+                    border-radius: 50%;
+                    top: -13px;
+                    left: -15px;
+                    box-shadow: 0px 47px 0 0 white,
+                  0px 92px 0 0 white,
+                  905px 0px 0 0 white,
+                  905px 47px 0 0 white,
+                  905px 92px 0 0 white
+                }
 
                 &__pen {
                     color: grey;
@@ -461,7 +637,7 @@ body{
                    text-align: center;
 
                     .g-content__ticket__from {
-                        font-size: 15px;
+                        font-size: 13px;
                         padding-bottom: 5px;
                         display: flex;
                         flex-direction: column;
@@ -470,7 +646,7 @@ body{
                     }
 
                     .g-content__ticket__to {
-                        font-size: 15px;
+                        font-size: 13px;
                         display: flex;
                         flex-direction: column;
                         padding: 10px;
@@ -875,10 +1051,93 @@ body{
         }
     }
 }
+/***CONTACT and SUPPORT***/
+.s-content{
+    flex: 1;
+    padding: 25px;
+}
+.s-content__box{
+    display: flex;
+    width: 300px;
+    border: 2px black;
+}
 
-@media (max-width: 800px){
-    .c-content__item{
-        flex-direction: column;
+@media (max-width: 900px){
+    .c-content{
+        max-width: 850px;
+        margin: 0 auto;
+        justify-content: center;
+
+        &__item{
+            flex-direction: column;
+
+            .c-content__map{
+                width: 100%;
+            }
+
+            .c-content__upcoming-trips{
+                width: 100%;
+                margin: 30px 0 10px 0;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+
+            .c-content__destination{
+                margin: 15px 0;
+            }
+
+            .c-content__days-left{
+                margin: 15px 0;
+
+                .c-content__days-left__num{
+                    padding: 5px 10px;
+                    font-size: 32px;
+                }
+            }
+        }
     }
 }
 
+@media (max-width: 750px){
+    
+    .nav{
+        position: fixed;
+        left: -1000px;
+        z-index: 99;
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+    }
+    .c-content{
+        max-width: 700px;
+
+        .heading__text{
+            font-size: 34px;
+        }
+
+        &__button-nav{
+            display: block;
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            background: rgb(3,169,244);
+            background: linear-gradient(0deg, rgba(3,169,244,1) 0%, rgba(3,155,229,1) 100%);
+
+            i{
+                color: #fff;
+                font-size: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+        &__item--vertical{
+            margin-bottom: 100px;
+        }
+    }
+}
