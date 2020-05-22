@@ -2071,7 +2071,6 @@ body {
   display: inline;
   font-size: 14px;
   padding: 4px;
-  top: -4px;
 }
 
 .d-content__breadcrumb__link {
@@ -2081,6 +2080,32 @@ body {
 
 .d-content__breadcrumb__link:hover {
   text-decoration: underline;
+}
+
+.d-content__details {
+  width: 330px;
+  height: 420px;
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.d-content__details__first {
+  margin-left: 10px;
+}
+
+.d-content__details__photo {
+  height: 100px;
+  width: 330px;
 }
 
 /***CONTACT and SUPPORT***/

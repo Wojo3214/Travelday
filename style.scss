@@ -711,7 +711,25 @@ body{
             text-decoration: underline;
         }
     }
-    
+    &__details{
+        width: 330px;
+        height: 420px;
+        background-color: #EEEEEE;
+        border-radius: 20px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-left: 80px;
+        margin-top: 40px;
+
+        &__first{
+            margin-left: 10px;
+        }
+        &__photo{
+            height: 100px;
+            width: 330px;
+        }
+    }
 }
 
 /***CONTACT and SUPPORT***/
