@@ -80,7 +80,7 @@
             }
     
             .g-content__ticket{
-                width: 80%;
+                width: 100%;
                 position: relative;
                 height: 100%;
                 background-color: rgb(211, 211, 211);
@@ -99,10 +99,7 @@
                     top: -13px;
                     left: -15px;
                     box-shadow: 0px 47px 0 0 white,
-                  0px 92px 0 0 white,
-                  905px 0px 0 0 white,
-                  905px 47px 0 0 white,
-                  905px 92px 0 0 white
+                    0px 130px 0 0 white;
                 }
 
                 &__pen {
@@ -113,7 +110,7 @@
 
                 &__info {
                     color: #0998E6;
-                    margin: auto;
+                    margin: 40px;
                     font-size: 20px;
                 }
 
