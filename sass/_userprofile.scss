@@ -1,0 +1,138 @@
+/***USER PROFILE***/
+
+.u-content{
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+
+    &__personal{
+        font-family: Roboto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 280px;
+        color: #333;
+
+        &__border{
+            border: 3px solid #EEEEEE;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        
+        &__photo__alan{
+            margin-left: 24%;
+        }
+            
+        
+        &__followers{
+            color: #0998E6;
+            display: inline-flex;
+            justify-content:space-between;
+            margin-top: 20px;
+        }
+        
+        &__info{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            &__text{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                
+                &__member{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    &__right{
+        display: flex;
+        margin-left: -80px;
+
+    }
+    &__journals{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        font-family: Roboto;
+        color: #333;
+
+        &__alan{
+            font-size: 40px;
+        }
+
+        &__myjournals{
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        &__miniatures{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            text-align: center;
+
+            &__content {
+                padding: 5px;
+            
+                .u-content__journals__miniatures__photos{
+                    max-width: 70%;
+                    
+                    &__title{
+                        font-size: 14px;
+                        color: #707070;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bar{
+        width: 480px;
+        margin-left: 80px;
+    }
+}
+
+.u-content__bottom{
+    flex: 1;
+    padding: 25px;
+    font-family: Roboto;
+    color: #333;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+
+    &__text{
+        margin-bottom: 10px;
+        font-size: 30px;
+        margin-left: -76%;
+    }
+
+    &__saved{
+        display: flex;
+        padding: 10px;
+
+        &__journals{
+            margin-left: 25px;
+            align-items: center;
+
+            &__miniature{
+                max-width: 65%;
+                padding: 5px;
+            }
+        }
+    }
+
+    &__border{
+        border: 3px solid #EEEEEE;
+        padding: 8px;
+        border-radius: 20px;
+    }
+}

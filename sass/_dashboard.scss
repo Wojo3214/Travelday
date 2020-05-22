@@ -1,0 +1,174 @@
+/***DASHBOARD***/
+
+.c-content {
+    flex: 1;
+    padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    &__item{
+        display: flex;
+        
+
+        //MAP
+        .c-content__map{
+            width: 65%;
+            height: 350px;
+            background-color: rgb(84, 83, 184);
+            border-radius: 20px;
+        }
+
+        //UPCOMING TRIPS
+        .c-content__upcoming-trips{
+            width: 35%;
+            margin-left: 10px;
+            padding: 20px;
+            background-color: #EEEEEE;
+            border-radius: 20px;
+
+            .c-content__upcoming-trips__heading{
+                margin-left: 20px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            &__places{
+                display: flex;
+                align-items: center;
+                margin: 10px 15px;
+
+                .c-content__upcoming-trips__img{
+                    width: 75px;
+                    height: auto;
+                } 
+                
+                .c-content__upcoming-trips__info{
+                    margin-left: 20px;
+
+                    .c-content__upcoming-trips__place{
+                        font-size: 20px;
+                    }
+    
+                    .c-content__upcoming-trips__date{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+        //TOP DESTINATIONS
+        .c-content__destination{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            margin-right: 30px;
+            .c-content__img{
+                display: block;
+                width: 80px;
+                height: auto;
+                float: left;
+            }
+
+            &__info{
+                margin-left: 10px;
+
+                .c-content__destination-country{
+                    font-size: 15px;
+                }
+
+                .c-content__destination-city{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .c-content__days-left{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+
+            .c-content__days-left__num{
+                font-size: 42px;
+                font-weight: 800;
+                padding: 10px 15px;
+                border: 5px solid #333;
+                border-radius: 10px;
+            }
+
+            .c-content__days-left__info{
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__item--vertical{
+        flex-direction: column;
+        
+        .c-content__score{
+            font-size: 16px;
+            margin: 10px 0 0 0;
+            color: #A8A8A8;
+        }
+
+        .c-content__bar{
+            width: 100%;
+            height: 15px;
+            background-color: rgb(211, 211, 211);
+            border-radius: 20px;
+            overflow: hidden;
+            clear: both;
+
+            .c-content__progress{
+                width: 0%;
+                height: 15px;
+                border-radius: 20px;
+                float: left;
+                background-color: #0998E6;
+                animation: progress 2s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes progress{
+                from{
+                    width: 0%;
+                }
+
+                to{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .c-content__button-nav{
+        i{
+            color: #fff;
+        }
+    }
+}
+
+.heading{
+    font-family: 'Roboto';
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #333;
+
+    &--main{
+        font-size: 24px;
+    }
+
+    &--sub{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        .fa-info-circle{
+            margin-left: 10px;
+            color: gray;
+        }
+    }
+}
