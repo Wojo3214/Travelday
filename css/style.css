@@ -361,13 +361,33 @@
   float: right;
   right: 150px;
   top: 150px;
-  opacity: 0.6;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
-.g-content__item .g-content__tickets .g-content__post__tickets__button:hover {
+.g-content__item .g-content__tickets .g-content__post__tickets__button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.g-content__item .g-content__tickets .g-content__post__tickets__button span:after {
+  content: '+';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.g-content__item .g-content__tickets .g-content__post__tickets__button:hover span {
+  padding-right: 25px;
+}
+
+.g-content__item .g-content__tickets .g-content__post__tickets__button:hover span:after {
   opacity: 1;
+  right: 0;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket {
