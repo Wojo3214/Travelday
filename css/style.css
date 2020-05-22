@@ -1189,6 +1189,7 @@
   font-size: 40px;
 }
 
+<<<<<<< Updated upstream
 .u-content__journals__myjournals {
   font-size: 30px;
   margin-top: 30px;
@@ -1203,6 +1204,47 @@
           justify-content: space-between;
   padding: 10px;
   text-align: center;
+=======
+.z-content__item .z-content__posts .z-content__post__info__button {
+  background-color: #0998E6;
+  color: white;
+  width: 205px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 800;
+  border: none;
+  float: right;
+  position: absolute;
+  right: 150px;
+  top: 150px;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button span:after {
+  content: '\+';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button:hover span {
+  padding-right: 25px;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button:hover span:after {
+  opacity: 1;
+  right: 0;
+>>>>>>> Stashed changes
 }
 
 .u-content__journals__miniatures__content {
