@@ -1232,6 +1232,27 @@ body {
   font-size: 18px;
 }
 
+.z-content__item .z-content__posts .z-content__post__info__button {
+  background-color: #0998E6;
+  color: white;
+  width: 205px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 800;
+  border: none;
+  float: right;
+  position: absolute;
+  right: 150px;
+  top: 150px;
+  opacity: 0.6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button:hover {
+  opacity: 1;
+}
+
 .z-content__item .z-content__posts .z-content__post__info .z-content__post__user {
   font-size: 20px;
   color: #333;
