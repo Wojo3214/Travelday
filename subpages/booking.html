@@ -98,7 +98,7 @@
                             <a href="#" class="g-content__ticket__link"></a>     
                         </div>
                         <i class="fas fa-pencil-alt g-content__ticket__pen"></i>
-                        <a href="booking_details.html" alt="Ticket-icon"><i class="fas fa-info-circle g-content__ticket__info"></i></a>
+                        <a href="#" alt="Ticket-icon"><i class="fas fa-info-circle g-content__ticket__info"></i></a>
                     </div>
                 </div>
                 <div class="g-content__tickets g-content__tickets--lower">
@@ -131,15 +131,19 @@
             </div>
         </main>
     </div>
+    <script
+        src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"
+        charset="utf-8"
+    ></script>
     <script>
          /********* MAPBOX**********/
 
-         mapboxgl.accessToken = 'pk.eyJ1IjoibWFkZWVsZSIsImEiOiJjazdkMWF3NjIwNTBiM2lud2k3cjY0Njl5In0.d6TBUltXIwgnMsKbwESW7g';
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWFkZWVsZSIsImEiOiJjazdkMWF3NjIwNTBiM2lud2k3cjY0Njl5In0.d6TBUltXIwgnMsKbwESW7g';
         var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/madeele/ckadq6xy403s61ioohg7xtk4e',
         center: [20.532, 48.929],
-        zoom: 1
+        zoom: 3
         });
         
         // Aarhus
@@ -147,6 +151,8 @@
         
         // Nessebar
         var destination = [27.736, 42.658];
+
+        /*taken from https://docs.mapbox.com/mapbox-gl-js/example/animate-point-along-route/*/
         
         // A simple line from origin to destination.
         var route = {
@@ -217,23 +223,11 @@
         'source': 'route',
         'type': 'line',
         'paint': {
-        'line-width': 4,
+        'line-width': 2,
         'line-color': '#007cbf'
         }
         });
         
-        map.addLayer({
-        'id': 'point',
-        'source': 'point',
-        'type': 'symbol',
-        'layout': {
-        'icon-image': 'airport-15',
-        'icon-rotate': ['get', 'bearing'],
-        'icon-rotation-alignment': 'map',
-        'icon-allow-overlap': true,
-        'icon-ignore-placement': true
-        }
-        });
     })          
     // Update point geometry to a new position based on counter denoting
 // the index to access the arc.
