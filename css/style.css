@@ -2202,6 +2202,77 @@ body {
   margin-left: 130px;
 }
 
+.d-content__details__accommodation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 80px;
+  margin-top: -46px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.d-content__details__accommodation__address {
+  font-size: 18px;
+}
+
+.d-content__details__hotel-details {
+  font-weight: bolder;
+  margin-left: 40px;
+}
+
+.d-content__details__hotel-details__aphrodite {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.d-content__details__hotel-details__checkin {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.d-content__details__hotel-details__checkin__blue {
+  color: #0998E6;
+  margin-left: 5px;
+}
+
+.d-content__details__hotel-details__checkout {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.d-content__details__facilities {
+  margin-left: 40px;
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: bolder;
+}
+
+.d-content__details__facilities__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-left: -20px;
+  margin-top: 10px;
+}
+
+.d-content__details__facilities__icon {
+  color: #0998E6;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
 .d-content__delimitation-line {
   width: 240px;
   border: 2px solid #cccccc;
@@ -2212,6 +2283,14 @@ body {
 
 .d-content .fa-chevron-right {
   color: #333;
+}
+
+.d-content .fa-map-marker-alt {
+  color: #0998E6;
+  font-size: 35px;
+  margin-left: 40px;
+  margin-top: 24px;
+  text-shadow: 8px 0 3px #A8A8A8;
 }
 
 /***CONTACT and SUPPORT***/
