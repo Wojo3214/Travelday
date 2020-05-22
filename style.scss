@@ -24,8 +24,6 @@ body{
     width: 100%;
 }
 
-<<<<<<< Updated upstream
-=======
 /***NAVIGATION***/
 .nav{
     max-width: 230px;
@@ -995,6 +993,13 @@ body{
     .heading_journal {
         display: flex;
         align-items: center;
+
+        &__paragraph{
+            font-size: 14px;
+            margin-left: 20px;
+            color:#A8A8A8;
+            text-transform: initial;
+        }
     }
 
     .heading__icon {
@@ -1130,7 +1135,6 @@ body{
     border: 2px black;
 }
 
->>>>>>> Stashed changes
 @media (max-width: 900px){
     .c-content{
         max-width: 850px;

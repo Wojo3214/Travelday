@@ -12,6 +12,7 @@
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
     <script src="https://kit.fontawesome.com/82ee0524bd.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="l-grid">
@@ -52,7 +53,8 @@
 
     <main class="z-content">
         <header class="heading heading--main heading_journal">
-            <h1 class="heading__text">MY JOURNAL</h1><i class="fas fa-info-circle heading__icon"></i>
+            <h1 class="heading__text">MY JOURNAL</h1><i class="fas fa-info-circle heading__icon i" id="show"></i>
+            <p class="heading_journal__paragraph">Here you can see all the journeys you have been to. Have fun by describing them, write your gripping story,<br>add breathtaking pictures and share your experience with your friends and community.</p>
         </header>
         <div class="z-content__item">
             <div class="z-content__posts">
@@ -105,5 +107,13 @@
         </div>
         </div>
     </main>
+    <script>
+    $(document).ready(function(){
+        $(".heading_journal__paragraph").hide()
+        $("#show").click(function(){
+          $(".heading_journal__paragraph").fadeToggle("slow");
+        });
+      });
+    </script>
 </body>
 </html>
