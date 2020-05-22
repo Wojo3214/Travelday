@@ -786,7 +786,7 @@ body{
 
             &__aphrodite{
                 font-size: 18px;
-                margin-top: 10px;
+                margin-top: 22px;
             }
             &__checkin{
                 display: inline-flex;
@@ -807,19 +807,64 @@ body{
         &__facilities{
             margin-left: 40px;
             font-size: 18px;
-            margin-top: 30px;
+            margin-top: 26px;
             font-weight: bolder;
 
             &__icons{
                 display: flex;
                 list-style-type: none;
                 margin-left: -20px;
-                margin-top: 10px;
+                margin-top: 16px;
             }
             &__icon{
                 color: #0998E6;
-                margin-left: 30px;
-                font-size: 20px;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+        }
+        &__destination{
+            margin-left: 40px;
+
+            &__title1{
+                font-size: 18px;
+                font-family: Open Sans;
+                margin-top: 24px;
+            }
+            &__photo{
+                width: 20%;
+                margin-top: 20px;
+                margin-left: 22px;
+
+                &__1{
+                    margin-left: 0px;
+                }
+
+                &__weather{
+                    display: flex;
+
+                    &__text{
+                        margin-left: 48px;
+                        font-size: 14px;
+
+                        &__1{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            &__title2{
+                font-size: 18px;
+                font-family: Open Sans;
+                margin-top: 30px;
+            }
+            &__attractions{
+                width: 16%;
+                margin-left: 8px;
+                margin-top: 28px;
+
+                &__1{
+                    margin-left: 0px;
+                }
             }
         }
     }

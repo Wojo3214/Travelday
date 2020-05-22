@@ -2227,7 +2227,7 @@ body {
 
 .d-content__details__hotel-details__aphrodite {
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 22px;
 }
 
 .d-content__details__hotel-details__checkin {
@@ -2254,7 +2254,7 @@ body {
 .d-content__details__facilities {
   margin-left: 40px;
   font-size: 18px;
-  margin-top: 30px;
+  margin-top: 26px;
   font-weight: bolder;
 }
 
@@ -2264,13 +2264,64 @@ body {
   display: flex;
   list-style-type: none;
   margin-left: -20px;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 .d-content__details__facilities__icon {
   color: #0998E6;
-  margin-left: 30px;
-  font-size: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.d-content__details__destination {
+  margin-left: 40px;
+}
+
+.d-content__details__destination__title1 {
+  font-size: 18px;
+  font-family: Open Sans;
+  margin-top: 24px;
+}
+
+.d-content__details__destination__photo {
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 22px;
+}
+
+.d-content__details__destination__photo__1 {
+  margin-left: 0px;
+}
+
+.d-content__details__destination__photo__weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-content__details__destination__photo__weather__text {
+  margin-left: 48px;
+  font-size: 14px;
+}
+
+.d-content__details__destination__photo__weather__text__1 {
+  margin-left: 10px;
+}
+
+.d-content__details__destination__title2 {
+  font-size: 18px;
+  font-family: Open Sans;
+  margin-top: 30px;
+}
+
+.d-content__details__destination__attractions {
+  width: 16%;
+  margin-left: 8px;
+  margin-top: 28px;
+}
+
+.d-content__details__destination__attractions__1 {
+  margin-left: 0px;
 }
 
 .d-content__delimitation-line {
