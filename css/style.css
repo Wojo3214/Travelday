@@ -632,6 +632,13 @@
           align-items: center;
 }
 
+.z-content .heading_journal__paragraph {
+  font-size: 14px;
+  text-transform: initial;
+  color: #cccccc;
+  margin-left: 25px;
+}
+
 .z-content .heading__icon {
   color: grey;
   font-size: 25px;
@@ -683,12 +690,6 @@
           align-items: center;
 }
 
-.z-content__item .z-content__posts .z-content__post__img {
-  width: 80px;
-  height: 80px;
-  padding: 20px;
-}
-
 .z-content__item .z-content__posts .z-content__post__journal {
   width: 120px;
   height: 120px;
@@ -727,13 +728,33 @@
   position: absolute;
   right: 150px;
   top: 150px;
-  opacity: 0.6;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
-.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button:hover {
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button span:after {
+  content: '+';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button:hover span {
+  padding-right: 25px;
+}
+
+.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button:hover span:after {
   opacity: 1;
+  right: 0;
 }
 
 .z-content__item .z-content__posts .z-content__post__info .z-content__post__user {
@@ -744,7 +765,7 @@
 }
 
 .z-content__item .z-content__posts .z-content__post__info .z-content__post__link {
-  font-size: 10px;
+  font-size: 12px;
   color: #707070;
 }
 
