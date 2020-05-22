@@ -2054,6 +2054,35 @@ body {
   font-size: 10px;
 }
 
+/***DETAILS OF THE TRIP PAGE***/
+.d-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.d-content__breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+.d-content__breadcrumb__list {
+  display: inline;
+  font-size: 14px;
+  padding: 4px;
+  top: -4px;
+}
+
+.d-content__breadcrumb__link {
+  color: #0998E6;
+  text-decoration: none;
+}
+
+.d-content__breadcrumb__link:hover {
+  text-decoration: underline;
+}
+
 /***CONTACT and SUPPORT***/
 .s-content {
   -webkit-box-flex: 1;

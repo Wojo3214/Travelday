@@ -608,7 +608,7 @@ body{
                     margin: auto;
                     font-size: 20px;
                 }
-                
+
                 &__icon {
                     font-size: 30px;
                     color: #0998E6;
@@ -686,6 +686,32 @@ body{
             }
         }
     }
+}
+
+/***DETAILS OF THE TRIP PAGE***/
+
+.d-content{
+    flex: 1;
+    padding: 25px; 
+
+    &__breadcrumb{
+        padding: 10px 16px;
+        list-style: none;
+
+        &__list{
+            display: inline;
+            font-size: 14px;
+            padding: 4px;
+        }
+        &__link{
+            color: #0998E6;
+            text-decoration: none;
+        }
+        &__link:hover{
+            text-decoration: underline;
+        }
+    }
+    
 }
 
 /***CONTACT and SUPPORT***/
