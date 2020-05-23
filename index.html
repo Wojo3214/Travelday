@@ -66,7 +66,7 @@
                         <img src="img/upcoming1.png" alt="Nessebar-img" class="c-content__upcoming-trips__img">
                         <div class="c-content__upcoming-trips__info">
                             <h5 class="c-content__upcoming-trips__place">Nessebar</h5>
-                            <p class="c-content__upcoming-trips__date">02/06 - 10/06</p>
+                            <p class="c-content__upcoming-trips__date">20/06 - 27/06</p>
                         </div>
                     </div>
                     <div class="c-content__upcoming-trips__places">
@@ -114,12 +114,12 @@
                     <a href="#" class="c-content__destination__link"></a>
                 </div>
                 <div class="c-content__days-left">
-                    <p class="c-content__days-left__num">29</p>
+                    <p class="c-content__days-left__num"></p>
                     <p class="c-content__days-left__info">days left to the next trip</p>
                 </div>
             </div>
             <header class="heading heading--sub">
-                <h2>Achievements</h2>
+                <h2 class="heading__text">Achievements</h2>
                 <i class="fas fa-info-circle"></i>
                 <span class="section-info"></span>
             </header>
@@ -151,7 +151,7 @@
 
             //Counting days left to upcoming trip 
             var today = new Date();
-            var upcomingTrip = new Date(today.getFullYear(),05,02);
+            var upcomingTrip = new Date(today.getFullYear(),05,20);
 
             if(today.getMonth()==05 && today.getDate()>02){
                 upcomingTrip.setFullYear(upcomingTrip.getFullYear()+1);
