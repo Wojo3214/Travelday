@@ -1,0 +1,74 @@
+/***LOG-IN PAGE***/
+
+.l-grid--login{
+    background-image: url("../img/bg.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+
+    .log-in__logo{
+        width: auto;
+        height: 70px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        order: 0;
+        align-self: flex-start;
+    }
+
+    .log-in{
+        width: 30%;
+        background: rgba(28, 123, 201, 0.8);
+        order: 2;
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-height: 100%;
+            margin: 0 auto;
+            width: 70%;
+            justify-content: center;
+
+            &__label{
+                margin: 10px 0;
+                width: 100%;
+                color: #fff;
+            }
+            input{
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            &__btn-submit{
+                width: 30%;
+                padding: 10px 15px;
+                margin-top: 20px;
+                background: none;
+                border: 1px solid #fff;
+                color: #fff;
+                align-self: flex-start;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: #fff;
+                    color: rgba(28, 123, 201, 0.8);
+                    cursor: pointer;
+                }
+            }
+
+
+
+            &__info{
+                color: rgb(230, 88, 88);
+            }
+
+        }
+    }
+}

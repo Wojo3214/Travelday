@@ -14,31 +14,6 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
     <script src="https://kit.fontawesome.com/82ee0524bd.js" crossorigin="anonymous"></script>
     
-
-    <script>
-        $(document).ready(function(){
-            $(".c-content__button-nav").click(function(){
-                console.log('we have a click now.');
-                let distance = $(".nav").css("left");
-                if(distance === "-1000px"){
-                    $(".nav").animate({left: "0px"}, 200);
-                } else {
-                    $(".nav").animate({left: "-1000px"}, 200);
-                };
-            });
-
-            var today = new Date();
-            var upcomingTrip = new Date(today.getFullYear(),05,02);
-
-            if(today.getMonth()==05 && today.getDate()>02){
-                upcomingTrip.setFullYear(upcomingTrip.getFullYear()+1);
-            }
-            var oneDay = 1000*60*60*24;
-            var score = Math.ceil((upcomingTrip.getTime()-today.getTime())/(oneDay));
-
-            $(".c-content__days-left__num").text(score);
-        });
-    </script>
 </head>
 <body>
     <div class="l-grid">
@@ -73,8 +48,11 @@
                 <li class="nav__item">
                     <a href="#" class="nav__link"><i class="fas fa-sign-out-alt nav__icon"></i>Log out</a>
                 </li>
+                <li class="nav__item">
+                    <p class="nav__rights">All rights reserved <span class="nav__rights__date"></span></p>
+                </li>
             </ul>
-            <p class="nav__rights">All rights reserved <span class="nav__rights__date"></span></p>
+            
         </nav>
         <main class="c-content">
             <header class="heading heading--main">
@@ -156,7 +134,39 @@
         src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"
         charset="utf-8"
     ></script>
- 
+    
+    <script>
+
+        //Slide right mobile navigation
+        $(document).ready(function(){
+            $(".c-content__button-nav").click(function(){
+                console.log('we have a click now.');
+                let distance = $(".nav").css("left");
+                if(distance === "-1000px"){
+                    $(".nav").animate({left: "0px"}, 200);
+                } else {
+                    $(".nav").animate({left: "-1000px"}, 200);
+                };
+            });
+
+            //Counting days left to upcoming trip 
+            var today = new Date();
+            var upcomingTrip = new Date(today.getFullYear(),05,02);
+
+            if(today.getMonth()==05 && today.getDate()>02){
+                upcomingTrip.setFullYear(upcomingTrip.getFullYear()+1);
+            }
+            var oneDay = 1000*60*60*24;
+            var score = Math.ceil((upcomingTrip.getTime()-today.getTime())/(oneDay));
+
+            if(score < 0){
+                $(".c-content__days-left__num").text("0");
+            }   else {
+                $(".c-content__days-left__num").text(score);
+            }
+        });
+    </script>
+
     <script>
         var date = new Date();
         var currentYear = date.getFullYear();
