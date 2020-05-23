@@ -109,7 +109,7 @@
 
 .c-content__item .c-content__map {
   width: 65%;
-  height: 350px;
+  height: 300px;
   background-color: #5453b8;
   border-radius: 20px;
 }
@@ -139,7 +139,7 @@
 }
 
 .c-content__item .c-content__upcoming-trips__places .c-content__upcoming-trips__img {
-  width: 75px;
+  width: 65px;
   height: auto;
 }
 
@@ -197,10 +197,33 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  position: relative;
+}
+
+.c-content__item .c-content__days-left:before {
+  content: '';
+  width: 5px;
+  height: 18px;
+  background-color: #333;
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+.c-content__item .c-content__days-left:after {
+  content: '';
+  width: 5px;
+  height: 18px;
+  background-color: #333;
+  position: absolute;
+  top: -5px;
+  left: 50px;
+  border-radius: 10px;
 }
 
 .c-content__item .c-content__days-left .c-content__days-left__num {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 800;
   padding: 10px 15px;
   border: 5px solid #333;
@@ -277,12 +300,12 @@
   color: #333;
 }
 
-.heading--main {
-  font-size: 24px;
+.heading--main .heading__text {
+  font-size: 35px;
 }
 
-.heading--sub {
-  font-size: 15px;
+.heading--sub .heading__text {
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1413,7 +1436,7 @@
 }
 
 .l-grid--login .log-in__container__info {
-  color: #e65858;
+  color: red;
 }
 
 * {
@@ -2994,13 +3017,24 @@ body {
   .c-content__item .c-content__days-left {
     margin: 15px 0;
   }
+  .c-content__item .c-content__days-left:before {
+    content: '';
+    left: 20px;
+  }
+  .c-content__item .c-content__days-left:after {
+    content: '';
+    left: 45px;
+  }
   .c-content__item .c-content__days-left .c-content__days-left__num {
     padding: 5px 10px;
     font-size: 32px;
   }
+  .l-grid--login .log-in__container__btn-submit {
+    width: 45%;
+  }
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .nav {
     position: fixed;
     left: -1000px;
@@ -3041,6 +3075,28 @@ body {
   }
   .c-content__item--vertical {
     margin-bottom: 100px;
+  }
+  .l-grid--login .log-in__logo {
+    width: auto;
+    height: 70px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -5%);
+            transform: translate(-50%, -5%);
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .l-grid--login .log-in {
+    width: 100%;
+  }
+  .l-grid--login .log-in .log-in__container__btn-submit {
+    width: 35%;
+    padding: 15px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
