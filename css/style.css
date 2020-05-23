@@ -1088,7 +1088,7 @@
   width: 75px;
   height: auto;
   border-radius: 50%;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 .a-content .a-content__settings-main__heading {
@@ -2001,10 +2001,13 @@ body {
 
 /***MY BOOKING***/
 .g-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  overflow: auto;
   padding: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .g-content__statistics {
@@ -2047,10 +2050,13 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .g-content__item .g-content__map {
-  width: 100%;
+  width: 90%;
   height: 350px;
   background-color: #5453b8;
   border-radius: 20px;
@@ -2063,10 +2069,10 @@ body {
 }
 
 .g-content__item .g-content__tickets .g-content__ticket {
-  width: 80%;
+  width: 100%;
   position: relative;
   height: 100%;
-  background-color: lightgray;
+  background-color: #ececec;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2087,20 +2093,18 @@ body {
   border-radius: 50%;
   top: -13px;
   left: -15px;
-  -webkit-box-shadow: 0px 47px 0 0 white, 0px 92px 0 0 white, 905px 0px 0 0 white, 905px 47px 0 0 white, 905px 92px 0 0 white;
-          box-shadow: 0px 47px 0 0 white, 0px 92px 0 0 white, 905px 0px 0 0 white, 905px 47px 0 0 white, 905px 92px 0 0 white;
+  -webkit-box-shadow: 0px 47px 0 0 white;
+          box-shadow: 0px 47px 0 0 white;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__pen {
-  color: grey;
-  margin: auto;
   font-size: 20px;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__info {
   color: #0998E6;
-  margin: auto;
   font-size: 20px;
+  margin-right: 50px;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__icon {
@@ -2108,6 +2112,7 @@ body {
   color: #0998E6;
   margin-left: 50px;
   padding: 30px;
+  cursor: default;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__icon--grey {
@@ -2115,18 +2120,21 @@ body {
   color: grey;
   margin-left: 50px;
   padding: 30px;
+  cursor: default;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__location {
   font-size: 25px;
   color: grey;
   padding: 10px;
+  cursor: default;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__location--grey {
   font-size: 30px;
   color: grey;
   padding: 10px;
+  cursor: default;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__btn {
@@ -2743,7 +2751,7 @@ body {
   width: 75px;
   height: auto;
   border-radius: 50%;
-  margin-left: 50px;
+  margin-left: 15px;
 }
 
 .a-content .a-content__settings-main__heading {
@@ -2779,6 +2787,9 @@ body {
   height: 30px;
   margin-right: 40%;
   float: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
 }
 
 .a-content .a-content__settings-main__places .a-content__settings-main__place {
@@ -2811,14 +2822,9 @@ body {
 }
 
 .z-content .heading__icon {
-  color: grey;
-  font-size: 25px;
+  color: #999999;
+  font-size: 20px;
   margin-left: 20px;
-}
-
-.z-content__icon {
-  font-size: 22px;
-  color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
