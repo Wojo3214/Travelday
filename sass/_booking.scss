@@ -4,6 +4,25 @@
     flex: 1;
     padding: 25px;
 
+    .heading_booking {
+        display: flex;
+        align-items: center;
+
+        &__paragraph{
+            font-size: 14px;
+            text-transform: initial;
+            color: #cccccc;
+            margin-left: 25px;
+        }
+    }
+
+    .heading__icon {
+        color: grey;
+        font-size: 22px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
     &__statistics {
         width: 20%;
         padding: 20px;
