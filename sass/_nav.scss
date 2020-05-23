@@ -3,15 +3,26 @@
 .nav{
     max-width: 230px;
     padding: 25px 0;
+    height: 100vh;
     background: rgb(3,169,244);
     background: linear-gradient(0deg, rgba(3,169,244,1) 0%, rgba(3,155,229,1) 100%);
-    position: relative;
+    flex-grow: 1;
     
     &__list {
         list-style-type: none;
 
         &--bottom {
-            margin-top: 60px;
+            margin-top: 20px;
+
+            .nav__item:last-child{
+                margin-top: 30px;
+                color: #fff;
+
+                &:hover{
+                    background: none;
+                    color: #fff;
+                }
+            }
 
             .nav__item:hover{
                 background-color: rgb(255, 255, 255);
@@ -23,11 +34,12 @@
         }
        
         .nav__item {
-            padding: 15px 25px;
+            padding: 10px 25px;
             
             .nav__link {
                 text-decoration: none;
                 color: #fff;
+                font-size: 13px;
                 display: flex;
                 align-items: center;
 
@@ -60,10 +72,6 @@
     }
 
     .nav__rights {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
         font-size: 10px;
         color: #fff;
         font-family: "Roboto";

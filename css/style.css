@@ -2,10 +2,13 @@
 .nav {
   max-width: 230px;
   padding: 25px 0;
+  height: 100vh;
   background: #03a9f4;
   background: -webkit-gradient(linear, left bottom, left top, from(#03a9f4), to(#039be5));
   background: linear-gradient(0deg, #03a9f4 0%, #039be5 100%);
-  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .nav__list {
@@ -13,7 +16,17 @@
 }
 
 .nav__list--bottom {
-  margin-top: 60px;
+  margin-top: 20px;
+}
+
+.nav__list--bottom .nav__item:last-child {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.nav__list--bottom .nav__item:last-child:hover {
+  background: none;
+  color: #fff;
 }
 
 .nav__list--bottom .nav__item:hover {
@@ -25,12 +38,13 @@
 }
 
 .nav__list .nav__item {
-  padding: 15px 25px;
+  padding: 10px 25px;
 }
 
 .nav__list .nav__item .nav__link {
   text-decoration: none;
   color: #fff;
+  font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,11 +79,6 @@
 }
 
 .nav .nav__rights {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   font-size: 10px;
   color: #fff;
   font-family: "Roboto";
@@ -83,9 +92,10 @@
 
 /***DASHBOARD***/
 .c-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  overflow: auto;
   padding: 25px;
   max-width: 1400px;
   margin: 0 auto;
@@ -1266,6 +1276,97 @@
   border-radius: 20px;
 }
 
+/***LOG-IN PAGE***/
+.l-grid--login {
+  background-image: url("../img/bg.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.l-grid--login .log-in__logo {
+  width: auto;
+  height: 70px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.l-grid--login .log-in {
+  width: 30%;
+  background: rgba(28, 123, 201, 0.8);
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.l-grid--login .log-in__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.l-grid--login .log-in__container__label {
+  margin: 10px 0;
+  width: 100%;
+  color: #fff;
+}
+
+.l-grid--login .log-in__container input {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.l-grid--login .log-in__container__btn-submit {
+  width: 30%;
+  padding: 10px 15px;
+  margin-top: 20px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.l-grid--login .log-in__container__btn-submit:hover {
+  background-color: #fff;
+  color: rgba(28, 123, 201, 0.8);
+  cursor: pointer;
+}
+
+.l-grid--login .log-in__container__info {
+  color: #e65858;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1281,8 +1382,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 900px) {
@@ -1301,6 +1403,7 @@ body {
   }
   .c-content__item .c-content__map {
     width: 100%;
+    height: 200px;
   }
   .c-content__item .c-content__upcoming-trips {
     width: 100%;
@@ -1332,6 +1435,9 @@ body {
   }
   .c-content {
     max-width: 700px;
+  }
+  .c-content .heading--sub .heading__text {
+    font-size: 24px;
   }
   .c-content .heading__text {
     font-size: 34px;

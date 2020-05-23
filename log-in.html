@@ -7,16 +7,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Travelday - My Profile &amp; Support</title>
+
     <script src="https://kit.fontawesome.com/82ee0524bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="l-grid l-grid--login">
         <div class="log-in">
+            <form class="log-in__container">
+                <label class="log-in__container__label">E-mail
+                    <input type="email" class="log-in__container__input-email" id="email">
+                </label>
+                <label class="log-in__container__label">
+                    Password
+                    <input type="password" class="log-in__container__input-pass" id="password">
+                </label>
+                <p class="log-in__container__info"></p>
+
+                <button type="submit" class="log-in__container__btn-submit" id="submit">Sign in</button>
+            </form>
             
         </div>
-        <img src="../img/logo.png" alt="logo">
+        <img src="../img/logo.png" class="log-in__logo" alt="logo">
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
+
+        
+           
+        //Checking user data
+        $("form").submit(function(e){
+            e.preventDefault();
+
+            var email = $("#email").val();
+			var password = $("#password").val();
+            var message = $(".log-in__container__info");
+
+            if(email == "abc@gmail.com" && password == "user"){
+                location.href = "index.html";
+            } else {
+                message.text("Wrong email or password!");
+            }
+        });
+
+/*
+        function checkData(){
+
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            var userData = {
+                email: "abc@gmail.com",
+                password: "user"
+            };
+
+            if(userData.email === email && userData.password === password){
+                window.location.href = "index.html";
+            } else {
+                console.log("false");
+            }
+        }
+
+        document.getElementById("submit").addEventListener('submit', checkData());*/
+        
+        
     </script>
 </body>
 </html>
