@@ -1601,6 +1601,11 @@ body {
   margin-left: -80px;
 }
 
+.u-content__right__achievements {
+  text-transform: none;
+  font-size: 30px;
+}
+
 .u-content__journals {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1632,6 +1637,7 @@ body {
           justify-content: space-between;
   padding: 10px;
   text-align: center;
+  margin-left: -30px;
 }
 
 .u-content__journals__miniatures__content {
@@ -1678,7 +1684,7 @@ body {
 }
 
 .u-content__bottom__saved__journals {
-  margin-left: 25px;
+  margin-left: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2489,20 +2495,22 @@ body {
   border-radius: 20px;
   margin-top: 20px;
   color: #333;
-  margin: 10px;
-  margin-left: 0;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.s-content__item .s-content__box__1 {
+  margin-left: 0px;
 }
 
 .s-content__item .s-content__box__question {
   margin-left: 30px;
-  margin-top: 25px;
 }
 
 .s-content__item .s-content__box__btn {
   border: none;
   color: #0998E6;
   font-size: 20px;
-  margin-top: 14%;
 }
 
 .s-content__item .s-content__container {
