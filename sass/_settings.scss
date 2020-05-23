@@ -17,12 +17,6 @@
                 margin-bottom: 15px;
                 display: flex;
                 align-items: center;
-
-                &__container {
-                    font-size: 15px;
-                    color: #707070;
-                    padding: 10px;
-                }
             }     
         }
     }
@@ -53,6 +47,10 @@
 
         &__information{
             font-size: 12px;
+
+            &--paragraph{
+                font-size: 10px;
+            }
         }
 
         &__places{
@@ -60,6 +58,10 @@
             flex-direction: column;
             padding: 10px;
             color: #333;
+
+            &__icon{
+                font-size: 10px;
+            }
 
             #text {
                 border: none;
