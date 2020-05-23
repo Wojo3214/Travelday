@@ -17,19 +17,9 @@
 
     .heading__icon {
         color: grey;
-        font-size: 25px;
+        font-size: 22px;
         margin-left: 20px;
         cursor: pointer;
-    }
-
-    &__icon{
-        font-size: 22px;
-        color:grey;
-        display: flex;
-        flex-wrap: wrap;
-        float: right;
-        align-items: center;
-        flex-direction: row;
     }
 
     &__item{
