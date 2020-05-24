@@ -61,7 +61,7 @@
                     <div class="c-content__achievements-container__info">
                         <div class="c-content__achievements-container__info--upper">
                         <h5 class="c-content__achievements-container__place">Achievements</h5>
-                        <i class="fas fa-times close"></i>
+                        <i class="fas fa-times close" id="close"></i>
                         <!-- <i class="fas fa-times c-content__achievements-container__info--icon"></i> --></div>
                         <p class="c-content__achievements-container__date">Here you can see overview of your collected points.</p><br>
                         <p class="c-content__achievements-container__date">Helping other travellers by reviews, photos, rating and answers, you collect 
@@ -177,6 +177,13 @@
                 $("#show").click(function(){
                   $(".c-content__achievements-container").fadeToggle("slow");
                   $(".c-content__achievements-container__bgimg").fadeToggle("slow");
+                  
+                });
+
+                $("#close").click(function(){
+                  $(".c-content__achievements-container").hide();
+                  $(".c-content__achievements-container__bgimg").hide();
+                  
                 });
               });
             </script>
