@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Your place where you can manage and share your travels. Everything with Travelday!">
 
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -185,42 +185,11 @@
         charset="utf-8"
     ></script>
     
-    <script>
+    <script type="text/javascript" src="JS/main.js"></script>
 
-        //Slide right mobile navigation
-        $(document).ready(function(){
-            $(".c-content__button-nav").click(function(){
-                console.log('we have a click now.');
-                let distance = $(".nav").css("left");
-                if(distance === "-1000px"){
-                    $(".nav").animate({left: "0px"}, 200);
-                } else {
-                    $(".nav").animate({left: "-1000px"}, 200);
-                };
-            });
-
-            //Counting days left to upcoming trip 
-            var today = new Date();
-            var upcomingTrip = new Date(today.getFullYear(),05,20);
-
-            if(today.getMonth()==05 && today.getDate()>02){
-                upcomingTrip.setFullYear(upcomingTrip.getFullYear()+1);
-            }
-            var oneDay = 1000*60*60*24;
-            var score = Math.ceil((upcomingTrip.getTime()-today.getTime())/(oneDay));
-
-            if(score < 0){
-                $(".c-content__days-left__num").text("0");
-            }   else {
-                $(".c-content__days-left__num").text(score);
-            }
-        });
-    </script>
+        
 
     <script>
-        var date = new Date();
-        var currentYear = date.getFullYear();
-        $(".nav__rights__date").append(currentYear);
 
         /********* MAPBOX**********/
 
