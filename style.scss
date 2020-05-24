@@ -169,6 +169,261 @@ body{
         border-radius: 20px;
     }
 }
+<<<<<<< Updated upstream
+=======
+/***DASHBOARD***/
+.c-content {
+    flex: 1;
+    padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    &__item{
+        display: flex;
+        
+
+        //MAP
+        .c-content__map{
+            width: 65%;
+            height: 350px;
+            background-color: rgb(84, 83, 184);
+            border-radius: 20px;
+        }
+
+        //UPCOMING TRIPS
+        .c-content__upcoming-trips{
+            width: 35%;
+            margin-left: 10px;
+            padding: 20px;
+            background-color: #EEEEEE;
+            border-radius: 20px;
+
+            .c-content__upcoming-trips__heading{
+                margin-left: 20px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            &__places{
+                display: flex;
+                align-items: center;
+                margin: 10px 15px;
+
+                .c-content__upcoming-trips__img{
+                    width: 75px;
+                    height: auto;
+                } 
+                
+                .c-content__upcoming-trips__info{
+                    margin-left: 20px;
+
+                    .c-content__upcoming-trips__place{
+                        font-size: 20px;
+                    }
+    
+                    .c-content__upcoming-trips__date{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+        //TOP DESTINATIONS
+        .c-content__destination{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            margin-right: 30px;
+            .c-content__img{
+                display: block;
+                width: 80px;
+                height: auto;
+                float: left;
+            }
+
+            &__info{
+                margin-left: 10px;
+
+                .c-content__destination-country{
+                    font-size: 15px;
+                }
+
+                .c-content__destination-city{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .c-content__days-left{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+
+            .c-content__days-left__num{
+                font-size: 42px;
+                font-weight: 800;
+                padding: 10px 15px;
+                border: 5px solid #333;
+                border-radius: 10px;
+            }
+
+            .c-content__days-left__info{
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__item--vertical{
+        flex-direction: column;
+        
+        .c-content__score{
+            font-size: 16px;
+            margin: 10px 0 0 0;
+            color: #A8A8A8;
+        }
+
+        .c-content__bar{
+            width: 100%;
+            height: 15px;
+            background-color: rgb(211, 211, 211);
+            border-radius: 20px;
+            overflow: hidden;
+            clear: both;
+
+            .c-content__progress{
+                width: 0%;
+                height: 15px;
+                border-radius: 20px;
+                float: left;
+                background-color: #0998E6;
+                animation: progress 2s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes progress{
+                from{
+                    width: 0%;
+                }
+
+                to{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .c-content__button-nav{
+        i{
+            color: #fff;
+        }
+    }
+
+    .c-content__achievements-container{
+        width: 40%;
+        height: 400px;
+        margin-left: 10px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        position: absolute;
+        top: 20%;
+        right: 22%;
+        z-index: 10000;
+
+        &__bgimg{
+            background-image: url("photographer.jpg");
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+
+        &__icons{
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            color: #0998E6;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+
+
+            &--icon{
+                float: left;
+                display: block;
+                margin-top: 10px;
+                margin-right: 50px;
+            }
+
+            &--text{
+                color: #707070;
+                font-size: 18px;
+                float: right;
+                padding: 10px 20px 0 20px;
+                margin-left: 50px;
+                margin-right: 50px;        
+            }
+        }
+
+        &__places{
+            display: flex;
+            align-items: center;
+            margin: 10px 15px;
+            
+            .c-content__achievements-container__info{
+                margin-left: 20px;
+
+                &--icon{
+                    font-size: 20px;
+                    float: right;
+                }
+
+                .c-content__achievements-container__place{
+                    font-size: 20px;
+                }
+
+                .c-content__achievements-container__date{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+.heading{
+    font-family: 'Roboto';
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #333;
+
+    &--main{
+        font-size: 24px;
+    }
+
+    &--sub{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        .fa-info-circle{
+            margin-top: 12px;
+            color: gray;
+            font-size: 14px;
+            cursor: pointer;
+            
+        }
+    }
+}
+>>>>>>> Stashed changes
 
 /***FEED***/
 .f-content {
@@ -988,7 +1243,11 @@ body{
         float: right;
         align-items: center;
         flex-direction: row;
+<<<<<<< Updated upstream
     }    
+=======
+    }
+>>>>>>> Stashed changes
 
     &__item{
         display: flex;

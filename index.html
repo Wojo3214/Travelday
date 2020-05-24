@@ -55,6 +55,48 @@
             
         </nav>
         <main class="c-content">
+            <img src="/img/background_image.png" class="c-content__achievements-container__bgimg" alt="Background image">
+            
+            <div class="c-content__achievements-container">
+                <div class="c-content__achievements-container__places">
+                    <div class="c-content__achievements-container__info">
+                        <h5 class="c-content__achievements-container__place">Achievements</h5>
+                        <i class="fas fa-times"></i>
+                        <!-- <i class="fas fa-times c-content__achievements-container__info--icon"></i> -->
+                        <p class="c-content__achievements-container__date">Here you can see overview of your collected points.</p><br>
+                        <p class="c-content__achievements-container__date">Helping other travellers by reviews, photos, rating and answers, you collect 
+                            points and get closer to the next level.</p>
+
+                            <div class="c-content__item c-content__item--vertical">
+                                <p class="c-content__score">100pkt/200pkt</p>
+                                <span class="c-content__bar"><span class="c-content__progress"></span></span>
+                            </div>
+
+                            <div class="c-content__achievements-container__icons">
+                                <div class="c-content__achievements-container__icons__container">
+                                <i class="fas fa-file-signature c-content__achievements-container__icons--icon"></i>
+                                <p class="c-content__achievements-container__icons--text">5</p>
+                                <p class="c-content__achievements-container__icons--text">Reviews</p>
+                                </div>
+                                <div class="c-content__achievements-container__icons__container">
+                                <i class="fas fa-photo-video c-content__achievements-container__icons--icon"></i>
+                                <p class="c-content__achievements-container__icons--text">10</p>
+                                <p class="c-content__achievements-container__icons--text">Photos</p>
+                                </div>
+                                <div class="c-content__achievements-container__icons__container">
+                                <i class="fas fa-star-half-alt c-content__achievements-container__icons--icon"></i>
+                                <p class="c-content__achievements-container__icons--text">25</p>
+                                <p class="c-content__achievements-container__icons--text">Rating</p>
+                                </div>
+                                <div class="c-content__achievements-container__icons__container">
+                                <i class="fas fa-comments c-content__achievements-container__icons--icon"></i>
+                                <p class="c-content__achievements-container__icons--text">7</p>
+                                <p class="c-content__achievements-container__icons--text">Answers</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
             <header class="heading heading--main">
                 <h1 class="heading__text">Dashboard</h1>
             </header>
@@ -119,16 +161,25 @@
                 </div>
             </div>
             <header class="heading heading--sub">
-                <h2 class="heading__text">Achievements</h2>
-                <i class="fas fa-info-circle"></i>
+                <h2 class="heading__text">Achievements</h2><i class="fas fa-info-circle" id="show"></i>
                 <span class="section-info"></span>
             </header>
             <div class="c-content__item c-content__item--vertical">
                 <p class="c-content__score">100pkt/200pkt</p>
                 <span class="c-content__bar"><span class="c-content__progress"></span></span>
             </div>
-            <div class="c-content__button-nav"><i class="fas fa-bars"></i></div>
+            <div class="c-content__button-nav"><i class="fas fa-bars"></i></div>          
         </main>
+        <script>
+            $(document).ready(function(){
+                $(".c-content__achievements-container").hide()
+                $(".c-content__achievements-container__bgimg").hide()
+                $("#show").click(function(){
+                  $(".c-content__achievements-container").fadeToggle("slow");
+                  $(".c-content__achievements-container__bgimg").fadeToggle("slow");
+                });
+              });
+            </script>
     </div>
     <script
         src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"

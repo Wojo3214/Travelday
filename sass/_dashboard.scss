@@ -1,8 +1,6 @@
 /***DASHBOARD***/
-
 .c-content {
-    flex-grow: 5;
-    overflow: auto;
+    flex: 1;
     padding: 25px;
     max-width: 1400px;
     margin: 0 auto;
@@ -14,7 +12,7 @@
         //MAP
         .c-content__map{
             width: 65%;
-            height: 300px;
+            height: 350px;
             background-color: rgb(84, 83, 184);
             border-radius: 20px;
         }
@@ -39,7 +37,7 @@
                 margin: 10px 15px;
 
                 .c-content__upcoming-trips__img{
-                    width: 65px;
+                    width: 75px;
                     height: auto;
                 } 
                 
@@ -87,33 +85,9 @@
             display: flex;
             align-items: center;
             flex-grow: 1;
-            position: relative;
-
-            //Before and After create two, horizontal lines in "days left" section
-            &:before{
-                content: '';
-                width: 5px;
-                height: 18px;
-                background-color: #333;
-                position: absolute;
-                top: -5px;
-                left: 20px;
-                border-radius: 10px;
-            }
-
-            &:after{
-                content: '';
-                width: 5px;
-                height: 18px;
-                background-color: #333;
-                position: absolute;
-                top: -5px;
-                left: 50px;
-                border-radius: 10px;
-            }
 
             .c-content__days-left__num{
-                font-size: 32px;
+                font-size: 42px;
                 font-weight: 800;
                 padding: 10px 15px;
                 border: 5px solid #333;
@@ -172,6 +146,82 @@
             color: #fff;
         }
     }
+
+    .c-content__achievements-container{
+        width: 40%;
+        height: 400px;
+        margin-left: 10px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        position: absolute;
+        top: 20%;
+        right: 22%;
+        z-index: 10000;
+
+        &__bgimg{
+            background-image: url("photographer.jpg");
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+
+        &__icons{
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            color: #0998E6;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+
+
+            &--icon{
+                float: left;
+                display: block;
+                margin-top: 10px;
+                margin-right: 50px;
+            }
+
+            &--text{
+                color: #707070;
+                font-size: 18px;
+                float: right;
+                padding: 10px 20px 0 20px;
+                margin-left: 50px;
+                margin-right: 50px;        
+            }
+        }
+
+        &__places{
+            display: flex;
+            align-items: center;
+            margin: 10px 15px;
+            
+            .c-content__achievements-container__info{
+                margin-left: 20px;
+
+                &--icon{
+                    font-size: 20px;
+                    float: right;
+                }
+
+                .c-content__achievements-container__place{
+                    font-size: 20px;
+                }
+
+                .c-content__achievements-container__date{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
 }
 
 .heading{
@@ -182,13 +232,11 @@
     color: #333;
 
     &--main{
-        
-        .heading__text{
-            font-size: 35px;
-        }
+        font-size: 24px;
     }
 
     &--sub{
+<<<<<<< Updated upstream
 
         .heading__text{
             font-size: 20px;
@@ -196,10 +244,19 @@
             align-items: center;
         }
         
+=======
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+>>>>>>> Stashed changes
 
         .fa-info-circle{
-            margin-left: 10px;
+            margin-top: 12px;
             color: gray;
+            font-size: 14px;
+            cursor: pointer;
+            
         }
     }
 }
