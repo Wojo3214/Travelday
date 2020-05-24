@@ -71,6 +71,20 @@ $(document).ready(function(){
     });
     
 
+    //Changing Settings windows
+    //Edit profile
+    $(document).ready(function(){
+        $("#show").click(function(){
+            $("a-content__settings-main").fadeToggle("fast");
+        });
+    });
+
+    //Change password
+    $(document).ready(function(){
+        $("#show").click(function(){
+            $("a-content__settings-main-password").fadeToggle("fast");
+        });
+    });
 
 });
 

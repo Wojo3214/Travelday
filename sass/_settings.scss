@@ -1,7 +1,10 @@
 /***SETTINGS***/
 .a-content {
-    flex: 1;
+    flex-grow: 5;
+    overflow: auto;
     padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
     
     &__item{
         display: flex;
@@ -32,17 +35,17 @@
             width: 75px;
             height: auto;
             border-radius: 50%;
-            margin-left: 70px;
+            margin-left: 10px;
         } 
 
         &__heading{
-            margin-left: 15px;
+            margin-left: 10px;
             font-size: 24px;
         }
 
         &__date{
             font-size:13px;
-            margin-left: 15px;
+            margin-left: 10px;
         }
 
         &__information{
