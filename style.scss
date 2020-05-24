@@ -155,6 +155,10 @@ body{
         display: flex;
         margin-left: -80px;
 
+        &__achievements{
+            text-transform: none;
+            font-size: 30px;
+        }
     }
     &__journals{
         display: flex;
@@ -177,6 +181,7 @@ body{
             justify-content: space-between;
             padding: 10px;
             text-align: center;
+            margin-left: -30px;
 
             &__content {
                 padding: 5px;
@@ -219,7 +224,7 @@ body{
         padding: 10px;
 
         &__journals{
-            margin-left: 25px;
+            margin-left: 0px;
             align-items: center;
 
             &__miniature{
@@ -919,19 +924,22 @@ body{
             border-radius: 20px;
             margin-top: 20px;
             color: #333;
-            margin: 10px;
-            margin-left: 0;
+            margin-left: 80px;
+            margin-top: 10px;
+
+            &__1{
+                margin-left: 0px;
+            }
             
             &__question{
                 margin-left: 30px;
-                margin-top: 25px;
+             
             }
 
             &__btn{
                 border: none;
                 color: #0998E6;
                 font-size: 20px;
-                margin-top: 14%;
             }
                 
         }
@@ -976,7 +984,8 @@ body{
 
         &__btn7{
             margin-left: 209px;
-    }
+        }
+
 }
 
 .dropup__btn__content {
@@ -1356,6 +1365,16 @@ body{
             .c-content__days-left{
                 margin: 15px 0;
 
+                &:before{
+                    content: '';
+                    left: 20px;
+                }
+                
+                &:after{
+                    content: '';
+                    left: 45px;
+                }
+
                 .c-content__days-left__num{
                     padding: 5px 10px;
                     font-size: 32px;
@@ -1363,9 +1382,15 @@ body{
             }
         }
     }
+
+    .l-grid--login{
+        .log-in__container__btn-submit{
+            width: 45%;
+        }
+    }
 }
 
-@media (max-width: 750px){
+@media only screen and (max-width: 750px){
     
     .nav{
         position: fixed;
@@ -1411,6 +1436,28 @@ body{
 
         &__item--vertical{
             margin-bottom: 100px;
+        }
+    }
+
+    .l-grid--login{
+        .log-in__logo{
+            width: auto;
+            height: 70px;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -5%);
+            order: 0;
+            align-self: center;
+        }
+    
+        .log-in{
+            width: 100%;
+
+            .log-in__container__btn-submit{
+                width: 35%;
+                padding: 15px 20px;
+            }
         }
     }
 }
