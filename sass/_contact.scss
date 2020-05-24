@@ -1,0 +1,220 @@
+<<<<<<< Updated upstream
+=======
+/***CONTACT and SUPPORT***/
+.s-content{
+    flex: 1;
+    padding: 25px;
+
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+
+        .s_subheading_text{
+            font-size: 20px;
+            color: #333;
+            font-family: Roboto;
+        }
+        
+    
+        .s-content__box{
+            display: flex;
+            width: 480px;
+            height: 80px;
+            background-color: #EEEEEE;
+            border-radius: 20px;
+            margin-top: 20px;
+            color: #333;
+            margin-left: 80px;
+            margin-top: 10px;
+
+            &__1{
+                margin-left: 0px;
+            }
+            
+            &__question{
+                margin-left: 30px;
+             
+            }
+
+            &__btn{
+                border: none;
+                color: #0998E6;
+                font-size: 20px;
+            }
+                
+        }
+
+        .s-content__container{
+            display: flex;
+        }
+    }
+} 
+
+.dropup {
+    display: flex;
+    flex-direction: column;
+
+        &__btn0{
+            margin-left: 170px;
+        }
+
+        &__btn1{
+            margin-left: 190px;
+        }
+
+        &__btn2{
+            margin-left: 145px;
+        }
+
+        &__btn3{
+            margin-left: 232px;
+        }
+
+        &__btn4{
+            margin-left: 216px;
+        }
+
+        &__btn5{
+            margin-left: 145px;
+        }
+
+        &__btn6{
+            margin-left: 166px;
+        }
+
+        &__btn7{
+            margin-left: 209px;
+        }
+
+}
+
+.dropup__btn__content {
+    display: none;
+    width: 480px;
+    bottom: 50px;
+    z-index: 1;
+    margin-left: -248px;
+    margin-top: -10px;
+
+    &__answer1{
+        margin-left: -224px;
+    }
+    &__answer2{
+        margin-left: -273px;
+    }
+    &__answer3{
+        margin-left: -180.5px;
+    }
+    &__answer4{
+        margin-left: -201px;
+    }
+    &__answer5{
+        margin-left: -268px;
+    }
+    &__answer6{
+        margin-left: -250px;
+    }
+    &__answer7{
+        margin-left: -203.5px;
+    }
+    &__paragraph{
+        font-size: 13px;
+        display: block;
+        width: 430px;
+        margin-top: 20px;
+        background-color: #EEEEEE;
+        height: 50px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 25px;
+    }
+}
+
+.dropup:hover .dropup__btn__content {
+    display: block;
+    width: 30px;
+}
+
+.dropup:hover .fa-chevron-down {
+    color: #707070;
+}
+
+.s-contact{
+    display: flex;
+    margin-top: 2%;
+    padding: 25px;
+    flex-wrap: nowrap;
+    color: #333;
+    font-family: Roboto;
+
+    &__e-mail{
+        margin-left:14px;
+       
+        &__text{
+            font-family: Roboto;
+            font-size: 18px;
+            color: #333;
+        }
+
+        &__icon{
+            list-style-type: none;
+            
+        }
+
+        &__us{
+            font-size: 16px;
+            font-family: Roboto;
+            padding-left: 10px;
+            margin-top: 3em;
+        }
+    }
+
+    .fas{
+        color: #0998E6;
+        font-size: 40px;
+    }
+
+    .fab{
+        color: #0998E6;
+        font-size: 40px;
+    }
+
+    .s-contact__social-media__icon{
+    margin-top: 23px;
+    margin-left: 600px;
+    }
+
+    .s-contact__social-media__icons{
+        display: inline-flex;
+        padding-left: 15px;
+    }
+}
+
+.s-subheading_text_container{
+    margin-top: 50px;
+}
+
+.heading{
+    font-family: 'Roboto';
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #333;
+
+    &--main{
+        font-size: 24px;
+    }
+
+    &--sub{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        .fa-info-circle{
+            margin-left: 10px;
+            color: gray;
+        }
+    }
+}
+>>>>>>> Stashed changes

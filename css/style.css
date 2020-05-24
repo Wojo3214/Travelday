@@ -895,6 +895,252 @@
   color: #707070;
 }
 
+<<<<<<< Updated upstream
+=======
+/***CONTACT and SUPPORT***/
+.s-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+
+.s-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.s-content__item .s_subheading_text {
+  font-size: 20px;
+  color: #333;
+  font-family: Roboto;
+}
+
+.s-content__item .s-content__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 480px;
+  height: 80px;
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  margin-top: 20px;
+  color: #333;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.s-content__item .s-content__box__1 {
+  margin-left: 0px;
+}
+
+.s-content__item .s-content__box__question {
+  margin-left: 30px;
+}
+
+.s-content__item .s-content__box__btn {
+  border: none;
+  color: #0998E6;
+  font-size: 20px;
+}
+
+.s-content__item .s-content__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dropup__btn0 {
+  margin-left: 170px;
+}
+
+.dropup__btn1 {
+  margin-left: 190px;
+}
+
+.dropup__btn2 {
+  margin-left: 145px;
+}
+
+.dropup__btn3 {
+  margin-left: 232px;
+}
+
+.dropup__btn4 {
+  margin-left: 216px;
+}
+
+.dropup__btn5 {
+  margin-left: 145px;
+}
+
+.dropup__btn6 {
+  margin-left: 166px;
+}
+
+.dropup__btn7 {
+  margin-left: 209px;
+}
+
+.dropup__btn__content {
+  display: none;
+  width: 480px;
+  bottom: 50px;
+  z-index: 1;
+  margin-left: -248px;
+  margin-top: -10px;
+}
+
+.dropup__btn__content__answer1 {
+  margin-left: -224px;
+}
+
+.dropup__btn__content__answer2 {
+  margin-left: -273px;
+}
+
+.dropup__btn__content__answer3 {
+  margin-left: -180.5px;
+}
+
+.dropup__btn__content__answer4 {
+  margin-left: -201px;
+}
+
+.dropup__btn__content__answer5 {
+  margin-left: -268px;
+}
+
+.dropup__btn__content__answer6 {
+  margin-left: -250px;
+}
+
+.dropup__btn__content__answer7 {
+  margin-left: -203.5px;
+}
+
+.dropup__btn__content__paragraph {
+  font-size: 13px;
+  display: block;
+  width: 430px;
+  margin-top: 20px;
+  background-color: #EEEEEE;
+  height: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 25px;
+}
+
+.dropup:hover .dropup__btn__content {
+  display: block;
+  width: 30px;
+}
+
+.dropup:hover .fa-chevron-down {
+  color: #707070;
+}
+
+.s-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2%;
+  padding: 25px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: #333;
+  font-family: Roboto;
+}
+
+.s-contact__e-mail {
+  margin-left: 14px;
+}
+
+.s-contact__e-mail__text {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #333;
+}
+
+.s-contact__e-mail__icon {
+  list-style-type: none;
+}
+
+.s-contact__e-mail__us {
+  font-size: 16px;
+  font-family: Roboto;
+  padding-left: 10px;
+  margin-top: 3em;
+}
+
+.s-contact .fas {
+  color: #0998E6;
+  font-size: 40px;
+}
+
+.s-contact .fab {
+  color: #0998E6;
+  font-size: 40px;
+}
+
+.s-contact .s-contact__social-media__icon {
+  margin-top: 23px;
+  margin-left: 600px;
+}
+
+.s-contact .s-contact__social-media__icons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 15px;
+}
+
+.s-subheading_text_container {
+  margin-top: 50px;
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #333;
+}
+
+.heading--main {
+  font-size: 24px;
+}
+
+.heading--sub {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.heading--sub .fa-info-circle {
+  margin-left: 10px;
+  color: gray;
+}
+
+>>>>>>> Stashed changes
 /***SETTINGS***/
 .a-content {
   -webkit-box-flex: 1;
@@ -1080,6 +1326,11 @@
   margin-left: -80px;
 }
 
+.u-content__right__achievements {
+  text-transform: none;
+  font-size: 30px;
+}
+
 .u-content__journals {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,6 +1362,7 @@
           justify-content: space-between;
   padding: 10px;
   text-align: center;
+  margin-left: -30px;
 }
 
 .u-content__journals__miniatures__content {
@@ -1157,7 +1409,7 @@
 }
 
 .u-content__bottom__saved__journals {
-  margin-left: 25px;
+  margin-left: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

@@ -56,6 +56,10 @@
         display: flex;
         margin-left: -80px;
 
+      &__achievements{
+            text-transform: none;
+            font-size: 30px;
+        }
     }
     &__journals{
         display: flex;
@@ -78,6 +82,7 @@
             justify-content: space-between;
             padding: 10px;
             text-align: center;
+            margin-left: -30px;
 
             &__content {
                 padding: 5px;
@@ -120,7 +125,7 @@
         padding: 10px;
 
         &__journals{
-            margin-left: 25px;
+            margin-left:0px;
             align-items: center;
 
             &__miniature{
