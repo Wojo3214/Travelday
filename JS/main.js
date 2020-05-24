@@ -65,5 +65,12 @@ $(document).ready(function(){
     });
 
 
+    //Open support button
+    $(".s-content__button").click(function(){
+        $(".s-content__support").slideToggle("slow");
+    });
+    
+
+
 });
 
