@@ -92,12 +92,99 @@
 
 /***DASHBOARD***/
 .c-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  overflow: auto;
   padding: 25px;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.c-content__achievements-container {
+  width: 84%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 10000;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  margin-left: -25px;
+}
+
+.c-content__achievements-container__icons {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #0998E6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.c-content__achievements-container__icons--icon {
+  float: left;
+  display: block;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.c-content__achievements-container__icons--text {
+  color: #707070;
+  font-size: 18px;
+  float: right;
+  padding: 10px 20px 0 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.c-content__achievements-container__places {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 400px;
+  margin-left: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 20%;
+  right: 22%;
+  z-index: 10000;
+}
+
+.c-content__achievements-container__places .c-content__achievements-container__info {
+  margin-left: 20px;
+}
+
+.c-content__achievements-container__places .c-content__achievements-container__info--icon {
+  font-size: 20px;
+  float: right;
+}
+
+.c-content__achievements-container__places .c-content__achievements-container__info .c-content__achievements-container__place {
+  font-size: 20px;
+}
+
+.c-content__achievements-container__places .c-content__achievements-container__info .c-content__achievements-container__date {
+  font-size: 17px;
 }
 
 .c-content__item {
@@ -108,7 +195,7 @@
 
 .c-content__item .c-content__map {
   width: 65%;
-  height: 350px;
+  height: 300px;
   background-color: #5453b8;
   border-radius: 20px;
 }
@@ -138,7 +225,7 @@
 }
 
 .c-content__item .c-content__upcoming-trips__places .c-content__upcoming-trips__img {
-  width: 75px;
+  width: 65px;
   height: auto;
 }
 
@@ -196,10 +283,33 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  position: relative;
+}
+
+.c-content__item .c-content__days-left:before {
+  content: '';
+  width: 5px;
+  height: 18px;
+  background-color: #333;
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+.c-content__item .c-content__days-left:after {
+  content: '';
+  width: 5px;
+  height: 18px;
+  background-color: #333;
+  position: absolute;
+  top: -5px;
+  left: 50px;
+  border-radius: 10px;
 }
 
 .c-content__item .c-content__days-left .c-content__days-left__num {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 800;
   padding: 10px 15px;
   border: 5px solid #333;
@@ -268,97 +378,7 @@
   color: #fff;
 }
 
-.c-content .c-content__achievements-container {
-  width: 40%;
-  height: 400px;
-  margin-left: 10px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 20%;
-  right: 22%;
-  z-index: 10000;
-}
-
-.c-content .c-content__achievements-container__bgimg {
-  background-image: url("photographer.jpg");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.c-content .c-content__achievements-container__icons {
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #0998E6;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 25px;
-}
-
-.c-content .c-content__achievements-container__icons--icon {
-  float: left;
-  display: block;
-  margin-top: 10px;
-  margin-right: 50px;
-}
-
-.c-content .c-content__achievements-container__icons--text {
-  color: #707070;
-  font-size: 18px;
-  float: right;
-  padding: 10px 20px 0 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.c-content .c-content__achievements-container__places {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 15px;
-}
-
-.c-content .c-content__achievements-container__places .c-content__achievements-container__info {
-  margin-left: 20px;
-}
-
-.c-content .c-content__achievements-container__places .c-content__achievements-container__info--icon {
-  font-size: 20px;
-  float: right;
-}
-
-.c-content .c-content__achievements-container__places .c-content__achievements-container__info .c-content__achievements-container__place {
-  font-size: 20px;
-}
-
-.c-content .c-content__achievements-container__places .c-content__achievements-container__info .c-content__achievements-container__date {
-  font-size: 17px;
-}
-
-.heading {
+.c-content .heading {
   font-family: 'Roboto';
   font-weight: 600;
   text-transform: uppercase;
@@ -366,25 +386,24 @@
   color: #333;
 }
 
-.heading--main {
-  font-size: 24px;
+.c-content .heading--main .heading__text {
+  font-size: 35px;
 }
 
-.heading--sub {
-  font-size: 15px;
+.c-content .heading--sub .heading__text {
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
 }
 
-.heading--sub .fa-info-circle {
-  margin-top: 12px;
+.c-content .heading--sub .fa-info-circle {
+  margin-left: 10px;
   color: gray;
-  font-size: 14px;
-  cursor: pointer;
 }
 
 /***MY BOOKING***/
@@ -659,6 +678,21 @@
   padding: 25px;
 }
 
+.f-content .heading--main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.f-content .heading--main .heading__icon {
+  font-size: 20px;
+  margin-left: 20px;
+  color: #999999;
+}
+
 .f-content__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,8 +929,6 @@
   color: #707070;
 }
 
-<<<<<<< Updated upstream
-=======
 /***CONTACT and SUPPORT***/
 .s-content {
   -webkit-box-flex: 1;
@@ -931,6 +963,9 @@
   color: #333;
   margin-left: 80px;
   margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .s-content__item .s-content__box__1 {
@@ -1140,7 +1175,6 @@
   color: gray;
 }
 
->>>>>>> Stashed changes
 /***SETTINGS***/
 .a-content {
   -webkit-box-flex: 1;
@@ -1671,7 +1705,6 @@ body {
   max-width: 70%;
 }
 
-<<<<<<< Updated upstream
 .u-content__journals__miniatures__content .u-content__journals__miniatures__photos__title {
   font-size: 14px;
   color: #707070;
@@ -1688,103 +1721,6 @@ body {
           flex: 1;
   padding: 25px;
   font-family: Roboto;
-=======
-.c-content .c-content__achievements-container {
-  width: 40%;
-  height: 400px;
-  margin-left: 10px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 20%;
-  right: 22%;
-  z-index: 10000;
-}
-
-.c-content .c-content__achievements-container__bgimg {
-  background-image: url("photographer.jpg");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.c-content .c-content__achievements-container__icons {
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #0998E6;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 25px;
-}
-
-.c-content .c-content__achievements-container__icons--icon {
-  float: left;
-  display: block;
-  margin-top: 10px;
-  margin-right: 50px;
-}
-
-.c-content .c-content__achievements-container__icons--text {
-  color: #707070;
-  font-size: 18px;
-  float: right;
-  padding: 10px 20px 0 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.c-content .c-content__achievements-container__places {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 15px;
-}
-
-.c-content .c-content__achievements-container__places .c-content__achievements-container__info {
-  margin-left: 20px;
-}
-
-.c-content .c-content__achievements-container__places .c-content__achievements-container__info--icon {
-  font-size: 20px;
-  float: right;
-}
-
-.c-content .c-content__achievements-container__places .c-content__achievements-container__info .c-content__achievements-container__place {
-  font-size: 20px;
-}
-
-.c-content .c-content__achievements-container__places .c-content__achievements-container__info .c-content__achievements-container__date {
-  font-size: 17px;
-}
-
-.heading {
-  font-family: 'Roboto';
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 10px 0;
->>>>>>> Stashed changes
   color: #333;
   width: 75%;
   margin: auto;
@@ -1811,7 +1747,6 @@ body {
           align-items: center;
 }
 
-<<<<<<< Updated upstream
 .u-content__bottom__saved__journals__miniature {
   max-width: 65%;
   padding: 5px;
@@ -1821,123 +1756,6 @@ body {
   border: 3px solid #EEEEEE;
   padding: 8px;
   border-radius: 20px;
-=======
-.heading--sub .fa-info-circle {
-  margin-top: 12px;
-  color: gray;
-  font-size: 14px;
-  cursor: pointer;
->>>>>>> Stashed changes
-}
-
-/***FEED***/
-.f-content {
-  -webkit-box-flex: 5;
-      -ms-flex-positive: 5;
-          flex-grow: 5;
-  overflow: auto;
-  padding: 25px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.f-content__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.f-content__item .f-content__posts {
-  width: 85%;
-}
-
-.f-content__item .f-content__posts .f-content__post {
-  width: 100%;
-  height: 120px;
-  background-color: #F7F7F7;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.f-content__item .f-content__posts .f-content__post__img {
-  width: 80px;
-  height: 80px;
-  padding: 20px;
-}
-
-.f-content__item .f-content__posts .f-content__post__journal {
-  width: 100px;
-  margin-left: auto;
-  padding: 20px;
-}
-
-.f-content__item .f-content__posts .f-content__post__user {
-  font-size: 15px;
-  color: #707070;
-  padding-bottom: 5px;
-}
-
-.f-content__item .f-content__posts .f-content__post__title {
-  font-size: 15px;
-}
-
-.f-content__item .f-content__posts .f-content__post__link {
-  font-size: 10px;
-}
-
-.f-content__item .f-content__also-like {
-  width: 12%;
-  margin-left: 25px;
-  padding: 0 20 0 20px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.f-content__item .f-content__also-like .f-content__also-like__heading {
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.f-content__item .f-content__also-like__users {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 20px 15px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.f-content__item .f-content__also-like__users .f-content__also-like__img {
-  width: 40px;
-  height: auto;
-}
-
-.f-content__item .f-content__also-like__users .f-content__also-like__info .f-content__also-like__name {
-  font-size: 13px;
-}
-
-.f-content__item .f-content__also-like__users .f-content__also-like__info .f-content__also-like__follow {
-  font-size: 10px;
-  background-color: #0998E6;
-  color: white;
-  padding: 3px;
-  margin-top: 5px;
-  width: 60px;
-  margin: 5px auto;
 }
 
 /***MY BOOKING***/
