@@ -1,7 +1,10 @@
 /***MY JOURNAL***/
 .z-content {
-    flex: 1;
+    flex-grow: 5;
+    overflow: auto;
     padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
 
     .heading_journal {
         display: flex;
@@ -41,9 +44,9 @@
                 align-items: center;
 
                 &__journal {
-                    width: 120px;
-                    height: 120px;
-                    padding: 20px;
+                    width: 100px;
+                    height: 100px;
+                    padding: 0 20px;
                 }
 
                 &__title {
@@ -58,7 +61,7 @@
                     &__eye{
                         margin-top: 25px;
                         bottom: 0;
-                        font-size: 18px;
+                        font-size: 15px;
                     }
 
                 &__button{

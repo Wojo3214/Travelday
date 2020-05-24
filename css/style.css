@@ -425,10 +425,17 @@
 
 /***MY BOOKING***/
 .g-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  overflow: auto;
   padding: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.g-content .heading__text {
+  z-index: 99;
 }
 
 .g-content .heading_booking {
@@ -497,11 +504,11 @@
 }
 
 .g-content__item .g-content__map {
-  width: 100%;
+  width: 90%;
   height: 350px;
   background-color: #5453b8;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
 .g-content__item .g-content__tickets {
@@ -689,10 +696,13 @@
 
 /***FEED***/
 .f-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  overflow: auto;
   padding: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .f-content .heading--main {
@@ -811,10 +821,13 @@
 
 /***MY JOURNAL***/
 .z-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  overflow: auto;
   padding: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .z-content .heading_journal {
@@ -868,9 +881,9 @@
 }
 
 .z-content__item .z-content__posts .z-content__post__journal {
-  width: 120px;
-  height: 120px;
-  padding: 20px;
+  width: 100px;
+  height: 100px;
+  padding: 0 20px;
 }
 
 .z-content__item .z-content__posts .z-content__post__title {
@@ -890,7 +903,7 @@
 .z-content__item .z-content__posts .z-content__post__info__eye {
   margin-top: 25px;
   bottom: 0;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .z-content__item .z-content__posts .z-content__post__info__button {
@@ -1568,6 +1581,270 @@
   color: red;
 }
 
+/***DETAILS OF THE TRIP PAGE***/
+.d-content {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  overflow: auto;
+  padding: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.d-content__container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin-top: 40px;
+}
+
+.d-content__breadcrumb {
+  padding: 10px 0;
+  list-style: none;
+}
+
+.d-content__breadcrumb__list {
+  display: inline;
+  font-size: 14px;
+  padding: 4px;
+}
+
+.d-content__breadcrumb__link {
+  color: #0998E6;
+  text-decoration: none;
+}
+
+.d-content__breadcrumb__link:hover {
+  text-decoration: underline;
+}
+
+.d-content__details {
+  width: 330px;
+  height: 420px;
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.d-content__details__first {
+  margin-left: 10px;
+}
+
+.d-content__details__photo {
+  height: 100px;
+  width: 330px;
+}
+
+.d-content__details__info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.d-content__details__flight {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.d-content__details__flight__date {
+  color: #0998E6;
+  margin-left: 8px;
+}
+
+.d-content__details__flight__departure {
+  margin-left: 22px;
+}
+
+.d-content__details__airoport {
+  font-size: 50px;
+  font-weight: lighter;
+  margin-left: -10px;
+}
+
+.d-content__details__airoport__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 30px;
+}
+
+.d-content__details__time {
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: lighter;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 25px;
+  margin-top: -20px;
+}
+
+.d-content__details__pm {
+  margin-left: 130px;
+}
+
+.d-content__details__accommodation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 80px;
+  margin-top: -46px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.d-content__details__accommodation__address {
+  font-size: 18px;
+}
+
+.d-content__details__hotel-details {
+  font-weight: bolder;
+  margin-left: 40px;
+}
+
+.d-content__details__hotel-details__aphrodite {
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+.d-content__details__hotel-details__checkin {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.d-content__details__hotel-details__checkin__blue {
+  color: #0998E6;
+  margin-left: 5px;
+}
+
+.d-content__details__hotel-details__checkout {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.d-content__details__facilities {
+  margin-left: 40px;
+  font-size: 18px;
+  margin-top: 26px;
+  font-weight: bolder;
+}
+
+.d-content__details__facilities__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-left: -20px;
+  margin-top: 16px;
+}
+
+.d-content__details__facilities__icon {
+  color: #0998E6;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.d-content__details__destination {
+  margin-left: 40px;
+}
+
+.d-content__details__destination__title1 {
+  font-size: 18px;
+  font-family: Open Sans;
+  margin-top: 24px;
+}
+
+.d-content__details__destination__photo {
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 22px;
+}
+
+.d-content__details__destination__photo__1 {
+  margin-left: 0px;
+}
+
+.d-content__details__destination__photo__weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-content__details__destination__photo__weather__text {
+  margin-left: 48px;
+  font-size: 14px;
+}
+
+.d-content__details__destination__photo__weather__text__1 {
+  margin-left: 10px;
+}
+
+.d-content__details__destination__title2 {
+  font-size: 18px;
+  font-family: Open Sans;
+  margin-top: 30px;
+}
+
+.d-content__details__destination__attractions {
+  width: 16%;
+  margin-left: 8px;
+  margin-top: 28px;
+}
+
+.d-content__details__destination__attractions__1 {
+  margin-left: 0px;
+}
+
+.d-content__delimitation-line {
+  width: 240px;
+  border: 2px solid #cccccc;
+  margin-left: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.d-content .fa-chevron-right {
+  color: #333;
+  font-size: 30px;
+}
+
+.d-content .fa-map-marker-alt {
+  color: #0998E6;
+  font-size: 35px;
+  margin-left: 40px;
+  margin-top: 24px;
+  text-shadow: 8px 0 3px #A8A8A8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1773,481 +2050,6 @@ body {
   border: 3px solid #EEEEEE;
   padding: 8px;
   border-radius: 20px;
-}
-
-/***MY BOOKING***/
-.g-content {
-  -webkit-box-flex: 5;
-      -ms-flex-positive: 5;
-          flex-grow: 5;
-  overflow: auto;
-  padding: 25px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.g-content__statistics {
-  width: 20%;
-  padding: 20px;
-  margin: auto;
-  margin-bottom: 30px;
-  border-radius: 20px;
-  font-size: 20px;
-  color: white;
-}
-
-.g-content__statistics__flights {
-  background-image: url(../img/stat1.png);
-  background-color: #cccccc;
-  background-position: center;
-  /* Center the image */
-  background-size: cover;
-}
-
-.g-content__statistics__kilometers {
-  background-image: url(../img/stat2.png);
-  background-color: #cccccc;
-  background-position: center;
-  /* Center the image */
-  background-size: cover;
-}
-
-.g-content__statistics__countries {
-  background-image: url(../img/stat3.png);
-  background-color: #cccccc;
-  background-position: center;
-  /* Center the image */
-  background-size: cover;
-}
-
-.g-content .heading__icon {
-  color: #999999;
-  font-size: 20px;
-  margin-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  float: right;
-}
-
-.g-content__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.g-content__item .g-content__map {
-  width: 90%;
-  height: 350px;
-  background-color: #5453b8;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.g-content__item .g-content__tickets {
-  width: 90%;
-  margin: auto;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket {
-  width: 100%;
-  position: relative;
-  height: 100%;
-  background-color: #ececec;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2px;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket:before {
-  content: '';
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: white;
-  border-radius: 50%;
-  top: -13px;
-  left: -15px;
-  -webkit-box-shadow: 0px 47px 0 0 white;
-          box-shadow: 0px 47px 0 0 white;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__pen {
-  font-size: 20px;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__info {
-  color: #0998E6;
-  font-size: 20px;
-  margin-right: 50px;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__icon {
-  font-size: 30px;
-  color: #0998E6;
-  margin-left: 50px;
-  padding: 30px;
-  cursor: default;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__icon--grey {
-  font-size: 30px;
-  color: grey;
-  margin-left: 50px;
-  padding: 30px;
-  cursor: default;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__location {
-  font-size: 25px;
-  color: grey;
-  padding: 10px;
-  cursor: default;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__location--grey {
-  font-size: 30px;
-  color: grey;
-  padding: 10px;
-  cursor: default;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__btn {
-  width: 100px;
-  margin-left: auto;
-  padding: 20px;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__places {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__from {
-  font-size: 13px;
-  padding-bottom: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-  margin: 0 80px 0 80px;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__to {
-  font-size: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-  margin: 0 0 0 150px;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__to--grey {
-  font-size: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-  margin: 0 0 0 200px;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__places .g-content__ticket__from--grey {
-  font-size: 15px;
-  padding-bottom: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-  margin: 0 80px 0 80px;
-}
-
-.g-content__item .g-content__tickets .g-content__ticket__link {
-  font-size: 10px;
-}
-
-/***DETAILS OF THE TRIP PAGE***/
-.d-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 25px;
-  font-family: Open Sans;
-  color: #333;
-}
-
-.d-content__breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-}
-
-.d-content__breadcrumb__list {
-  display: inline;
-  font-size: 14px;
-  padding: 4px;
-}
-
-.d-content__breadcrumb__link {
-  color: #0998E6;
-  text-decoration: none;
-}
-
-.d-content__breadcrumb__link:hover {
-  text-decoration: underline;
-}
-
-.d-content__details {
-  width: 330px;
-  height: 420px;
-  background-color: #EEEEEE;
-  border-radius: 20px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 80px;
-  margin-top: 40px;
-}
-
-.d-content__details__first {
-  margin-left: 10px;
-}
-
-.d-content__details__photo {
-  height: 100px;
-  width: 330px;
-}
-
-.d-content__details__info {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.d-content__details__flight {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: 20px;
-}
-
-.d-content__details__flight__date {
-  color: #0998E6;
-  margin-left: 8px;
-}
-
-.d-content__details__flight__departure {
-  margin-left: 22px;
-}
-
-.d-content__details__airoport {
-  font-size: 50px;
-  font-weight: lighter;
-  margin-left: -10px;
-}
-
-.d-content__details__airoport__text {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding-left: 30px;
-}
-
-.d-content__details__time {
-  font-size: 18px;
-  font-family: Open Sans;
-  font-weight: lighter;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 25px;
-  margin-top: -20px;
-}
-
-.d-content__details__pm {
-  margin-left: 130px;
-}
-
-.d-content__details__accommodation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 80px;
-  margin-top: -46px;
-  padding: 10px;
-  font-size: 14px;
-}
-
-.d-content__details__accommodation__address {
-  font-size: 18px;
-}
-
-.d-content__details__hotel-details {
-  font-weight: bolder;
-  margin-left: 40px;
-}
-
-.d-content__details__hotel-details__aphrodite {
-  font-size: 18px;
-  margin-top: 22px;
-}
-
-.d-content__details__hotel-details__checkin {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: 3px;
-  font-size: 14px;
-}
-
-.d-content__details__hotel-details__checkin__blue {
-  color: #0998E6;
-  margin-left: 5px;
-}
-
-.d-content__details__hotel-details__checkout {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: 3px;
-  font-size: 14px;
-}
-
-.d-content__details__facilities {
-  margin-left: 40px;
-  font-size: 18px;
-  margin-top: 26px;
-  font-weight: bolder;
-}
-
-.d-content__details__facilities__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  margin-left: -20px;
-  margin-top: 16px;
-}
-
-.d-content__details__facilities__icon {
-  color: #0998E6;
-  margin-left: 20px;
-  font-size: 25px;
-}
-
-.d-content__details__destination {
-  margin-left: 40px;
-}
-
-.d-content__details__destination__title1 {
-  font-size: 18px;
-  font-family: Open Sans;
-  margin-top: 24px;
-}
-
-.d-content__details__destination__photo {
-  width: 20%;
-  margin-top: 20px;
-  margin-left: 22px;
-}
-
-.d-content__details__destination__photo__1 {
-  margin-left: 0px;
-}
-
-.d-content__details__destination__photo__weather {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.d-content__details__destination__photo__weather__text {
-  margin-left: 48px;
-  font-size: 14px;
-}
-
-.d-content__details__destination__photo__weather__text__1 {
-  margin-left: 10px;
-}
-
-.d-content__details__destination__title2 {
-  font-size: 18px;
-  font-family: Open Sans;
-  margin-top: 30px;
-}
-
-.d-content__details__destination__attractions {
-  width: 16%;
-  margin-left: 8px;
-  margin-top: 28px;
-}
-
-.d-content__details__destination__attractions__1 {
-  margin-left: 0px;
-}
-
-.d-content__delimitation-line {
-  width: 240px;
-  border: 2px solid #cccccc;
-  margin-left: 40px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.d-content .fa-chevron-right {
-  color: #333;
-}
-
-.d-content .fa-map-marker-alt {
-  color: #0998E6;
-  font-size: 35px;
-  margin-left: 40px;
-  margin-top: 24px;
-  text-shadow: 8px 0 3px #A8A8A8;
 }
 
 /***CONTACT and SUPPORT***/
@@ -2590,151 +2392,6 @@ body {
 .a-content .a-content__settings-main__places .a-content__settings-main__place {
   font-size: 15px;
   margin-right: 20px;
-}
-
-/***MY JOURNAL***/
-.z-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 25px;
-}
-
-.z-content .heading_journal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.z-content .heading_journal__paragraph {
-  font-size: 14px;
-  margin-left: 20px;
-  color: #A8A8A8;
-  text-transform: initial;
-}
-
-.z-content .heading__icon {
-  color: #999999;
-  font-size: 20px;
-  margin-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  float: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.z-content__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -20px;
-}
-
-.z-content__item .z-content__posts {
-  width: 85%;
-}
-
-.z-content__item .z-content__posts .z-content__post {
-  width: 100%;
-  height: 120px;
-  border-radius: 20px;
-  margin-bottom: 35px;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.z-content__item .z-content__posts .z-content__post__journal {
-  width: 150px;
-  height: 150px;
-  padding: 20px;
-}
-
-.z-content__item .z-content__posts .z-content__post__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.z-content__item .z-content__posts .z-content__post__info__eye {
-  margin-top: 25px;
-  bottom: 0;
-  font-size: 18px;
-}
-
-.z-content__item .z-content__posts .z-content__post__info__button {
-  background-color: #0998E6;
-  color: white;
-  width: 205px;
-  height: 45px;
-  font-size: 15px;
-  font-weight: 800;
-  border: none;
-  float: right;
-  position: absolute;
-  right: 150px;
-  top: 150px;
-}
-
-.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button span:after {
-  content: '\+';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button:hover span {
-  padding-right: 25px;
-}
-
-.z-content__item .z-content__posts .z-content__post__info .z-content__post__info__button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.z-content__item .z-content__posts .z-content__post__info .z-content__post__user {
-  font-size: 25px;
-  color: #333;
-  padding-bottom: 5px;
-  margin-top: -30px;
-}
-
-.z-content__item .z-content__posts .z-content__post__info .z-content__post__link {
-  font-size: 12px;
-  color: #707070;
 }
 
 /***CONTACT and SUPPORT***/

@@ -1,9 +1,15 @@
 /***MY BOOKING***/
 
 .g-content {
-    flex: 1;
+    flex-grow: 5;
+    overflow: auto;
     padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
 
+    .heading__text {
+        z-index: 99;
+    }
     .heading_booking {
         display: flex;
         align-items: center;
@@ -59,11 +65,11 @@
         flex-wrap: wrap;
 
         .g-content__map{
-            width: 100%;
+            width: 90%;
             height: 350px;
             background-color: rgb(84, 83, 184);
             border-radius: 20px;
-            margin-bottom: 20px;
+            margin: 20px auto;
         }
 
         @mixin pseudo-ready($position: absolute){

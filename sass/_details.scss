@@ -1,0 +1,207 @@
+/***DETAILS OF THE TRIP PAGE***/
+
+.d-content{
+    flex-grow: 5;
+    overflow: auto;
+    padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    &__container {
+        align-items: center;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    &__breadcrumb{
+        padding: 10px 0;
+        list-style: none;
+
+        &__list{
+            display: inline;
+            font-size: 14px;
+            padding: 4px;
+        }
+        &__link{
+            color: #0998E6;
+            text-decoration: none;
+        }
+        &__link:hover{
+            text-decoration: underline;
+        }
+    }
+    &__details{
+        width: 330px;
+        height: 420px;
+        background-color: #EEEEEE;
+        border-radius: 20px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+
+        &__first{
+            margin-left: 10px;
+        }
+        &__photo{
+            height: 100px;
+            width: 330px;
+        }
+        &__info{
+         flex-direction: column;
+        }
+        &__flight{
+            display: inline-flex;
+            margin-top: 20px;
+
+            &__date{
+                color: #0998E6;
+                margin-left: 8px;
+            }
+            &__departure{
+                margin-left: 22px;
+            }
+        }
+        &__airoport{
+            font-size: 50px;
+            font-weight: lighter;
+            margin-left: -10px;
+
+            &__text{
+                display: inline-flex;
+                padding-left: 30px;
+            }
+        }
+        &__time{
+            font-size: 18px;
+            font-family: Open Sans;
+            font-weight: lighter;
+            display: inline-flex;
+            margin-left: 25px;
+            margin-top: -20px;
+        }
+        
+        &__pm{
+            margin-left: 130px;
+        }
+        &__accommodation{
+            display: flex;
+            flex-direction: column;
+            margin-left: 80px;
+            margin-top: -46px;
+            padding: 10px;
+            font-size: 14px;
+
+            &__address{
+                font-size: 18px;
+            }
+        }
+        &__hotel-details{
+            font-weight: bolder;
+            margin-left: 40px;
+
+            &__aphrodite{
+                font-size: 18px;
+                margin-top: 22px;
+            }
+            &__checkin{
+                display: inline-flex;
+                margin-top: 3px;
+                font-size: 14px;
+
+                &__blue{
+                    color: #0998E6;
+                    margin-left: 5px;
+                }
+            }
+            &__checkout{
+                display: inline-flex;
+                margin-top: 3px;
+                font-size: 14px;
+            }
+        }
+        &__facilities{
+            margin-left: 40px;
+            font-size: 18px;
+            margin-top: 26px;
+            font-weight: bolder;
+
+            &__icons{
+                display: flex;
+                list-style-type: none;
+                margin-left: -20px;
+                margin-top: 16px;
+            }
+            &__icon{
+                color: #0998E6;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+        }
+        &__destination{
+            margin-left: 40px;
+
+            &__title1{
+                font-size: 18px;
+                font-family: Open Sans;
+                margin-top: 24px;
+            }
+            &__photo{
+                width: 20%;
+                margin-top: 20px;
+                margin-left: 22px;
+
+                &__1{
+                    margin-left: 0px;
+                }
+
+                &__weather{
+                    display: flex;
+
+                    &__text{
+                        margin-left: 48px;
+                        font-size: 14px;
+
+                        &__1{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            &__title2{
+                font-size: 18px;
+                font-family: Open Sans;
+                margin-top: 30px;
+            }
+            &__attractions{
+                width: 16%;
+                margin-left: 8px;
+                margin-top: 28px;
+
+                &__1{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    &__delimitation-line{
+        width: 240px;
+        border: 2px solid #cccccc;
+        margin-left: 40px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .fa-chevron-right{
+        color: #333;
+        font-size: 30px;
+    }
+    .fa-map-marker-alt{
+        color: #0998E6;
+        font-size: 35px;
+        margin-left: 40px;
+        margin-top: 24px;
+        text-shadow: 8px 0 3px #A8A8A8;
+    }
+}
