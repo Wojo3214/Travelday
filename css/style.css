@@ -2768,6 +2768,97 @@ body {
   border: 2px black;
 }
 
+/***LOG-IN PAGE***/
+.l-grid--login {
+  background-image: url("../img/bg.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.l-grid--login .log-in__logo {
+  width: auto;
+  height: 70px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.l-grid--login .log-in {
+  width: 30%;
+  background: rgba(28, 123, 201, 0.8);
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.l-grid--login .log-in__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.l-grid--login .log-in__container__label {
+  margin: 10px 0;
+  width: 100%;
+  color: #fff;
+}
+
+.l-grid--login .log-in__container input {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.l-grid--login .log-in__container__btn-submit {
+  width: 30%;
+  padding: 10px 15px;
+  margin-top: 20px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.l-grid--login .log-in__container__btn-submit:hover {
+  background-color: #fff;
+  color: rgba(28, 123, 201, 0.8);
+  cursor: pointer;
+}
+
+.l-grid--login .log-in__container__info {
+  color: red;
+}
+
 @media (max-width: 900px) {
   .c-content {
     max-width: 850px;
