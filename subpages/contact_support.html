@@ -42,8 +42,10 @@
                 <li class="nav__item">
                     <a href="#" class="nav__link"><i class="fas fa-sign-out-alt nav__icon"></i>Log out</a>
                 </li>
+                <li class="nav__item">
+                    <p class="nav__rights">All rights reserved <span class="nav__rights__date"></span></p>
+                </li>
             </ul>
-            <p class="nav__rights">All rights reserved 2020</p>
         </nav>
         <main class="s-content">
             <header class="heading heading--main">
@@ -58,7 +60,7 @@
                             <p class="s-content__box__question">How do I change the language?</p>
                         </div>  
                         <div class="s-content__container dropup">
-                            <button class="s-content__box__btn dropup__btn0"><i class="fas fa-chevron-down"></i></button>
+                            <button class="s-content__box__btn dropup__btn0" id="dropup_btn"><i class="fas fa-chevron-down"></i></button>
                                 <div class="dropup__btn__content">
                                     <p class="dropup__btn__content__paragraph">For changing the language, go to <b>Settings</b> >> <b>Language</b> and set the preffered one. </p>
                                 </div>
@@ -164,6 +166,10 @@
         </main>
     </div>
     <script>
+
+$("dropup_btn").click(function(){
+  $("p").toggle();
+});
     </script>
 </body>
 </html>
