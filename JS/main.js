@@ -41,50 +41,45 @@ $(document).ready(function(){
 
 
     //Show booking section information
-    $(document).ready(function(){
-        $(".heading_booking__paragraph").hide()
-            $("#show").click(function(){
-                $(".heading_booking__paragraph").fadeToggle("fast");
-        });
+    
+    $(".heading_booking__paragraph").hide()
+        $("#show").click(function(){
+            $(".heading_booking__paragraph").fadeToggle("fast");
     });
+    
 
     //Show journal section information
-    $(document).ready(function(){
-        $(".heading_journal__paragraph").hide()
-        $("#show").click(function(){
-          $(".heading_journal__paragraph").fadeToggle("slow");
-        });
-      });
-
+    
+    $(".heading_journal__paragraph").hide()
+    $("#show").click(function(){
+        $(".heading_journal__paragraph").fadeToggle("slow");
+    });
+     
     
     //Show settings section information
-    $(document).ready(function(){
-        $("#show").click(function(){
-            $(".a-content__settings-main").toggle();
-        });
+    $("#show").click(function(){
+        $(".a-content__settings-main").toggle();
     });
 
 
     //Open support button
+    $(".s-content__support").hide()
     $(".s-content__button").click(function(){
         $(".s-content__support").slideToggle("slow");
     });
-    
 
-    //Changing Settings windows
+    //Changing Settings windows (not working as it should yet)
     //Edit profile
-    $(document).ready(function(){
-        $("#show").click(function(){
-            $("a-content__settings-main").fadeToggle("fast");
-        });
+    $("#show").click(function(){
+        $("a-content__settings-main").fadeToggle("fast");
     });
 
-    //Change password
-    $(document).ready(function(){
-        $("#show").click(function(){
-            $("a-content__settings-main-password").fadeToggle("fast");
-        });
+    //Change password 
+    
+    $("#show").click(function(){
+        $("a-content__settings-main-password").fadeToggle("fast");
     });
+    
 
 });
 

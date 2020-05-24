@@ -1228,10 +1228,6 @@
   cursor: pointer;
 }
 
-.s-content__container__item .s-content__support {
-  display: none;
-}
-
 /***SETTINGS***/
 .a-content {
   -webkit-box-flex: 5;
