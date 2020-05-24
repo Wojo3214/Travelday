@@ -61,6 +61,18 @@
             .c-content__achievements-container__info{
                 margin-left: 20px;
 
+                &--upper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .close {
+                        float: right;
+                        margin-right: 20px;
+                        font-size: 20px;
+                    }
+                }
+
                 &--icon{
                     font-size: 20px;
                     float: right;
@@ -268,7 +280,6 @@
             font-size: 20px;
             display: flex;
             align-items: center;
-            margin-top: 10px;
         }
         
 
