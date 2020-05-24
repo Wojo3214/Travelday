@@ -1682,10 +1682,13 @@ body {
 
 /***FEED***/
 .f-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  overflow: auto;
   padding: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .f-content__item {

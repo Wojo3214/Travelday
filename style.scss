@@ -416,8 +416,11 @@ body{
 
 /***FEED***/
 .f-content {
-    flex: 1;
+    flex-grow: 5;
+    overflow: auto;
     padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
 
     &__item{
         display: flex;
