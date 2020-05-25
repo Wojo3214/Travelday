@@ -1,7 +1,9 @@
 .j-content{
-    flex: 1;
+    flex-grow: 5;
+    overflow: auto;
     padding: 25px;
-    font-family: Open Sans;
+    max-width: 1400px;
+    margin: 0 auto;
 
     &__link{
         color: #A8A8A8;
