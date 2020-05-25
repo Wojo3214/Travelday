@@ -2127,6 +2127,34 @@
   padding-bottom: 20px;
 }
 
+.j-content__section__reviews {
+  width: 1000px;
+  background-color: #F4F4F4;
+  border-radius: 20px;
+  height: 140px;
+  margin-top: 10px;
+}
+
+.j-content__section__reviews__text {
+  margin-left: 16%;
+  margin-top: -10%;
+}
+
+.j-content__section__reviews__text__comment {
+  margin-top: -13px;
+}
+
+.j-content__section__reviews__image {
+  max-width: 90%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.j-content__section__reviews__stars {
+  max-width: 90%;
+  margin-top: 10px;
+}
+
 .j-content__practical-info {
   width: 350px;
   height: 600px;
