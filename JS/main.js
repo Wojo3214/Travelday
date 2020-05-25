@@ -46,6 +46,13 @@ $(document).ready(function(){
         $("#show").click(function(){
             $(".heading_booking__paragraph").fadeToggle("fast");
     });
+
+    //Show feed section information
+    
+    $(".heading_feed__paragraph").hide()
+        $("#show").click(function(){
+            $(".heading_feed__paragraph").fadeToggle("fast");
+    });
     
 
     //Show journal section information

@@ -391,8 +391,8 @@
 
 .c-content__item--vertical .c-content__bar {
   width: 100%;
-  height: 15px;
-  background-color: lightgray;
+  height: 10px;
+  background-color: #EEEEEE;
   border-radius: 20px;
   overflow: hidden;
   clear: both;
@@ -400,7 +400,7 @@
 
 .c-content__item--vertical .c-content__bar .c-content__progress {
   width: 0%;
-  height: 15px;
+  height: 10px;
   border-radius: 20px;
   float: left;
   background-color: #0998E6;
@@ -500,7 +500,7 @@
 }
 
 .g-content .heading__icon {
-  color: grey;
+  color: #999999;
   font-size: 18px;
   cursor: pointer;
   margin-left: 20px;
@@ -766,6 +766,22 @@
   font-size: 35px;
 }
 
+.f-content .heading_feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.f-content .heading_feed__paragraph {
+  font-size: 14px;
+  text-transform: initial;
+  color: #cccccc;
+  margin-left: 25px;
+}
+
 .f-content .heading--main {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -779,6 +795,7 @@
   font-size: 20px;
   margin-left: 20px;
   color: #999999;
+  cursor: pointer;
 }
 
 .f-content__item {
