@@ -2032,8 +2032,7 @@
           flex-grow: 5;
   overflow: auto;
   padding: 25px;
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 1600px;
 }
 
 .j-content__link {
@@ -2096,7 +2095,86 @@
   color: #333;
 }
 
-.j-content__section__attractions {
+.j-content__flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.j-content__practical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 610px;
+  width: 300px;
+  background-color: #F4F4F4;
+  border-radius: 20px;
+  margin-top: 12px;
+  padding-left: 22px;
+}
+
+.j-content__practical__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 52px;
+  color: #A8A8A8;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.j-content__practical__title {
+  font-size: 18px;
+  color: #707070;
+  font-family: Roboto;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+.j-content__practical__rating {
+  width: 160px;
+  padding-bottom: 40px;
+}
+
+.j-content__practical__info {
+  font-size: 14px;
+  color: #333;
+  padding-bottom: 18px;
+  margin-top: 8px;
+}
+
+.j-content__practical__views {
+  font-size: 16px;
+  color: #A8A8A8;
+}
+
+.j-content__practical__users-photo {
+  width: 120px;
+  margin-top: 12px;
+}
+
+.j-content__sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+  color: #333;
+}
+
+.j-content__sections__title {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.j-content__sections__attractions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2105,33 +2183,33 @@
   width: 1000px;
 }
 
-.j-content__section__attractions__image {
+.j-content__sections__attractions__image {
   max-width: 30%;
   margin-left: 40px;
 }
 
-.j-content__section__attractions__text {
+.j-content__sections__attractions__text {
   margin-top: 20px;
 }
 
-.j-content__section__attractions__title {
+.j-content__sections__attractions__title {
   font-size: 20px;
   color: #333;
   margin-top: 10px;
   font-style: bold;
 }
 
-.j-content__section__accommodation {
+.j-content__sections__accommodation {
   width: 1000px;
 }
 
-.j-content__section__accommodation__image {
+.j-content__sections__accommodation__image {
   max-width: 100%;
   margin-top: 20px;
   padding-bottom: 20px;
 }
 
-.j-content__section__reviews {
+.j-content__sections__reviews {
   width: 1000px;
   background-color: #F4F4F4;
   border-radius: 20px;
@@ -2139,22 +2217,22 @@
   margin-top: 10px;
 }
 
-.j-content__section__reviews__text {
+.j-content__sections__reviews__text {
   margin-left: 16%;
   margin-top: -8%;
 }
 
-.j-content__section__reviews__text__comment {
+.j-content__sections__reviews__text__comment {
   margin-top: -20px;
 }
 
-.j-content__section__reviews__image {
+.j-content__sections__reviews__image {
   width: 80px;
   margin-left: 20px;
   margin-top: 15px;
 }
 
-.j-content__section__reviews__stars {
+.j-content__sections__reviews__stars {
   width: 10%;
 }
 
@@ -2181,6 +2259,13 @@
 
 .heading--main .heading__text {
   font-size: 35px;
+}
+
+.fa-map-marker-alt {
+  color: #03A9F4;
+  font-size: 30px;
+  text-shadow: 8px 0 3px #A8A8A8;
+  padding-right: 20px;
 }
 
 * {

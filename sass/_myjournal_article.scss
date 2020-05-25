@@ -2,8 +2,7 @@
     flex-grow: 5;
     overflow: auto;
     padding: 25px;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 1600px;
 
     &__link{
         color: #A8A8A8;
@@ -56,6 +55,68 @@
                 color: #333;
             }
         }
+    }
+    &__flex{
+        display: inline-flex;
+    }
+    &__practical{
+        display: flex;
+        flex-direction: column;
+        height: 610px;
+        width: 300px;
+        background-color: #F4F4F4;
+        border-radius: 20px;
+        margin-top: 12px;
+        padding-left: 22px;
+
+        &__top{
+            display: flex;
+            padding-bottom: 52px;
+            color: #A8A8A8;
+            font-size: 22px;
+            margin-top: 10px;
+            
+        }
+
+        &__title{
+            font-size: 18px;
+            color: #707070;
+            font-family: Roboto;
+            font-weight: 200;
+            padding-bottom: 10px;
+        }
+
+        &__rating{
+            width: 160px;
+            padding-bottom: 40px;
+        }
+        &__info{
+            font-size: 14px;
+            color: #333;
+            padding-bottom: 18px;
+            margin-top: 8px;
+        }
+        &__views{
+            font-size: 16px;
+            color: #A8A8A8;
+
+        }
+        &__users-photo{
+            width: 120px;
+            margin-top: 12px;
+        }
+    }
+    &__sections{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        color: #333;
+
+        &__title{
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
         &__attractions{
             display: flex;
             flex-wrap: nowrap;
@@ -141,4 +202,10 @@
             font-size: 35px;
         }
     }
+}
+.fa-map-marker-alt{
+    color: #03A9F4;
+    font-size: 30px;
+    text-shadow: 8px 0 3px #A8A8A8;
+    padding-right: 20px;
 }
