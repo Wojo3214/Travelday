@@ -75,6 +75,14 @@ $(document).ready(function(){
         $(".s-content__support").slideToggle("slow");
     });
     
+    
+    //Follow&Unfollow
+    $(".f-content__also-like__follow").each(function(){
+        $(".f-content__also-like__follow").click(function(){
+            var follow = $(this).text("Unfollow");         
+
+        });
+    });
 
 });
 

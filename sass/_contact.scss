@@ -14,6 +14,12 @@
         font-size: 35px;
     }
 
+    .s_subheading_text{
+        font-size: 20px;
+        color: #333;
+        font-family: Roboto;
+    }
+
     &__container{
         display: flex;
         width: 100%;
@@ -40,10 +46,41 @@
                 }
             }
 
+            .s-content__button__answer{
+                margin: 10px 0;
+            }
+
             
         }
     }
 
+    .heading{
+        font-family: 'Roboto';
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 0;
+        color: #333;
+    
+        &--main{
+            font-size: 18px;
+        }
+    
+        &--sub{
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+    
+            .fa-info-circle{
+                margin-left: 10px;
+                color: gray;
+            }
+        }
+    
+    }
+
+
+}
     
 
     /**
@@ -261,5 +298,6 @@
         }
     }
 
-    **/
 }
+
+**/
