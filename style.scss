@@ -7,6 +7,7 @@
 @import 'sass/settings';
 @import 'sass/userprofile';
 @import 'sass/login';
+@import 'sass/details';
 
 *{
     margin: 0;
@@ -19,6 +20,7 @@ body{
     font-size: 15px;
 }
 
+
 .l-grid{
     display: flex;
     height: 100vh;
@@ -26,6 +28,7 @@ body{
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 /***USER PROFILE***/
 
 .u-content{
@@ -1380,48 +1383,9 @@ body{
             margin: 0 auto;
             width: 70%;
             justify-content: center;
+=======
+>>>>>>> master
 
-            &__label{
-                margin: 10px 0;
-                width: 100%;
-                color: #fff;
-            }
-            input{
-                width: 100%;
-                display: block;
-                margin: 0 auto;
-                padding: 10px 15px;
-                border: none;
-                border-radius: 5px;
-                box-sizing: border-box;
-            }
-
-            &__btn-submit{
-                width: 30%;
-                padding: 10px 15px;
-                margin-top: 20px;
-                background: none;
-                border: 1px solid #fff;
-                color: #fff;
-                align-self: flex-start;
-                transition: 0.3s;
-
-                &:hover{
-                    background-color: #fff;
-                    color: rgba(28, 123, 201, 0.8);
-                    cursor: pointer;
-                }
-            }
-
-
-
-            &__info{
-                color: rgb(255, 0, 0);
-            }
-
-        }
-    }
-}
 
 @media (max-width: 900px){
     .c-content{

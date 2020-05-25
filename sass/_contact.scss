@@ -1,7 +1,44 @@
 /***CONTACT and SUPPORT***/
 .s-content{
-    flex: 1;
+    flex-grow: 5;
+    overflow: auto;
     padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    &__container{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            margin: 15px;
+            
+    
+            .s-content__button{
+                background-color: #eee;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 10px 15px;
+                border-radius: 10px;
+
+                &__arrow{
+                    cursor: pointer;
+                }
+            }
+
+            
+        }
+    }
+
+    
+
+    /**
 
     &__item{
         display: flex;
@@ -215,4 +252,6 @@
             color: gray;
         }
     }
+
+    **/
 }
