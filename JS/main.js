@@ -74,18 +74,6 @@ $(document).ready(function(){
     $(".s-content__button").click(function(){
         $(".s-content__support").slideToggle("slow");
     });
-
-    //Changing Settings windows (not working as it should yet)
-    //Edit profile
-    $("#show").click(function(){
-        $("a-content__settings-main").fadeToggle("fast");
-    });
-
-    //Change password 
-    
-    $("#show").click(function(){
-        $("a-content__settings-main-password").fadeToggle("fast");
-    });
     
 
 });

@@ -1379,7 +1379,7 @@
           align-items: center;
 }
 
-.a-content .a-content__settings-main {
+.a-content .a-content__settings-main, .a-content .a-content__settings-main-password {
   width: 65%;
   height: 80%;
   margin-left: 20px;
@@ -1387,32 +1387,32 @@
   background-color: #F7F7F7;
 }
 
-.a-content .a-content__settings-main__img {
+.a-content .a-content__settings-main__img, .a-content .a-content__settings-main-password__img {
   width: 75px;
   height: auto;
   border-radius: 50%;
   margin-left: 10px;
 }
 
-.a-content .a-content__settings-main__heading {
+.a-content .a-content__settings-main__heading, .a-content .a-content__settings-main-password__heading {
   margin-left: 10px;
   font-size: 24px;
 }
 
-.a-content .a-content__settings-main__date {
+.a-content .a-content__settings-main__date, .a-content .a-content__settings-main-password__date {
   font-size: 13px;
   margin-left: 10px;
 }
 
-.a-content .a-content__settings-main__information {
+.a-content .a-content__settings-main__information, .a-content .a-content__settings-main-password__information {
   font-size: 12px;
 }
 
-.a-content .a-content__settings-main__information--paragraph {
+.a-content .a-content__settings-main__information--paragraph, .a-content .a-content__settings-main-password__information--paragraph {
   font-size: 10px;
 }
 
-.a-content .a-content__settings-main__places {
+.a-content .a-content__settings-main__places, .a-content .a-content__settings-main-password__places {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1424,11 +1424,11 @@
   color: #333;
 }
 
-.a-content .a-content__settings-main__places__icon {
+.a-content .a-content__settings-main__places__icon, .a-content .a-content__settings-main-password__places__icon {
   font-size: 10px;
 }
 
-.a-content .a-content__settings-main__places #text {
+.a-content .a-content__settings-main__places #text, .a-content .a-content__settings-main-password__places #text {
   border: none;
   border-radius: 10px;
   width: 40%;
@@ -1437,7 +1437,7 @@
   float: right;
 }
 
-.a-content .a-content__settings-main__places .a-content__settings-main__place {
+.a-content .a-content__settings-main__places .a-content__settings-main__place, .a-content .a-content__settings-main-password__places .a-content__settings-main__place {
   font-size: 15px;
   margin-right: 20px;
 }
