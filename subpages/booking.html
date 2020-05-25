@@ -53,12 +53,14 @@
             </ul>
         </nav>
         <main class="g-content">
+            <!-- INFO ICON WITH THE INFORMATION ON CLICK -->
             <header class="heading heading--main heading_booking">
                 <h1 class="heading__text">My Booking</h1><i class="fas fa-info-circle heading__icon" id="show"></i>
                 <p class="heading_booking__paragraph">Here you can find a map with visited and places-to-be visited. Click on an info icon down below<br>to have a look on detials of fligts, accomondation and destination.</p>
             </header>
             <div class="g-content__item">
                 <div id="map" class="g-content__map"></div>
+                <!-- STATISTICS UNDER THE MAP -->
                 <div class="g-content__statistics g-content__statistics__flights">
                     <div class="g-content__statistics__info">
                         <h4 class="g-content__statistics-name">Total flights</h4>
@@ -80,6 +82,7 @@
                 <div class="g-content__tickets g-content__tickets--upper">
                     <button class="g-content__post__tickets__button"><span>ADD NEW BOOKING</span></button>
                     <header class="heading heading--sub">
+                        <!-- UPCOMING TICKETS -->
                         <h2 class="heading__text-tickets">Upcoming</h2>
                     </header>
                     <div class="g-content__ticket">
@@ -106,6 +109,7 @@
                 </div>
                 <div class="g-content__tickets g-content__tickets--lower">
                     <header class=" heading heading--sub">
+                         <!-- USED TICKETS -->
                         <h2 class="heading__text-tickets">Places I have been to</h2>
                     </header>
                     <div class="g-content__ticket g-content__ticket">
@@ -128,6 +132,30 @@
                         </div>
                         <i class="fas fa-pencil-alt g-content__ticket__pen"></i>
                         <i class="fas fa-info-circle g-content__ticket__info"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- POPUP WITH NEW BOOKING -->
+            <div class="g-content__booking__popup__background">
+                <div class="g-content__booking__popup">
+                    <div class="g-content__booking__popup__element">
+                        <i class="fas fa-times close" id="close"></i>
+                        <h5 class="g-content__booking__popup__element__title">ADD NEW BOOKING</h5>
+                    </div>
+                    <div class="g-content__booking__popup__container">
+                        <form action="#">
+                            <label class="g-content__booking__popup__container__label">Hotel name
+                            <input type="text" id="text" name="Hotel name"></label>
+                            <label class="g-content__booking__popup__container__label">Hotel address
+                            <input type="text" id="text" name="Hotel address"></label>
+                            <label class="g-content__booking__popup__container__label">Check-in date and time
+                            <input type="date" id="text" name="Check-in date">
+                            <input type="time" id="text" name="Check-in time"></label>
+                            <label class="g-content__booking__popup__container__label">Check-in date and time
+                            <input type="date" id="text" name="Check-out date">
+                            <input type="time" id="text" name="Check-out time"></label>
+                            <input type="submit" id="submit" name="Submit">
+                        </form>
                     </div>
                 </div>
             </div>

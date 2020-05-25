@@ -71,17 +71,94 @@ $(document).ready(function(){
 
     //Open support button
     $(".s-content__support").hide()
-    $(".s-content__button").click(function(){
-        $(".s-content__support").slideToggle("slow");
+    $(".btn1").click(function(){
+        $(".support1").slideToggle("slow");
     });
-    
+
+    $(".s-content__support").hide()
+    $(".btn2").click(function(){
+        $(".support2").slideToggle("slow");
+    });
+
+    $(".s-content__support").hide()
+    $(".btn3").click(function(){
+        $(".support3").slideToggle("slow");
+    });
+
+    $(".s-content__support").hide()
+    $(".btn4").click(function(){
+        $(".support4").slideToggle("slow");
+    });
+
+    $(".s-content__support").hide()
+    $(".btn5").click(function(){
+        $(".support5").slideToggle("slow");
+    });
+
+    $(".s-content__support").hide()
+    $(".btn6").click(function(){
+        $(".support6").slideToggle("slow");
+    });
+
+    $(".s-content__support").hide()
+    $(".btn7").click(function(){
+        $(".support7").slideToggle("slow");
+    });
+
+    $(".s-content__support").hide()
+    $(".btn8").click(function(){
+        $(".support8").slideToggle("slow");
+    });
     
     //Follow&Unfollow
     $(".f-content__also-like__follow").each(function(){
         $(".f-content__also-like__follow").click(function(){
             var follow = $(this).text("Unfollow");         
-
         });
+    });
+
+    //My booking popup hidden from the beggining
+    $(".g-content__booking__popup").hide();
+    $(".g-content__booking__popup__background").hide();
+
+    //My booking popup open
+    $(".g-content__post__tickets__button").click(function(){
+        $(".g-content__booking__popup").fadeToggle("fast");
+        $(".g-content__booking__popup__background").fadeToggle("fast");
+    });
+
+    //My booking popup close
+    $("#close").click(function(){
+        $(".g-content__booking__popup").fadeToggle("fast");
+        $(".g-content__booking__popup__background").fadeToggle("fast");
+    });
+
+    //My booking popup close on "submit"
+    $("#submit").click(function(){
+        $(".g-content__booking__popup").fadeToggle("fast");
+        $(".g-content__booking__popup__background").fadeToggle("fast");
+    });
+
+    //My jouranl popup hidden from the beggining
+    $(".z-content__journal__popup").hide();
+    $(".z-content__journal__popup__background").hide();
+
+    //My journal popup open
+    $(".z-content__post__info__button").click(function(){
+        $(".z-content__journal__popup").fadeToggle("fast");
+        $(".z-content__journal__popup__background").fadeToggle("fast");
+    });
+
+    //My journal popup close
+    $("#close").click(function(){
+        $(".z-content__journal__popup").fadeToggle("fast");
+        $(".z-content__journal__popup__background").fadeToggle("fast");
+    });
+
+    //My journal popup close on "submit"
+    $("#submit").click(function(){
+        $(".z-content__journal__popup").fadeToggle("fast");
+        $(".z-content__journal__popup__background").fadeToggle("fast");
     });
 
 });
