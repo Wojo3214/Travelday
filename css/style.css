@@ -110,6 +110,13 @@
           align-items: center;
 }
 
+.c-content .heading__icon {
+  color: #999999;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
 .c-content__achievements-container {
   width: 84%;
   height: 90%;
