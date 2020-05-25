@@ -91,25 +91,26 @@
             width: 1000px;
             background-color: #F4F4F4;
             border-radius: 20px;
-            height: 140px;
+            height: 110px;
             margin-top: 10px;
 
             &__text{
                 margin-left: 16%;
-                margin-top: -10%;
+                margin-top: -8%;
 
                 &__comment{
-                    margin-top: -13px;
+                    margin-top: -20px;
                 }
             }
             &__image{
-                max-width: 90%;
+                width: 80px;
                 margin-left: 20px;
-                margin-top: 20px;
+                margin-top: 15px;
+               
             }
             &__stars{
-                max-width: 90%;
-                margin-top: 10px;
+                width: 10%;
+                
             }
         }
     }

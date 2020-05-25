@@ -2135,28 +2135,27 @@
   width: 1000px;
   background-color: #F4F4F4;
   border-radius: 20px;
-  height: 140px;
+  height: 110px;
   margin-top: 10px;
 }
 
 .j-content__section__reviews__text {
   margin-left: 16%;
-  margin-top: -10%;
+  margin-top: -8%;
 }
 
 .j-content__section__reviews__text__comment {
-  margin-top: -13px;
+  margin-top: -20px;
 }
 
 .j-content__section__reviews__image {
-  max-width: 90%;
+  width: 80px;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .j-content__section__reviews__stars {
-  max-width: 90%;
-  margin-top: 10px;
+  width: 10%;
 }
 
 .j-content__practical-info {
