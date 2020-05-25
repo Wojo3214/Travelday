@@ -101,6 +101,15 @@
   margin: 0 auto;
 }
 
+.c-content .heading--sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .c-content__achievements-container {
   width: 84%;
   height: 90%;
@@ -232,6 +241,20 @@
   font-weight: 700;
 }
 
+.c-content__item .c-content__upcoming-trips .c-content__upcoming-trips__link {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.c-content__item .c-content__upcoming-trips .c-content__upcoming-trips__link:hover {
+  color: #0998E6;
+}
+
+.c-content__item .c-content__upcoming-trips .c-content__upcoming-trips__link:hover h5 {
+  text-decoration: underline;
+}
+
 .c-content__item .c-content__upcoming-trips__places {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,6 +293,19 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 30px;
+}
+
+.c-content__item .c-content__destination__link {
+  text-decoration: none;
+  color: black;
+}
+
+.c-content__item .c-content__destination__link:hover {
+  color: #0998E6;
+}
+
+.c-content__item .c-content__destination__link:hover h4 {
+  text-decoration: underline;
 }
 
 .c-content__item .c-content__destination .c-content__img {
@@ -435,7 +471,12 @@
 }
 
 .g-content .heading__text {
-  z-index: 99;
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #333;
+  font-size: 35px;
 }
 
 .g-content .heading_booking {
@@ -452,6 +493,10 @@
   text-transform: initial;
   color: #cccccc;
   margin-left: 25px;
+}
+
+.g-content .heading__text-tickets {
+  margin: 10px 0 10px 0;
 }
 
 .g-content .heading__icon {
@@ -514,6 +559,7 @@
 .g-content__item .g-content__tickets {
   width: 90%;
   margin: auto;
+  margin-top: 20px;
 }
 
 .g-content__item .g-content__tickets .g-content__post__tickets__button {
@@ -525,8 +571,7 @@
   font-weight: 800;
   border: none;
   float: right;
-  right: 150px;
-  top: 150px;
+  margin-bottom: 20px;
 }
 
 .g-content__item .g-content__tickets .g-content__post__tickets__button span {
@@ -581,8 +626,8 @@
   border-radius: 50%;
   top: -13px;
   left: -15px;
-  -webkit-box-shadow: 0px 47px 0 0 white, 0px 130px 0 0 white;
-          box-shadow: 0px 47px 0 0 white, 0px 130px 0 0 white;
+  -webkit-box-shadow: 0px 47px 0 0 white;
+          box-shadow: 0px 47px 0 0 white;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__pen {
@@ -592,9 +637,11 @@
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__info {
-  color: #0998E6;
+  color: white;
   margin: 40px;
   font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__icon {
@@ -602,6 +649,7 @@
   color: #0998E6;
   margin-left: 50px;
   padding: 30px;
+  cursor: default;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__icon--grey {
@@ -609,6 +657,10 @@
   color: grey;
   margin-left: 50px;
   padding: 30px;
+}
+
+.g-content__item .g-content__tickets .g-content__ticket__info:hover {
+  color: #0998E6;
 }
 
 .g-content__item .g-content__tickets .g-content__ticket__location {
@@ -705,6 +757,15 @@
   margin: 0 auto;
 }
 
+.f-content .heading__text {
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #333;
+  font-size: 35px;
+}
+
 .f-content .heading--main {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -726,6 +787,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .f-content__item .f-content__posts {
@@ -830,6 +892,15 @@
   margin: 0 auto;
 }
 
+.z-content .heading__text {
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #333;
+  font-size: 35px;
+}
+
 .z-content .heading_journal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,8 +918,8 @@
 }
 
 .z-content .heading__icon {
-  color: grey;
-  font-size: 22px;
+  color: #999999;
+  font-size: 20px;
   margin-left: 20px;
   cursor: pointer;
 }
@@ -1186,6 +1257,15 @@
     **/
 }
 
+.s-content .heading__text {
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #333;
+  font-size: 35px;
+}
+
 .s-content__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1237,6 +1317,15 @@
   padding: 25px;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.a-content .heading__text {
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #333;
+  font-size: 35px;
 }
 
 .a-content__item {

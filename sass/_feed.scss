@@ -6,6 +6,15 @@
     max-width: 1400px;
     margin: 0 auto;
 
+    .heading__text {
+        font-family: 'Roboto';
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 0;
+        color: #333;
+        font-size: 35px;
+    }
+
     .heading--main {
         align-items: center;
         display: flex;
@@ -21,6 +30,7 @@
     &__item{
         display: flex;
         flex-wrap: wrap;
+        margin-top: 40px;
 
         //POSTS
         .f-content__posts {

@@ -8,8 +8,14 @@
     margin: 0 auto;
 
     .heading__text {
-        z-index: 99;
+        font-family: 'Roboto';
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 0;
+        color: #333;
+        font-size: 35px;
     }
+
     .heading_booking {
         display: flex;
         align-items: center;
@@ -20,6 +26,10 @@
             color: #cccccc;
             margin-left: 25px;
         }
+    }
+
+    .heading__text-tickets {
+        margin: 10px 0 10px 0;
     }
 
     .heading__icon {
@@ -84,6 +94,7 @@
         .g-content__tickets {
             width: 90%;
             margin: auto;
+            margin-top: 20px;
 
             .g-content__post__tickets__button {
                 background-color: #0998E6;
@@ -94,8 +105,7 @@
                 font-weight: 800;
                 border: none;
                 float: right;
-                right: 150px;
-                top: 150px;
+                margin-bottom: 20px;
             }
 
             .g-content__post__tickets__button span{
@@ -144,7 +154,6 @@
                     top: -13px;
                     left: -15px;
                     box-shadow: 0px 47px 0 0 white,
-                    0px 130px 0 0 white;
                 }
 
                 &__pen {
@@ -154,9 +163,10 @@
                 }
 
                 &__info {
-                    color: #0998E6;
+                    color: white;
                     margin: 40px;
                     font-size: 20px;
+                    transition: 0.3s;
                 }
 
                 &__icon {
@@ -164,6 +174,7 @@
                     color: #0998E6;
                     margin-left: 50px;
                     padding: 30px;
+                    cursor: default;
 
                     &--grey {
                         font-size: 30px;
@@ -171,6 +182,10 @@
                         margin-left: 50px;
                         padding: 30px;
                     }
+                }
+
+                &__info:hover {
+                    color: #0998E6;
                 }
 
                 &__location {

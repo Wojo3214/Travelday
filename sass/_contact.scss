@@ -5,6 +5,14 @@
     padding: 25px;
     max-width: 1400px;
     margin: 0 auto;
+    .heading__text {
+        font-family: 'Roboto';
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 0;
+        color: #333;
+        font-size: 35px;
+    }
 
     &__container{
         display: flex;

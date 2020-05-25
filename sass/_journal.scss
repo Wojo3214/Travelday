@@ -6,6 +6,15 @@
     max-width: 1400px;
     margin: 0 auto;
 
+    .heading__text {
+        font-family: 'Roboto';
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 0;
+        color: #333;
+        font-size: 35px;
+    }
+
     .heading_journal {
         display: flex;
         align-items: center;
@@ -19,8 +28,8 @@
     }
 
     .heading__icon {
-        color: grey;
-        font-size: 22px;
+        color: #999999;;
+        font-size: 20px;
         margin-left: 20px;
         cursor: pointer;
     }

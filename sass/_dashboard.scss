@@ -7,6 +7,11 @@
     max-width: 1400px;
     margin: 0 auto;
 
+    .heading--sub {
+        display: flex;
+        align-items: center;
+    }
+
     &__achievements-container{
         width: 84%;
         height: 90%;
@@ -116,6 +121,20 @@
                 font-weight: 700;
             }
 
+            .c-content__upcoming-trips__link {
+                width: 100%;
+                text-decoration: none;
+                color: black;
+            }
+
+            .c-content__upcoming-trips__link:hover {
+                color: #0998E6;
+
+                h5{
+                    text-decoration: underline;
+                }
+            }
+
             &__places{
                 display: flex;
                 align-items: center;
@@ -146,12 +165,27 @@
             align-items: center;
             flex-grow: 1;
             margin-right: 30px;
+
+            &__link {
+                text-decoration: none;
+                color: black;
+            }
+
+            &__link:hover {
+                color: #0998E6;
+
+                h4{
+                    text-decoration: underline;
+                }
+            }
             .c-content__img{
                 display: block;
                 width: 80px;
                 height: auto;
                 float: left;
             }
+
+           
 
             &__info{
                 margin-left: 10px;
