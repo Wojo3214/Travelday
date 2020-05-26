@@ -33,6 +33,21 @@ $(document).ready(function(){
     var currentYear = date.getFullYear();
     $(".nav__rights__date").append(currentYear);
 
+    //Dashboard opening and closing achievements popup
+    $(".c-content__achievements-container").hide();
+    $(".c-content__achievements-container__bgimg").hide();
+    
+    $("#show").click(function(){
+      $(".c-content__achievements-container").fadeToggle("fast");
+      $(".c-content__achievements-container__bgimg").fadeToggle("fast");
+      
+    });
+
+    $("#close").click(function(){
+      $(".c-content__achievements-container").fadeToggle("fast");
+      $(".c-content__achievements-container__bgimg").fadeToggle("fast");
+    });
+
 
     //Open contact&support buttons
     $("dropup_btn").click(function(){
