@@ -65,7 +65,7 @@
     &__practical{
         display: flex;
         flex-direction: column;
-        height: 610px;
+        height: 545px;
         width: 300px;
         background-color: #F4F4F4;
         border-radius: 20px;
@@ -82,7 +82,7 @@
         }
 
         &__title{
-            font-size: 18px;
+            font-size: 15px;
             color: #707070;
             font-family: Roboto;
             font-weight: 600;
@@ -90,11 +90,11 @@
         }
 
         &__rating{
-            width: 160px;
+            width: 100px;
             padding-bottom: 40px;
         }
         &__info{
-            font-size: 14px;
+            font-size: 12px;
             color: #333;
             padding-bottom: 18px;
             margin-top: 8px;
@@ -129,7 +129,7 @@
         &__attractions{
             display: flex;
             flex-wrap: nowrap;
-            width: 1000px;
+            width: 75%;
 
 
             &__image{
@@ -150,16 +150,20 @@
             }
         }
         &__accommodation{
-            width: 1000px;
+            width: 75%;
 
             &__image{
                 max-width: 100%;
                 margin-top: 20px;
                 padding-bottom: 20px;
             }
+
+            p {
+                padding: 5px;
+            }
         }
         &__reviews{
-            width: 70%;
+            width: 75%;
             background-color: #F4F4F4;
             border-radius: 20px;
             height: 110px;
@@ -170,8 +174,13 @@
             &__text{
                 margin-left: 5%;
 
+                h3 {
+                    font-size: 13px;
+                }
+
                 &__comment{
                     margin-top: -20px;
+                    font-size: 13px;
                 }
             }
             &__image{
@@ -181,6 +190,7 @@
 
             &__stars{
                 width: 10%;
+                padding: 10px 0;
                 
             }
         }

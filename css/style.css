@@ -2314,7 +2314,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 610px;
+  height: 545px;
   width: 300px;
   background-color: #F4F4F4;
   border-radius: 20px;
@@ -2333,7 +2333,7 @@
 }
 
 .j-content__practical__title {
-  font-size: 18px;
+  font-size: 15px;
   color: #707070;
   font-family: Roboto;
   font-weight: 600;
@@ -2341,12 +2341,12 @@
 }
 
 .j-content__practical__rating {
-  width: 160px;
+  width: 100px;
   padding-bottom: 40px;
 }
 
 .j-content__practical__info {
-  font-size: 14px;
+  font-size: 12px;
   color: #333;
   padding-bottom: 18px;
   margin-top: 8px;
@@ -2391,7 +2391,7 @@
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 1000px;
+  width: 75%;
 }
 
 .j-content__sections__attractions__image {
@@ -2411,7 +2411,7 @@
 }
 
 .j-content__sections__accommodation {
-  width: 1000px;
+  width: 75%;
 }
 
 .j-content__sections__accommodation__image {
@@ -2420,8 +2420,12 @@
   padding-bottom: 20px;
 }
 
+.j-content__sections__accommodation p {
+  padding: 5px;
+}
+
 .j-content__sections__reviews {
-  width: 70%;
+  width: 75%;
   background-color: #F4F4F4;
   border-radius: 20px;
   height: 110px;
@@ -2438,8 +2442,13 @@
   margin-left: 5%;
 }
 
+.j-content__sections__reviews__text h3 {
+  font-size: 13px;
+}
+
 .j-content__sections__reviews__text__comment {
   margin-top: -20px;
+  font-size: 13px;
 }
 
 .j-content__sections__reviews__image {
@@ -2449,6 +2458,7 @@
 
 .j-content__sections__reviews__stars {
   width: 10%;
+  padding: 10px 0;
 }
 
 .j-content__practical-info {
