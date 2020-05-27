@@ -16,7 +16,7 @@ $(document).ready(function(){
     var upcomingTrip = new Date(today.getFullYear(),05,20);
 
     var oneDay = 1000*60*60*24;
-    var score = Math.ceil((upcomingTrip.getTime()-today.getTime())/(oneDay));
+    var score = Math.round((upcomingTrip.getTime()-today.getTime())/(oneDay));
 
     if(score < 0){
         $(".c-content__days-left__num").text("0");
