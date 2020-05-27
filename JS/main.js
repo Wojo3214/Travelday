@@ -15,9 +15,6 @@ $(document).ready(function(){
     var today = new Date();
     var upcomingTrip = new Date(today.getFullYear(),05,20);
 
-    if(today.getMonth()==05 && today.getDate()>02){
-        upcomingTrip.setFullYear(upcomingTrip.getFullYear()+1);
-    }
     var oneDay = 1000*60*60*24;
     var score = Math.ceil((upcomingTrip.getTime()-today.getTime())/(oneDay));
 
